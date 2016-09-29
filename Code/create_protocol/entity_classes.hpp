@@ -3,15 +3,16 @@
 
 class protocol_data{
 	private:
-		byte my_id;
-		byte my_weapon;
-		byte id;
-		byte weapon
-		bool change = false;
+		byte my_player_identifier;
+		byte my_weapon_identifier;
+		byte weapon_identifier;
+		byte player_identifier
+		bool change;
 	public:
-		protocol_data(byte my_id, byte my_weapon):
-			my_id(my_id),
-			my_weapon(my_weapon)
+		protocol_data(byte my_player_identifier = 0, byte my_weapon_identifier = 0):
+			my_player_identifier(my_id),
+			my_weapon_identifier(my_weapon),
+            change(false)
 		{}
 		byte get_player_weapon();
 		byte get_my_weapon();

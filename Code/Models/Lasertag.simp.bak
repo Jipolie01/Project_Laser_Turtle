@@ -191,7 +191,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>127</value>
+        <value>34</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -2574,7 +2574,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-class" id="p1c7f6cc60ce945149d7f8176165d74e4_171923921" name="Protocol class interface" order-index="9" overview-order-index="8" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-72,0">
+      <diagram type="uml-class" id="p1c7f6cc60ce945149d7f8176165d74e4_171923921" name="Protocol class interface" order-index="9" overview-order-index="8" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-85,75" zoom="0.9">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -2586,7 +2586,7 @@
           </authors>
           <description />
           <creation-date>09/28/2016 12:11:48</creation-date>
-          <change-date>09/29/2016 12:43:17</change-date>
+          <change-date>09/29/2016 13:15:19</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -2691,7 +2691,7 @@
             </source-codes>
           </item>
           <item id="di763476780972839433" cid="C033" type="class" name="protocol_data" style-class="" visibility="package" change-tracking-state="added" creation-date="09/28/2016 12:58:35">
-            <style style-name="Default" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="1,1" shadow-visible="true" shadow-color="#32000000" gloss-effect="true" wrap-name-text="true" wrap-other-text="true" padding="1" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
               <text-style type="name" use-defaults="false" color="#FF000000" font="Verdana;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
               <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
               <text-style type="text" use-defaults="false" color="#FF000000" font="Verdana;9;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
@@ -2747,7 +2747,7 @@
                   <source-code language="ActionScript" />
                 </source-codes>
               </operation>
-              <operation id="o95c9c911c85847d29e36813b7d23e50d414" cid="ELEM016" name="get_player_indentifier" type="Integer" type-id="Uml.Integer" visibility="public">
+              <operation id="o95c9c911c85847d29e36813b7d23e50d414" cid="ELEM016" name="get_player_identifier" type="Integer" type-id="Uml.Integer" visibility="public">
                 <style class="default" />
                 <source-codes>
                   <source-code language="ActionScript" />
@@ -2885,10 +2885,6 @@
             <layout ax="416" ay="502" awidth="308" aheight="160" x="416" y="502" width="308" height="160" />
             <class />
           </item>
-          <item id="di763476780972839433" iid="bca7d67565874a409c4fbedda1ecd5d7" creation-date="09/28/2016 12:58:35" order-index="3" type="entity">
-            <layout ax="-2" ay="80" awidth="365" aheight="301" x="-2" y="80" width="365" height="301" />
-            <class />
-          </item>
           <item id="di139606095903523361" iid="ab8000b5426c46f5a29012d02f08f705" creation-date="09/28/2016 13:19:20" order-index="6" type="relation">
             <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="175" y1="502" x2="447" y2="364" start-border-pos="0.125" end-border-pos="0.680107533931732" name-position="-34,-13">
               <points>
@@ -2946,6 +2942,10 @@
               </points>
             </layout>
             <relation from="di615925186319651130" from-iid="8bb8837c3cdc4990aa782f3bc8e58aaf" to="di208723108656488220" to-iid="2898a529a0074683b576af541e554fb6" />
+          </item>
+          <item id="di763476780972839433" iid="bca7d67565874a409c4fbedda1ecd5d7" creation-date="09/28/2016 12:58:35" order-index="3" type="entity">
+            <layout ax="-2" ay="80" awidth="365" aheight="301" x="-2" y="80" width="365" height="301" />
+            <class />
           </item>
         </layer>
       </diagram>

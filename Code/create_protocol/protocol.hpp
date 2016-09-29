@@ -34,7 +34,7 @@ class receive_protocol : public protocol{
 		my_player(my_player)
 		{}
 		void write();
-		char16_t encode(){
+		char16_t decode(){
 			myweapon = myplayer.getWeapon();
 		};
 }
