@@ -189,10 +189,6 @@
         <item-type type-id="concurrency-timer" type="ConcurrencyTimer" />
         <value>7</value>
       </counter>
-      <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>34</value>
-      </counter>
     </entity-ids>
     <diagrams>
       <counter>
@@ -2574,7 +2570,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-class" id="p1c7f6cc60ce945149d7f8176165d74e4_171923921" name="Protocol class interface" order-index="9" overview-order-index="8" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-85,75" zoom="0.9">
+      <diagram type="uml-class" id="p1c7f6cc60ce945149d7f8176165d74e4_171923921" name="Protocol class interface" order-index="9" overview-order-index="8" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-46,75" zoom="0.9">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
