@@ -1,0 +1,15 @@
+
+int get_bit(auto &p1, int signal[], int i){
+    
+    for(;;){
+        if ( p1.get() == 0){
+            hwlib::wait_us(1000);
+            if (p1.get() == 0){
+                hwlib::wait_us(700);
+                hwlib::cout <<"1\n";
+            }
+            else if (p1.get() == 1){
+                hwlib::cout <<"0\n";
+            }
+        }
+}}

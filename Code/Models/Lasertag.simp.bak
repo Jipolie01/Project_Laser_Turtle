@@ -189,6 +189,10 @@
         <item-type type-id="concurrency-timer" type="ConcurrencyTimer" />
         <value>7</value>
       </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>34</value>
+      </counter>
     </entity-ids>
     <diagrams>
       <counter>
