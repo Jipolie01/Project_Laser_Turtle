@@ -189,10 +189,6 @@
         <item-type type-id="concurrency-timer" type="ConcurrencyTimer" />
         <value>7</value>
       </counter>
-      <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>34</value>
-      </counter>
     </entity-ids>
     <diagrams>
       <counter>
@@ -310,7 +306,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-usecase" id="pbf13208b8d954b548f4bd6c0c3c2ff33_114019903" name="Use Case Diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" show-frame="false">
+      <diagram type="uml-usecase" id="pbf13208b8d954b548f4bd6c0c3c2ff33_114019903" name="Use Case Diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" show-frame="false" view-location="131,0">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
