@@ -24,7 +24,7 @@ Software perspectief
 			Send_IR_message
 			Register_game_parameters
 			play_sound
-			lcd
+			LCD_chars
 		Timer objects:
 			game_time
 
