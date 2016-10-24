@@ -17,6 +17,7 @@ Software perspectief
 	Control objects:
 		Coordinator objects:
 			Run_Game
+			Transfer_hits
 		State depended control objects:
 			Init_game
 			Receive_IR_message
@@ -101,3 +102,8 @@ Assiocaties
 			Ontvangt systeem_tijd van system_time 
 			Ontvangt systeem_tijd_start van run_game
 
+	Transfer_hits:
+		Sturen:
+			Stuurt score naar pc
+		Ontvangen:
+			Ontvangt score van received_information
