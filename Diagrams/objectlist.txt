@@ -22,10 +22,10 @@ Software perspectief
 			Receive_IR_message
 			Send_IR_message
 			Register_game_parameters
-			game_time
 			play_sound
 			lcd
 		Timer objects:
+			game_time
 
 
 	Entity objects: 
@@ -45,6 +45,7 @@ Assiocaties
 			Stuurt start_sein naar game_time
 			Stuurt schiet_signaal naar play_sound
 			Stuurt schiet_signaal naar send_IR_message
+			Stuurt hit_signaal naar play_sound
 		Ontvangen:
 			Ontvangt systeem_tijd van game_time
 			Ontvangt score van register_game_parameters
@@ -78,10 +79,25 @@ Assiocaties
 			Ontvangt player_number van keypad
 			Ontvangt weapon van keypad
 			Ontvangt command van receive_IR_message 
+	
+	Play_sound:
+		Sturen:
+			Stuurt decoded_sound_schiet naar speaker
+			Stuurt decoded_sound_hit naar speaker
+		Ontvangen:
+			Ontvangt schiet_signaal van run_game
+			Ontvangt hit_signaal van run_game 
+
+	LCD_letters:
+		Sturen:
+			Stuurt pixels_char naar lcd
+		Ontvangen:
+			Ontvangt text van run_game
 
 	Game_time:
-		Sturen:
-
-
+		Sturen:	
+			Stuurt overgebleven_tijd naar init_information. 
 		Ontvangen:
+			Ontvangt systeem_tijd van system_time 
+			Ontvangt systeem_tijd_start van run_game
 
