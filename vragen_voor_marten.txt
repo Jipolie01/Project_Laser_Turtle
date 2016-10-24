@@ -1,0 +1,2 @@
+1. Moet de run_game alle threads beheren of moet deze ook nog iets functioneels doen? 
+2. 
