@@ -1,0 +1,51 @@
+Software perspectief
+
+	Boundary objects:
+		Input:
+			Keypad
+			IR_receiver
+			fire_button
+			system_time
+		Output:
+			LCD
+			IR_sender
+		
+		Proxy:
+			PC
+
+	Control objects:
+		Coordinator objects:
+			Run_Game
+		State depended control objects:
+			Init_game
+			Receive_IR_message
+			Send_IR_message
+			Register_game_parameters
+			game_time
+		Timer objects:
+
+
+	Entity objects: 
+		My_player_information
+		Received_information
+
+
+Assiocaties
+
+	Run_game:
+		Sturen:
+			Stuurt score naar LCD
+			Stuurt game_time naar LCD
+			Stuurt 'je bent geraakt' naar LCD
+			Stuurt start_sein naar game_time
+			Stuurt schiet_signaal naar send_IR_message
+		Ontvangen:
+			Ontvangt systeem_tijd van game_time
+			Ontvangt score van register_game_parameters
+			Ontvangt schiet_signaal van fire_button
+			Ontvangt hit van received_information
+	Init_game:
+		Sturen:
+			
+		Ontvangen:
+
