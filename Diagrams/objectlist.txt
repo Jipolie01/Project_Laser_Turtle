@@ -9,7 +9,8 @@ Software perspectief
 		Output:
 			LCD
 			IR_sender
-		
+			speaker
+			led
 		Proxy:
 			PC
 
@@ -22,12 +23,16 @@ Software perspectief
 			Send_IR_message
 			Register_game_parameters
 			game_time
+			play_sound
+			lcd
 		Timer objects:
 
 
 	Entity objects: 
 		My_player_information
 		Received_information
+		Init_information
+
 
 
 Assiocaties
@@ -38,14 +43,45 @@ Assiocaties
 			Stuurt game_time naar LCD
 			Stuurt 'je bent geraakt' naar LCD
 			Stuurt start_sein naar game_time
+			Stuurt schiet_signaal naar play_sound
 			Stuurt schiet_signaal naar send_IR_message
 		Ontvangen:
 			Ontvangt systeem_tijd van game_time
 			Ontvangt score van register_game_parameters
 			Ontvangt schiet_signaal van fire_button
 			Ontvangt hit van received_information
+	
 	Init_game:
 		Sturen:
-			
+			Stuurt
+		Ontvangen:
+			Ontvangt 
+	
+	Receive_IR_message:
+		Sturen:
+			Stuurt id en weapon naar received_information
+			Stuurt command naar register_game_parameters
+		Ontvangen
+			Ontvangt bit van IR_receiver
+	
+	Send_IR_message:
+		Sturen:
+			Stuurt bit naar IR_sender 
+		Ontvangen:
+			Ontvangt id en weapon van my_player_information
+
+	Register_game_parameters:
+		Sturen:
+			Stuurt player_number en weapon naar my_player_information
+			Stuurt playtime en start naar init_information
+		Ontvangen: 
+			Ontvangt player_number van keypad
+			Ontvangt weapon van keypad
+			Ontvangt command van receive_IR_message 
+
+	Game_time:
+		Sturen:
+
+
 		Ontvangen:
 
