@@ -23,7 +23,7 @@
       </counter>
       <counter>
         <item-type type-id="relationship" type="UmlAssociation" />
-        <value>63</value>
+        <value>68</value>
       </counter>
       <counter>
         <item-type type-id="uml-n-ary-association" type="UmlNaryAssociation" />
@@ -38,12 +38,16 @@
         <value>3</value>
       </counter>
       <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>57</value>
-      </counter>
-      <counter>
         <item-type type-id="enumeration" type="UmlEnumeration" />
         <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>36</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="UmlGeneralization" />
+        <value>4</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -55,11 +59,11 @@
     <fields>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>56</value>
+        <value>85</value>
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.AttributeField</type>
-        <value>53</value>
+        <value>86</value>
       </counter>
     </fields>
   </counters>
@@ -109,6 +113,14 @@
       <type id="hwlib::glcd_oled_buffered" tid="" name="hwlib::glcd_oled_buffered" description="" nullable="false" />
       <type id="hwlib::target::pin_oc &amp;" tid="" name="hwlib::target::pin_oc &amp;" description="" nullable="false" />
       <type id="cons char" tid="" name="cons char" description="" nullable="false" />
+      <type id="Class:di305300766467171926" tid="" name="ir_receiver" description="" nullable="false" class-ref="di305300766467171926" />
+      <type id="hwlib::pin_in &amp;" tid="" name="hwlib::pin_in &amp;" description="" nullable="false" />
+      <type id="hwlib::target::d2_36kHz" tid="" name="hwlib::target::d2_36kHz" description="" nullable="false" />
+      <type id="my_player_information &amp;" tid="" name="my_player_information &amp;" description="" nullable="false" />
+      <type id="char16_t" tid="" name="char16_t" description="" nullable="false" />
+      <type id="Class:di744441539881055365" tid="" name="my_player_information" description="" nullable="false" class-ref="di744441539881055365" />
+      <type id="Keypad &amp;" tid="" name="Keypad &amp;" description="" nullable="false" />
+      <type id="my_player_information &amp; (my_player_information &amp;)" tid="" name="my_player_information &amp; (my_player_information &amp;)" description="" nullable="false" />
     </custom-types>
   </types>
   <filters />
@@ -128,7 +140,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="ClassDiagram1" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-201,-193" zoom="0.6742857">
+      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="ClassDiagram1" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-64,-194" zoom="0.7557143">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -140,12 +152,12 @@
           </authors>
           <description />
           <creation-date>10/24/2016 03:23:08</creation-date>
-          <change-date>10/25/2016 14:00:18</change-date>
+          <change-date>10/25/2016 18:29:11</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
-          <item id="di588626608440694716" cid="C001" type="class" name="keypad" style-class="" visibility="package" change-tracking-state="added" creator="P76ead2b588434934b3d27453bea8ada1" creation-date="10/24/2016 03:23:43">
+          <item id="di588626608440694716" cid="C001" type="class" name="Keypad" style-class="" visibility="package" change-tracking-state="added" creator="P76ead2b588434934b3d27453bea8ada1" creation-date="10/24/2016 03:23:43">
             <stereotypes>
               <stereotype name="boundary" />
               <stereotype name="Input" />
@@ -187,6 +199,28 @@
               <stereotype name="Input" />
             </stereotypes>
             <style class="default" />
+            <attributes>
+              <attribute id="ae70fc347fc8e406f8cfaba3c754760b7848" cid="ELEM066" name="IR_receiver_pin" type="hwlib::pin_in &amp;" type-id="hwlib::pin_in &amp;" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o98d61791c0e44ccaba31f68c4afc5916128" cid="ELEM067" name="ir_receiver" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p36a32b1e745b4a9e8519e313bf368be5" name="IR_receiver_pin" type="hwlib::pin_in &amp;" type-id="hwlib::pin_in &amp;" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o7db11a387acb4eeb858ba6def6922c5a739" cid="ELEM068" name="get_bit" type="Boolean" type-id="Uml.Boolean" visibility="public" virtual="true">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
             <source-codes>
               <source-code language="ActionScript" />
             </source-codes>
@@ -283,6 +317,31 @@
               <stereotype name="Output" />
             </stereotypes>
             <style class="default" />
+            <attributes>
+              <attribute id="ac75442e25bbb4e2994af992e7ae8158e325" cid="ELEM061" name="IR_led_pin" type="hwlib::target::d2_36kHz" type-id="hwlib::target::d2_36kHz" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o31047b0112844f09808d80d409e949ad303" cid="ELEM062" name="ir_sender" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p4dd173ff38f54913af02c39530187b9c" name="ir_pin" type="hwlib::pin_out &amp;" type-id="hwlib::pin_out &amp;" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o255272213b3243288f72d30bc834ad0d556" cid="ELEM063" name="set" type="void" type-id="void" visibility="public" virtual="true">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pf963599dc21841f6953e4f6f2a0e44b5" name="val" type="Boolean" type-id="Uml.Boolean" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
             <source-codes>
               <source-code language="ActionScript" />
             </source-codes>
@@ -332,6 +391,9 @@
               <attribute id="a713b271de679499a8cf9c1cb2af12416591" cid="ELEM009" name="exor_check_bits" type="byte" type-id="byte" visibility="private">
                 <style class="default" />
               </attribute>
+              <attribute id="a5e16e7eec7c448e7bdb53b0b5439751a942" cid="ELEM072" name="compiled_bits" type="char16_t" type-id="char16_t" visibility="private">
+                <style class="default" />
+              </attribute>
             </attributes>
             <operations>
               <operation id="oc895fb57325e41b1a9daeaf35a1d362b141" cid="ELEM010" name="get_player_id" type="byte" type-id="byte" visibility="public">
@@ -352,6 +414,48 @@
                   <source-code language="ActionScript" />
                 </source-codes>
               </operation>
+              <operation id="ofbefdaa025204d96b553cc0ab0f1caf3534" cid="ELEM073" name="get_compiled_message" type="char16_t" type-id="char16_t" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="ofa799bfb9f9747ec8c8e0e78b17b72bf735" cid="ELEM074" name="set_player_id" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p3233560d3cfe421189d2a42a4a7c7d84" name="id" type="byte" type-id="byte" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o192c21b8de1f44a7a9419587c79bce9d200" cid="ELEM075" name="set_weapon_id" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p84c5df699df64fcdb2dec3ffe96fc364" name="id" type="byte" type-id="byte" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o23510a6349f644ca9f8e34e953aa6752324" cid="ELEM076" name="set_exor" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p53841dfaced249b08a6151ff67cc4c93" name="exor" type="byte" type-id="byte" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o5f913e85fbf14427bdf1dce077cb62df383" cid="ELEM077" name="set_compiled_message" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p77ccd9f994cb407394f0f58e852c52b6" name="message" type="char16_t" type-id="char16_t" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
             </operations>
             <source-codes>
               <source-code language="ActionScript" />
@@ -363,12 +467,61 @@
           <item id="di659614656969318040" cid="C001" type="class" name="run_game" style-class="" visibility="package" change-tracking-state="added" creator="P76ead2b588434934b3d27453bea8ada1" creation-date="10/24/2016 03:23:43">
             <style class="default" />
           </item>
-          <item id="di428102789763763837" cid="C001" type="class" name="receive_ir_message" style-class="" visibility="package" change-tracking-state="added" creation-date="10/24/2016 03:23:43">
+          <item id="di428102789763763837" cid="C001" type="class" name="ir_message_controller" style-class="" visibility="package" change-tracking-state="added" creation-date="10/24/2016 03:23:43">
             <stereotypes>
               <stereotype name="control" />
               <stereotype name="State dependent" />
             </stereotypes>
             <style class="default" />
+            <attributes>
+              <attribute id="a1dc1f035baff450ba7c226548df5f18e173" cid="ELEM056" name="IR_receiver_pin" type="ir_receiver" type-id="Class:di305300766467171926" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ad47d3d34163747b88f251c7ff6438d9b744" cid="ELEM057" name="received_player_id" type="byte" type-id="byte" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a0a06da0eb3df43b39813388477615ea5834" cid="ELEM058" name="received_weapon_id" type="byte" type-id="byte" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o131973463296494d834462a5092f1b94566" cid="ELEM059" name="ir_message_controller" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p31c2998cc3cf4ab58a46d60ef3fd51d9" name="IR_receiver_pin" type="hwlib::pin_in &amp;" type-id="hwlib::pin_in &amp;" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o39c1a679065d4a4f8ba8f7f1365aaec7584" cid="ELEM060" name="get_bit" type="Boolean" type-id="Uml.Boolean" visibility="public" redefines="o7db11a387acb4eeb858ba6def6922c5a739">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o5586bd3ab1984856ba537250d3aa99dc729" cid="ELEM069" name="get_bits" type="char16_t" type-id="char16_t" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oabea56ed5d7247e8a89082ba91e821c0666" cid="ELEM070" name="decoder" type="Boolean" type-id="Uml.Boolean" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pcf6cbf7f023848f192f85c7b0cc2b437" name="receiving_bits" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o38b4d2d48cdd48089ad6ffe51a9669c1785" cid="ELEM071" name="get_decoded_bits" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
             <source-codes>
               <source-code language="ActionScript" />
               <source-code language="Cpp" />
@@ -380,6 +533,31 @@
               <stereotype name="State dependent" />
             </stereotypes>
             <style class="default" />
+            <attributes>
+              <attribute id="a83e7b6b6c90e4115a263c7d7559ff54215" cid="ELEM081" name="player_information" type="my_player_information &amp;" type-id="my_player_information &amp;" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a3a407de4a5144a4385264125c382434c348" cid="ELEM082" name="game_information" type="my_player_information &amp; (my_player_information &amp;)" type-id="my_player_information &amp; (my_player_information &amp;)" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="acfc1757ce82a4d5f8399b91568561299408" cid="ELEM085" name="keypad" type="Keypad &amp;" type-id="Keypad &amp;" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o2a277d3eaf664541a3bc97dde9513596653" cid="ELEM083" name="setup" type="Boolean" type-id="Uml.Boolean" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o96d04ff5326c4d5288d8741975799b17400" cid="ELEM084" name="check_for_game_leader" type="Boolean" type-id="Uml.Boolean" visibility="private">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
             <source-codes>
               <source-code language="ActionScript" />
             </source-codes>
@@ -496,7 +674,7 @@
               <source-code language="ActionScript" />
             </source-codes>
           </item>
-          <item id="di329043291301688288" cid="C001" type="class" name="received_information" style-class="" visibility="package" change-tracking-state="added" creation-date="10/24/2016 03:23:43">
+          <item id="di329043291301688288" cid="C001" type="class" name="hits_received" style-class="" visibility="package" change-tracking-state="added" creation-date="10/24/2016 03:23:43">
             <stereotypes>
               <stereotype name="Entity" />
             </stereotypes>
@@ -509,12 +687,6 @@
                 <style class="default" />
               </attribute>
               <attribute id="a778d3c72647d4527a86d6b9a069b6f3c327" cid="ELEM022" name="current_ids_index" type="Char" type-id="Uml.Char" visibility="private" default-value="0">
-                <style class="default" />
-              </attribute>
-              <attribute id="aa6a4f24bb8ea4029a42120685d2783bc562" cid="ELEM024" name="game_time_remaining" type="Integer" type-id="Uml.Integer" visibility="private">
-                <style class="default" />
-              </attribute>
-              <attribute id="ad5d14da1eaa44b2a99b4bc44669be8c1911" cid="ELEM052" name="game_has_started" type="Boolean" type-id="Uml.Boolean" visibility="private" default-value="false">
                 <style class="default" />
               </attribute>
             </attributes>
@@ -547,47 +719,55 @@
                   <source-code language="ActionScript" />
                 </source-codes>
               </operation>
-              <operation id="o47cc11595b8649858122081e98951eb4893" cid="ELEM025" name="set_game_time" type="" type-id="" visibility="public">
-                <style class="default" />
-                <parameters>
-                  <parameter id="p7bd9436f8ad54109b485a6ed909da07c" name="time" type="Integer" type-id="Uml.Integer" />
-                </parameters>
-                <source-codes>
-                  <source-code language="ActionScript" />
-                </source-codes>
-              </operation>
-              <operation id="od71bd3e73d9a4f52ba4e62dc97baddd6245" cid="ELEM026" name="get_game_time" type="Integer" type-id="Uml.Integer" visibility="public">
-                <style class="default" />
-                <source-codes>
-                  <source-code language="ActionScript" />
-                </source-codes>
-              </operation>
-              <operation id="oc862389317e9446883e537b9454102e2243" cid="ELEM053" name="is_game_running()" type="Boolean" type-id="Uml.Boolean" visibility="public">
-                <style class="default" />
-                <source-codes>
-                  <source-code language="ActionScript" />
-                </source-codes>
-              </operation>
-              <operation id="o45deeb5e77a44fae95978270d833eb9f284" cid="ELEM054" name="set_game_running" type="" type-id="" visibility="public">
-                <style class="default" />
-                <parameters>
-                  <parameter id="pf7e659b3a995436d86dde014b6ce984c" name="running" type="Boolean" type-id="Uml.Boolean" />
-                </parameters>
-                <source-codes>
-                  <source-code language="ActionScript" />
-                </source-codes>
-              </operation>
             </operations>
             <source-codes>
               <source-code language="ActionScript" />
             </source-codes>
           </item>
-          <item id="di525752150290064808" cid="C001" type="class" name="send_ir_message" style-class="" visibility="package" change-tracking-state="added" creation-date="10/24/2016 03:23:43">
+          <item id="di525752150290064808" cid="C001" type="class" name="ir_message_send_controller" style-class="" visibility="package" change-tracking-state="added" creation-date="10/24/2016 03:23:43">
             <stereotypes>
               <stereotype name="control" />
               <stereotype name="State dependent" />
             </stereotypes>
             <style class="default" />
+            <attributes>
+              <attribute id="a75f6f92777844c248a48d11940b187a3606" cid="ELEM064" name="player_information" type="my_player_information &amp;" type-id="my_player_information &amp;" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o168f70572a6f4f3880c38f03d48b97ac574" cid="ELEM065" name="ir_message_send_controller" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p9984cd1bb7754ad9af9ada1ccdfa51ca" name="ir_pin" type="hwlib::pin_out &amp;" type-id="hwlib::pin_out &amp;" />
+                  <parameter id="pd849b2c89c014f859c2692aa68e96e16" name="player_information" type="my_player_information &amp;" type-id="my_player_information &amp;" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oc1223e8f8e82479fa266bcf288ac4037283" cid="ELEM078" name="set" type="void" type-id="void" visibility="public" redefines="o255272213b3243288f72d30bc834ad0d556">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p324c743ab66942d5ac1c65f37cba3c68" name="val" type="Boolean" type-id="Uml.Boolean" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oa432004e869f4b86b1fa2a352b629191232" cid="ELEM079" name="send_message" type="void" type-id="void" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o38526dca7ca142159695c51c10fc5eb4252" cid="ELEM080" name="encoder" type="char16_t" type-id="char16_t" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
             <source-codes>
               <source-code language="ActionScript" />
             </source-codes>
@@ -1165,9 +1345,99 @@
               <end-role id="" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
-          <item id="di154474988157115476" cid="REL062" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 12:37:15" from="di816045976867963784" to="di580894919151476683">
+          <item id="di154474988157115476" cid="REL062" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 12:37:15" from="di816045976867963784" to="di329043291301688288">
             <style class="default" />
-            <relation from="di816045976867963784" to="di580894919151476683">
+            <relation from="di816045976867963784" to="di329043291301688288">
+              <start-role id="" name="" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di455520592625616689" cid="REL063" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 14:26:12" from="di650699619955464010" to="di329043291301688288">
+            <style class="default" />
+            <relation from="di650699619955464010" to="di329043291301688288">
+              <start-role id="" name="" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di552227698305714593" cid="C001" type="class" name="game_information_data" style-class="" visibility="package" change-tracking-state="added" creation-date="10/24/2016 03:23:43">
+            <stereotypes>
+              <stereotype name="Entity" />
+            </stereotypes>
+            <style class="default" />
+            <attributes>
+              <attribute id="aa6a4f24bb8ea4029a42120685d2783bc562" cid="ELEM024" name="game_time_remaining" type="Integer" type-id="Uml.Integer" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ad5d14da1eaa44b2a99b4bc44669be8c1911" cid="ELEM052" name="game_has_started" type="Boolean" type-id="Uml.Boolean" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o47cc11595b8649858122081e98951eb4893" cid="ELEM025" name="set_game_time" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p7bd9436f8ad54109b485a6ed909da07c" name="time" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="od71bd3e73d9a4f52ba4e62dc97baddd6245" cid="ELEM026" name="get_game_time" type="Integer" type-id="Uml.Integer" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="oc862389317e9446883e537b9454102e2243" cid="ELEM053" name="is_game_running" type="Boolean" type-id="Uml.Boolean" visibility="public">
+                <style class="default" />
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o45deeb5e77a44fae95978270d833eb9f284" cid="ELEM054" name="set_game_running" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pf7e659b3a995436d86dde014b6ce984c" name="running" type="Boolean" type-id="Uml.Boolean" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
+          </item>
+          <item id="di848588389557383000" cid="REL064" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 15:55:48" from="di525752150290064808" to="di552227698305714593">
+            <style class="default" />
+            <relation from="di525752150290064808" to="di552227698305714593">
+              <start-role id="" name="" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di646381025776715962" cid="REL065" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 16:21:14" from="di525752150290064808" to="di600334847152085450">
+            <style class="default" />
+            <relation from="di525752150290064808" to="di600334847152085450">
+              <start-role id="" name="" navigability="" association-type="composition" visibility="private" attribute-ref="a75f6f92777844c248a48d11940b187a3606" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="di830266190659217748" cid="REL066" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 16:21:40" from="di525752150290064808" to="di744441539881055365">
+            <style class="default" />
+            <relation from="di525752150290064808" to="di744441539881055365">
+              <start-role id="" name="" navigability="" association-type="aggregation" visibility="private" />
+              <end-role id="" name="" navigability="" association-type="association" visibility="private" attribute-ref="a713b271de679499a8cf9c1cb2af12416591" />
+            </relation>
+          </item>
+          <item id="di665059037562737906" cid="GNR002" type="generalization" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 17:47:36" from="di428102789763763837" to="di305300766467171926">
+            <style class="default" />
+          </item>
+          <item id="di354010606584101196" cid="GNR003" type="generalization" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 18:14:24" from="di525752150290064808" to="di600334847152085450">
+            <style class="default" />
+          </item>
+          <item id="di983737000154915817" cid="REL067" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/25/2016 18:29:11" from="di579460109285289010" to="di552227698305714593">
+            <style class="default" />
+            <relation from="di579460109285289010" to="di552227698305714593">
               <start-role id="" name="" navigability="" association-type="aggregation" visibility="private" />
               <end-role id="" name="" navigability="" association-type="association" visibility="private" />
             </relation>
@@ -1179,7 +1449,7 @@
             <class />
           </item>
           <item id="di305300766467171926" iid="7051d39163a147b1ae4b57db22982402" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="-135" ay="417" awidth="140" aheight="160" x="-135" y="417" width="140" height="160" />
+            <layout ax="-440" ay="471" awidth="310" aheight="160" x="-440" y="471" width="310" height="160" />
             <class />
           </item>
           <item id="di772702362137669230" iid="79558161f98d42fa943fa459fd9eae3e" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
@@ -1191,7 +1461,7 @@
             <class />
           </item>
           <item id="di600334847152085450" iid="df14054773c14bfd8ecfbf5429d82ca6" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="-250" ay="206" awidth="255" aheight="160" x="-250" y="206" width="255" height="160" />
+            <layout ax="-339" ay="206" awidth="255" aheight="160" x="-339" y="206" width="255" height="160" />
             <class />
           </item>
           <item id="di648963538794440127" iid="2d6327f6f88f4ef88ce6d452fd318442" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
@@ -1199,11 +1469,11 @@
             <class />
           </item>
           <item id="di428102789763763837" iid="72421f80b3444f98bcd9482bbec413ac" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="125" ay="417" awidth="240" aheight="160" x="125" y="417" width="240" height="160" />
+            <layout ax="-54.5" ay="417" awidth="385.5" aheight="231" x="-54.5" y="417" width="385.5" height="231" />
             <class />
           </item>
           <item id="di579460109285289010" iid="b00bbb5a55a84a16bdf3aa174b5ea327" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="104" ay="-69" awidth="282" aheight="161" x="104" y="-69" width="282" height="161" />
+            <layout ax="104" ay="-69" awidth="310" aheight="180" x="104" y="-69" width="310" height="180" />
             <class />
           </item>
           <item id="di816045976867963784" iid="50a677945ff047c782bd8a0efdf9b995" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
@@ -1215,81 +1485,52 @@
             <class />
           </item>
           <item id="di744441539881055365" iid="9f0c46f90aad4213901889881d8533ff" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="-218" ay="3" awidth="255" aheight="167" x="-218" y="3" width="255" height="167" />
+            <layout ax="-296" ay="-97" awidth="306" aheight="269" x="-296" y="-97" width="306" height="269" />
             <class />
           </item>
           <item id="di329043291301688288" iid="be0b26b5c29c45078fe433a68ce8e5d5" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="-581" ay="-104" awidth="331" aheight="269" x="-581" y="-104" width="331" height="269" />
+            <layout ax="-670" ay="-163" awidth="331" aheight="178" x="-670" y="-163" width="331" height="178" />
             <class />
           </item>
           <item id="di525752150290064808" iid="05534e4983de4dc08577f6fbe40295f0" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="125" ay="206" awidth="140" aheight="160" x="125" y="206" width="140" height="160" />
+            <layout ax="10" ay="226" awidth="351" aheight="180" x="10" y="226" width="351" height="180" />
             <class />
           </item>
-          <item id="di968458168767196521" iid="dca7b5046a4d46a3bfe33f3bdd7b1c9d" creation-date="10/24/2016 03:56:45" order-index="1" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="125" y1="286" x2="5" y2="286" start-border-pos="0.875" end-border-pos="0.375" name-position="0,0">
-              <points>
-                <point x="125" y="286" />
-                <point x="87" y="286" />
-                <point x="77" y="285" />
-                <point x="5" y="286" />
-              </points>
-            </layout>
-            <relation from="di525752150290064808" from-iid="05534e4983de4dc08577f6fbe40295f0" to="di600334847152085450" to-iid="df14054773c14bfd8ecfbf5429d82ca6" />
-          </item>
-          <item id="di128507005333196987" iid="280727a0e3c342a9b73faf9c667b7698" creation-date="10/24/2016 03:57:02" order-index="3" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="125" y1="497" x2="5" y2="497" start-border-pos="0.875" end-border-pos="0.375" name-position="0,0">
-              <points>
-                <point x="125" y="497" />
-                <point x="5" y="497" />
-              </points>
-            </layout>
-            <relation from="di428102789763763837" from-iid="72421f80b3444f98bcd9482bbec413ac" to="di305300766467171926" to-iid="7051d39163a147b1ae4b57db22982402" />
-          </item>
           <item id="di134074619846950589" iid="c1345794596247edbb5b6ab5f39e0cbc" creation-date="10/24/2016 04:24:35" order-index="8" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="486" y1="377" x2="265" y2="286" start-border-pos="0.8765625" end-border-pos="0.375" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="7.485474,-75.91998" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="486" y1="377" x2="361" y2="343" start-border-pos="0.8765625" end-border-pos="0.412499994039536" name-position="0,0">
               <points>
                 <point x="486" y="377" />
-                <point x="265" y="286" />
+                <point x="361" y="343" />
               </points>
             </layout>
             <relation from="di648963538794440127" from-iid="2d6327f6f88f4ef88ce6d452fd318442" to="di525752150290064808" to-iid="05534e4983de4dc08577f6fbe40295f0" />
           </item>
           <item id="di556265481260938996" iid="21c9939044d3402ea8d2561382775c56" creation-date="10/24/2016 04:24:46" order-index="9" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="straight" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="480" y1="377" x2="365" y2="497" start-border-pos="0.0207253867923222" end-border-pos="0.375" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="straight" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="483" y1="377" x2="331" y2="532" start-border-pos="0.0207253867923222" end-border-pos="0.375" name-position="0,0">
               <points>
-                <point x="480" y="377" />
-                <point x="365" y="497" />
+                <point x="483" y="377" />
+                <point x="331" y="532" />
               </points>
             </layout>
             <relation from="di134074619846950589" from-iid="c1345794596247edbb5b6ab5f39e0cbc" to="di428102789763763837" to-iid="72421f80b3444f98bcd9482bbec413ac" />
           </item>
           <item id="di322555021767023940" iid="b9d03bf4849442bfb456cc7579908717" creation-date="10/24/2016 05:58:37" order-index="15" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="486" y1="378" x2="396" y2="698" start-border-pos="0.875" end-border-pos="0.35859375" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="525" y1="458" x2="396" y2="767" start-border-pos="0.68035714328289" end-border-pos="0.4671875" name-position="0,0">
               <points>
-                <point x="486" y="378" />
-                <point x="396" y="698" />
+                <point x="525" y="458" />
+                <point x="396" y="767" />
               </points>
             </layout>
             <relation from="di648963538794440127" from-iid="2d6327f6f88f4ef88ce6d452fd318442" to="di650699619955464010" to-iid="d7751edf58a045c1b94986cb263eea62" to-field="a71222c4d192341dc87247ae1a373b6b0841" />
           </item>
           <item id="di251879659219227324" iid="f682bdbe47644b04a4428c79a821bc5f" creation-date="10/24/2016 07:00:53" order-index="25" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="104" y1="11" x2="37" y2="86" start-border-pos="0.875776395201683" end-border-pos="0.374251497005988" name-position="6,23">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="104" y1="20" x2="10" y2="37" start-border-pos="0.875776395201683" end-border-pos="0.374251497005988" name-position="6,23">
               <points>
-                <point x="104" y="11" />
-                <point x="37" y="86" />
+                <point x="104" y="20" />
+                <point x="10" y="37" />
               </points>
             </layout>
             <relation from="di579460109285289010" from-iid="b00bbb5a55a84a16bdf3aa174b5ea327" to="di744441539881055365" to-iid="9f0c46f90aad4213901889881d8533ff" />
-          </item>
-          <item id="di580894919151476683" iid="4ce0a229c018499490243dc8d8eaade7" creation-date="10/24/2016 07:08:47" order-index="27" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="104" y1="-31" x2="-250" y2="-14" start-border-pos="0.940993788819876" end-border-pos="0.333715596330275" name-position="0,0">
-              <points>
-                <point x="104" y="-31" />
-                <point x="-250" y="-14" />
-              </points>
-            </layout>
-            <relation from="di579460109285289010" from-iid="b00bbb5a55a84a16bdf3aa174b5ea327" to="di329043291301688288" to-iid="be0b26b5c29c45078fe433a68ce8e5d5" />
           </item>
           <item id="di578706172545599157" iid="de21e30195b84a8b96cc991e4d4d8f1c" creation-date="10/24/2016 16:26:16" order-index="29" type="relation">
             <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="396" y1="698" x2="852" y2="417" start-border-pos="0.35859375" end-border-pos="0.648214280605316" name-position="0,0">
@@ -1348,35 +1589,13 @@
             <relation from="di648963538794440127" from-iid="2d6327f6f88f4ef88ce6d452fd318442" to="di772702362137669230" to-iid="79558161f98d42fa943fa459fd9eae3e" />
           </item>
           <item id="di687796242253344071" iid="2eae1509c0fe407eb5bed8bf27f182fb" creation-date="10/24/2016 17:12:14" order-index="34" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="245" y1="417" x2="-375" y2="165" start-border-pos="0.125" end-border-pos="0.594410876132931" name-position="-1397,-32">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="-54" y1="458" x2="-464" y2="15" start-border-pos="0.955521479249001" end-border-pos="0.594410876132931" name-position="-1397,-32">
               <points>
-                <point x="245" y="417" />
-                <point x="244" y="371" />
-                <point x="-370" y="373" />
-                <point x="-375" y="165" />
+                <point x="-54" y="458" />
+                <point x="-464" y="15" />
               </points>
             </layout>
             <relation from="di428102789763763837" from-iid="72421f80b3444f98bcd9482bbec413ac" from-field="control" to="di329043291301688288" to-iid="be0b26b5c29c45078fe433a68ce8e5d5" />
-          </item>
-          <item id="di452391865881495609" iid="7792f020b4e842a980b7cbe28b1fbd6b" creation-date="10/24/2016 17:12:28" order-index="35" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="294" y1="628" x2="-481" y2="165" start-border-pos="0.124378109452736" end-border-pos="0.674471299093656" name-position="-941,-43">
-              <points>
-                <point x="294" y="628" />
-                <point x="294" y="589" />
-                <point x="-478" y="585" />
-                <point x="-481" y="165" />
-              </points>
-            </layout>
-            <relation from="di650699619955464010" from-iid="d7751edf58a045c1b94986cb263eea62" from-field="control" to="di329043291301688288" to-iid="be0b26b5c29c45078fe433a68ce8e5d5" />
-          </item>
-          <item id="di930478297942605987" iid="554e4b264f6446649ea663f5307ee05b" creation-date="10/24/2016 17:13:52" order-index="36" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="24.82602,-3.38396" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="125" y1="254" x2="37" y2="90" start-border-pos="0.924999997019768" end-border-pos="0.380988023952096" name-position="0,0">
-              <points>
-                <point x="125" y="254" />
-                <point x="37" y="90" />
-              </points>
-            </layout>
-            <relation from="di525752150290064808" from-iid="05534e4983de4dc08577f6fbe40295f0" to="di744441539881055365" to-iid="9f0c46f90aad4213901889881d8533ff" to-field="a713b271de679499a8cf9c1cb2af12416591" />
           </item>
           <item id="di809160277492141946" iid="7468a76d0d964e77bbb4e08f16261f1a" creation-date="10/25/2016 11:33:46" order-index="37" type="entity">
             <layout ax="1035" ay="670" awidth="140" aheight="160" x="1035" y="670" width="140" height="160" />
@@ -1398,9 +1617,9 @@
             <class />
           </item>
           <item id="di107544530338280323" iid="5cee48f8b91048f4a4401b964272dd0e" creation-date="10/25/2016 12:19:37" order-index="39" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="386" y1="11" x2="827" y2="154" start-border-pos="0.374223602484472" end-border-pos="0.875" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="414" y1="20" x2="827" y2="154" start-border-pos="0.374223602484472" end-border-pos="0.875" name-position="0,0">
               <points>
-                <point x="386" y="11" />
+                <point x="414" y="20" />
                 <point x="800" y="15" />
                 <point x="804" y="153" />
                 <point x="827" y="154" />
@@ -1409,12 +1628,12 @@
             <relation from="di579460109285289010" from-iid="b00bbb5a55a84a16bdf3aa174b5ea327" to="di588626608440694716" to-iid="ea8ef9d015d5469ab31de41801e64c2b" />
           </item>
           <item id="di904054469582227494" iid="73c0d5b2c7c5400ba355a751ace8bfad" creation-date="10/25/2016 12:20:23" order-index="40" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="486" y1="377" x2="386" y2="11" start-border-pos="0" end-border-pos="0" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="486" y1="377" x2="414" y2="20" start-border-pos="0" end-border-pos="0" name-position="0,0">
               <points>
                 <point x="486" y="377" />
-                <point x="412" y="349" />
-                <point x="406" y="44" />
-                <point x="386" y="11" />
+                <point x="430" y="367" />
+                <point x="426" y="20" />
+                <point x="414" y="20" />
               </points>
             </layout>
             <relation from="di134074619846950589" from-iid="c1345794596247edbb5b6ab5f39e0cbc" to="di107544530338280323" to-iid="5cee48f8b91048f4a4401b964272dd0e" />
@@ -1457,9 +1676,9 @@
             <relation from="di816045976867963784" from-iid="50a677945ff047c782bd8a0efdf9b995" to="di790054017224307872" to-iid="68f212bc11bc44b29f01d0f6fa07e465" />
           </item>
           <item id="di641548129971804993" iid="e7b86768851941beb92daddd0d19b699" creation-date="10/25/2016 12:35:02" order-index="45" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="386" y1="-37" x2="855" y2="-242" start-border-pos="0.299689440993789" end-border-pos="0.875418060200669" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="414" y1="-33" x2="855" y2="-242" start-border-pos="0.299689440993789" end-border-pos="0.875418060200669" name-position="0,0">
               <points>
-                <point x="386" y="-37" />
+                <point x="414" y="-33" />
                 <point x="571" y="-79" />
                 <point x="855" y="-242" />
               </points>
@@ -1467,13 +1686,64 @@
             <relation from="di579460109285289010" from-iid="b00bbb5a55a84a16bdf3aa174b5ea327" from-field="State dependent" to="di790054017224307872" to-iid="68f212bc11bc44b29f01d0f6fa07e465" />
           </item>
           <item id="di154474988157115476" iid="17720e8aad2441039952ed286fd4bef3" creation-date="10/25/2016 12:37:15" order-index="46" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="413" y1="-184" x2="-249" y2="-14" start-border-pos="0.875" end-border-pos="0.997175141242938" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="413" y1="-161" x2="-339" y2="-132" start-border-pos="0.8390625" end-border-pos="0.293680299073458" name-position="0,0">
               <points>
-                <point x="413" y="-184" />
-                <point x="-249" y="-14" />
+                <point x="413" y="-161" />
+                <point x="-163" y="-149" />
+                <point x="-221" y="-152" />
+                <point x="-339" y="-132" />
               </points>
             </layout>
-            <relation from="di816045976867963784" from-iid="50a677945ff047c782bd8a0efdf9b995" to="di580894919151476683" to-iid="4ce0a229c018499490243dc8d8eaade7" />
+            <relation from="di816045976867963784" from-iid="50a677945ff047c782bd8a0efdf9b995" to="di329043291301688288" to-iid="be0b26b5c29c45078fe433a68ce8e5d5" />
+          </item>
+          <item id="di455520592625616689" iid="0e17278e74154cd7991abbbfd99dbbe5" creation-date="10/25/2016 14:26:12" order-index="47" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="194" y1="711" x2="-555" y2="15" start-border-pos="0.8703125" end-border-pos="0.663141993957704" name-position="0,0">
+              <points>
+                <point x="194" y="711" />
+                <point x="-555" y="15" />
+              </points>
+            </layout>
+            <relation from="di650699619955464010" from-iid="d7751edf58a045c1b94986cb263eea62" to="di329043291301688288" to-iid="be0b26b5c29c45078fe433a68ce8e5d5" />
+          </item>
+          <item id="di552227698305714593" iid="5fee03bda6be414db6aadd07736fe378" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
+            <layout ax="44" ay="-370" awidth="331" aheight="167" x="44" y="-370" width="331" height="167" />
+            <class />
+          </item>
+          <item id="di830266190659217748" iid="40c6c5fcaf4f46f886fa45a7d479a2b4" creation-date="10/25/2016 16:21:40" order-index="49" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="135" y1="226" x2="10" y2="-10" start-border-pos="0.0892070484581498" end-border-pos="0.33131970260223" name-position="0,0">
+              <points>
+                <point x="135" y="226" />
+                <point x="10" y="-10" />
+              </points>
+            </layout>
+            <relation from="di525752150290064808" from-iid="05534e4983de4dc08577f6fbe40295f0" to="di744441539881055365" to-iid="9f0c46f90aad4213901889881d8533ff" to-field="a713b271de679499a8cf9c1cb2af12416591" />
+          </item>
+          <item id="di665059037562737906" iid="69a3677d68224ab097fea6299d290d25" creation-date="10/25/2016 17:47:36" order-index="50" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="-54" y1="565" x2="-130" y2="532" start-border-pos="0.840277777777778" end-border-pos="0.3453125" name-position="0,0">
+              <points>
+                <point x="-54" y="565" />
+                <point x="-130" y="532" />
+              </points>
+            </layout>
+            <relation from="di428102789763763837" from-iid="72421f80b3444f98bcd9482bbec413ac" to="di305300766467171926" to-iid="7051d39163a147b1ae4b57db22982402" />
+          </item>
+          <item id="di354010606584101196" iid="c7dd2027079a4dfaa23c614c95a4aeaa" creation-date="10/25/2016 18:14:24" order-index="51" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="10" y1="316" x2="-84" y2="276" start-border-pos="0.875" end-border-pos="0.35859375" name-position="0,0">
+              <points>
+                <point x="10" y="316" />
+                <point x="-84" y="276" />
+              </points>
+            </layout>
+            <relation from="di525752150290064808" from-iid="05534e4983de4dc08577f6fbe40295f0" to="di600334847152085450" to-iid="df14054773c14bfd8ecfbf5429d82ca6" to-field="ac75442e25bbb4e2994af992e7ae8158e325" />
+          </item>
+          <item id="di983737000154915817" iid="a81611906e144f9381dd40ba9436022a" creation-date="10/25/2016 18:29:11" order-index="52" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="true" auto-path="" x1="259" y1="-69" x2="210" y2="-203" start-border-pos="0.125" end-border-pos="0.624622356495468" name-position="0,0">
+              <points>
+                <point x="259" y="-69" />
+                <point x="210" y="-203" />
+              </points>
+            </layout>
+            <relation from="di579460109285289010" from-iid="b00bbb5a55a84a16bdf3aa174b5ea327" from-field="control" to="di552227698305714593" to-iid="5fee03bda6be414db6aadd07736fe378" />
           </item>
         </layer>
       </diagram>
