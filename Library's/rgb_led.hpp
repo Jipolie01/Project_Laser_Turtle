@@ -56,6 +56,12 @@ public:
         g.set(1);
         b.set(1);
     }
+    
+    void off(){
+        r.set(0);
+        g.set(0);
+        b.set(0);
+    }
 };
 
 #endif // RGB_LED_HPP
