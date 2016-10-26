@@ -20,12 +20,12 @@
         <value>1</value>
       </counter>
       <counter>
-        <item-type type-id="" type="RoundedRectangleItem" />
-        <value>1</value>
-      </counter>
-      <counter>
         <item-type type-id="concurrency-task" type="ConcurrencyTask" />
         <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="DrawingItem" />
+        <value>3</value>
       </counter>
     </entity-names>
     <entity-ids>
@@ -62,16 +62,20 @@
         <value>2</value>
       </counter>
       <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>12</value>
-      </counter>
-      <counter>
         <item-type type-id="shape" type="AbstractShapeItem" />
         <value>2</value>
       </counter>
       <counter>
         <item-type type-id="concurrency-task" type="ConcurrencyTask" />
         <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>10</value>
+      </counter>
+      <counter>
+        <item-type type-id="text" type="AbstractTextItem" />
+        <value>4</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -81,7 +85,7 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.Diagrams.Other.ConcurrencyDiagram</type>
-        <value>2</value>
+        <value>4</value>
       </counter>
     </diagrams>
     <fields>
@@ -179,7 +183,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="run game" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-302,-26" zoom="0.4978572">
+      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="run game" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-302,-31" zoom="0.4978572">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -191,7 +195,7 @@
           </authors>
           <description />
           <creation-date>10/24/2016 03:23:08</creation-date>
-          <change-date>10/26/2016 14:48:49</change-date>
+          <change-date>10/26/2016 15:40:44</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -1749,7 +1753,7 @@
           <item id="di503371706365362586" cid="REL098" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 14:29:35" from="di579460109285289010" to="di588626608440694716">
             <style class="default" />
             <relation from="di579460109285289010" to="di588626608440694716">
-              <start-role id="" name="" navigability="" association-type="aggregation" visibility="private" />
+              <start-role id="" name="" navigability="" association-type="composition" visibility="private" />
               <end-role id="" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
@@ -1897,15 +1901,6 @@
               </points>
             </layout>
             <relation from="di803404010215056632" from-iid="392def4b129b40acb99e5765170733bf" to="di809160277492141946" to-iid="7468a76d0d964e77bbb4e08f16261f1a" />
-          </item>
-          <item id="di289575647815173441" iid="a8216607d4954ea5a57b25d171c406b7" creation-date="10/26/2016 10:32:32" order-index="57" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="810" y1="357" x2="912" y2="507" start-border-pos="0.409375" end-border-pos="0.8609375" name-position="0,0">
-              <points>
-                <point x="810" y="357" />
-                <point x="912" y="507" />
-              </points>
-            </layout>
-            <relation from="di648963538794440127" from-iid="2d6327f6f88f4ef88ce6d452fd318442" to="di588626608440694716" to-iid="ea8ef9d015d5469ab31de41801e64c2b" />
           </item>
           <item id="di566812691632815982" iid="a052134b2bd94f11800c4d3e03be7d64" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
             <layout ax="1190" ay="-130" awidth="329" aheight="163" x="1190" y="-130" width="329" height="163" />
