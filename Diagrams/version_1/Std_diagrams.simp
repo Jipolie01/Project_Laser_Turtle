@@ -31,22 +31,6 @@
         <item-type type-id="package" type="UmlPackage" />
         <value>1</value>
       </counter>
-      <counter>
-        <item-type type-id="" type="DrawingItem" />
-        <value>1</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="LineItem" />
-        <value>11</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="TextItem" />
-        <value>10</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="RoundedRectangleItem" />
-        <value>7</value>
-      </counter>
     </entity-names>
     <entity-ids>
       <counter>
@@ -63,7 +47,7 @@
       </counter>
       <counter>
         <item-type type-id="general-transition" type="UmlTransition" />
-        <value>109</value>
+        <value>110</value>
       </counter>
       <counter>
         <item-type type-id="decision" type="UmlDecision" />
@@ -76,10 +60,6 @@
       <counter>
         <item-type type-id="comment-connector" type="UmlCommentConnector" />
         <value>8</value>
-      </counter>
-      <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>154</value>
       </counter>
       <counter>
         <item-type type-id="composite-state" type="UmlCompositeState" />
@@ -100,6 +80,10 @@
       <counter>
         <item-type type-id="text" type="AbstractTextItem" />
         <value>12</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>129</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -167,14 +151,6 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
 
 Note: If so some of the stds need to be changed </comment>
     </item>
-    <item id="di316884678851142048" cid="CMT005" type="comment" name="Comment" style-class="" visibility="package" creation-date="10/26/2016 23:48:12">
-      <style class="default" />
-      <comment>Question: 
-Do you unset a flag or is this operation named differently?</comment>
-    </item>
-    <item id="di576821844752356218" cid="CN005" type="comment-connector" name="" style-class="" visibility="package" creation-date="10/26/2016 23:48:12" from="di316884678851142048" to="di227470363246689879">
-      <style class="default" />
-    </item>
     <item id="di604194794754362927" cid="CMT006" type="comment" name="Comment" style-class="" visibility="package" creation-date="10/26/2016 23:59:20">
       <style class="default" />
       <comment>Didn't want to use this state but the rules of a std are not to use to decisions after eachother
@@ -193,7 +169,7 @@ Do you unset a flag or is this operation named differently?</comment>
     <item id="di921381949174703792" cid="IS012" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:26">
       <style class="default" />
     </item>
-    <item id="di377841470169474120" cid="ELEM107" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:37" from="di921381949174703792" to="di393740928223733296">
+    <item id="di377841470169474120" cid="ELEM107" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:37" from="di921381949174703792" to="di365097496601624925">
       <style class="default" />
       <transition guard="" behaviourExpression=" ">
         <trigger />
@@ -202,7 +178,7 @@ Do you unset a flag or is this operation named differently?</comment>
     <item id="di212408407596348288" cid="IS013" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:11">
       <style class="default" />
     </item>
-    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di111215397932091363">
+    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di571828740886869599">
       <style class="default" />
       <transition guard="" behaviourExpression=" ">
         <trigger>main()</trigger>
@@ -223,7 +199,7 @@ Do you unset a flag or is this operation named differently?</comment>
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-statechart" id="p9cde66b0e9944f7c80e5552ef0640abc_564755496" name="IR_message_send_controller" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-240,-195">
+      <diagram type="uml-statechart" id="p9cde66b0e9944f7c80e5552ef0640abc_564755496" name="IR_message_send_controller" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-125,-190">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -235,7 +211,7 @@ Do you unset a flag or is this operation named differently?</comment>
           </authors>
           <description />
           <creation-date>10/26/2016 13:03:40</creation-date>
-          <change-date>10/27/2016 12:15:47</change-date>
+          <change-date>10/27/2016 15:29:35</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -245,25 +221,20 @@ Do you unset a flag or is this operation named differently?</comment>
           </item>
           <item id="di278570443483101152" cid="ELEM083" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:49:23" from="di227470363246689879" to="di400752977867132937">
             <style class="default" />
-            <transition guard="" behaviourExpression=" ">
-              <trigger>Flag unset</trigger>
+            <transition guard="" behaviourExpression="">
+              <trigger>button_pressed_flag</trigger>
             </transition>
           </item>
           <item id="di910826799522976345" cid="IS001" type="initial-state" name="Start" style-class="" visibility="package" change-tracking-state="added" creator="P6cff9aea0a2048fd9b26966daee2d2cf" creation-date="10/26/2016 13:26:13">
             <style class="default" />
           </item>
-          <item id="di472226377588850899" cid="ELEM082" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:43:28" from="di782953074201338836" to="di227470363246689879">
+          <item id="di472226377588850899" cid="ELEM082" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:43:28" from="di782953074201338836" to="di400752977867132937">
             <style class="default" />
             <transition guard="" behaviourExpression="" />
           </item>
-          <item id="di782953074201338836" cid="ST038" type="state" name="Set message send_flag" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:42:59">
-            <style class="default" />
-            <state-invariant />
-            <actions />
-          </item>
           <item id="di118664336674443733" cid="ELEM056" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:02:11" from="di377260323213998056" to="di777520814898361809">
             <style class="default" />
-            <transition guard="16 bits send" behaviourExpression="">
+            <transition guard="times_send &lt; 2" behaviourExpression=" send again">
               <trigger />
             </transition>
           </item>
@@ -279,21 +250,23 @@ Do you unset a flag or is this operation named differently?</comment>
           <item id="di400752977867132937" cid="ST035" type="state" name="Waiting for flag" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:33:33">
             <style class="default" />
             <state-invariant />
-            <actions />
+            <actions>
+              <action name="entry" behavior="button_pressed_flag.wait()" />
+            </actions>
           </item>
-          <item id="di110776866398699690" cid="ELEM058" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:05:03" from="di377260323213998056" to="di782953074201338836">
+          <item id="di110776866398699690" cid="ELEM058" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:05:03" from="di377260323213998056" to="di400752977867132937">
             <style class="default" />
-            <transition guard="msg send 2 times" behaviourExpression="">
+            <transition guard="times_send == 2" behaviourExpression=" ">
               <trigger />
             </transition>
           </item>
-          <item id="di786698112566413677" cid="ELEM079" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:33:48" from="di400752977867132937" to="di941043458808203067">
+          <item id="di786698112566413677" cid="ELEM079" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:33:48" from="di400752977867132937" to="di777520814898361809">
             <style class="default" />
             <transition guard="" behaviourExpression=" ">
-              <trigger>Flag set</trigger>
+              <trigger>button_pressed_flag.set()</trigger>
             </transition>
           </item>
-          <item id="di534752053548473836" cid="ELEM080" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:34:12" from="di910826799522976345" to="di227470363246689879">
+          <item id="di534752053548473836" cid="ELEM080" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:34:12" from="di910826799522976345" to="di941043458808203067">
             <style class="default" />
             <transition guard="" behaviourExpression="" />
           </item>
@@ -302,7 +275,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <state-invariant />
             <actions />
           </item>
-          <item id="di777520814898361809" cid="ST037" type="state" name="Send bit" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:37:10">
+          <item id="di777520814898361809" cid="ST037" type="state" name="send message" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:37:10">
             <style class="default" />
             <state-invariant />
             <actions />
@@ -310,6 +283,33 @@ Do you unset a flag or is this operation named differently?</comment>
           <item id="di773732476396216734" cid="ELEM081" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:37:20" from="di941043458808203067" to="di777520814898361809">
             <style class="default" />
             <transition guard="" behaviourExpression="" />
+          </item>
+          <item id="di111215397932091363" cid="ELEM001" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di764951844767369136" cid="ELEM002" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di636651526351457887" cid="ELEM003" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di813395398594816961" cid="ELEM004" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di451032217359073235" cid="ELEM005" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di393740928223733296" cid="ELEM006" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di852441426547465711" cid="ELEM007" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di991669102496705234" cid="ELEM109" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 15:23:50" from="di941043458808203067" to="di400752977867132937">
+            <style class="default" />
+            <transition guard="" behaviourExpression=" ">
+              <trigger>message encoded</trigger>
+            </transition>
           </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
@@ -337,17 +337,19 @@ Do you unset a flag or is this operation named differently?</comment>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di876416009568869607" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di451032217359073235" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="352.2326" ay="-49.75179" awidth="473.5807" aheight="2.305278" x="352.2326" y="-49.75179" width="473.5807" height="2.305278" />
             <drawing-line start-point="352.2326,-49.75179" end-point="824.6323,-48.59914" />
             <style class="default" />
           </item>
           <item id="di393740928223733296" iid="5db3f57a267849b58d563efa5f8c1f2a" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="349.8706" ay="-47.44652" awidth="474.7617" aheight="124.485" x="349.8706" y="-47.44652" width="474.7617" height="124.485" />
-            <drawing-text />
+            <drawing-text>
+              <text>button pressed/ button_pressed_flag.set()</text>
+            </drawing-text>
             <style class="default" />
           </item>
-          <item id="di640195070202928251" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di852441426547465711" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.972153" ay="134.6704" awidth="1219.972" aheight="1.728959" x="-7.972153" y="134.6704" width="1219.972" height="1.728959" />
             <drawing-line start-point="-7.972153,134.6704" end-point="1210.819,135.2468" />
             <style class="default" />
@@ -356,7 +358,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="77.05978" ay="-33.61484" awidth="28.81598" aheight="28.81598" x="77.05978" y="-33.61484" width="28.81598" height="28.81598" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di377841470169474120" iid="7cba69699a37456d8af634f4b567f971" creation-date="10/27/2016 12:12:37" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="106" y1="-19" x2="350" y2="-19" start-border-pos="0.37679457792528" end-border-pos="0.94212962962963" name-position="0,-24">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="106" y1="-19" x2="350" y2="-19" start-border-pos="0.376794585842759" end-border-pos="0.94212962962963" name-position="0,-24">
               <points>
                 <point x="106" y="-19" />
                 <point x="350" y="-19" />
@@ -377,109 +379,73 @@ Do you unset a flag or is this operation named differently?</comment>
             <relation from="di212408407596348288" from-iid="59b6992316604eedbd09c4d2c27dcc45" to="di111215397932091363" to-iid="be900456a0d048068a1e5cab7b68f4c3" />
           </item>
           <item id="di910826799522976345" iid="ef8e961f9440484391f7244f0e927f73" creation-date="10/26/2016 13:26:13" order-index="2" type="entity">
-            <layout ax="24" ay="295.8842" awidth="25" aheight="25" x="24" y="295.8842" width="25" height="25" name-position="0,10" name-anchor="bottom" />
+            <layout ax="18.02785" ay="294.3842" awidth="28" aheight="28" x="18.02785" y="294.3842" width="28" height="28" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di534752053548473836" iid="aafd2f860b784d149a6cf5d84437b4c8" creation-date="10/26/2016 23:34:12" order-index="22" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="49" y1="309" x2="95" y2="312" start-border-pos="0.379971618652344" end-border-pos="0.876205652952194" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="46" y1="307" x2="91" y2="303" start-border-pos="0.36097662789481" end-border-pos="0.904318615794182" name-position="0,0">
               <points>
-                <point x="49" y="309" />
-                <point x="95" y="312" />
+                <point x="46" y="307" />
+                <point x="91" y="303" />
               </points>
             </layout>
-            <relation from="di910826799522976345" from-iid="ef8e961f9440484391f7244f0e927f73" to="di227470363246689879" to-iid="e4875596d6024abba79baf6bc7d50156" />
-          </item>
-          <item id="di227470363246689879" iid="e4875596d6024abba79baf6bc7d50156" creation-date="10/26/2016 23:48:04" order-index="28" type="entity">
-            <layout ax="95" ay="285.3842" awidth="100" aheight="53.75" x="95" y="285.3842" width="100" height="53.75" />
-          </item>
-          <item id="di316884678851142048" iid="016a9accea1a4f5cbbce98ea1ec33bc7" creation-date="10/26/2016 23:48:12" order-index="29" type="entity">
-            <layout ax="75" ay="504.1342" awidth="140" aheight="100" x="75" y="504.1342" width="140" height="100" />
-          </item>
-          <item id="di576821844752356218" iid="8700245657fd4c65a238ba03e3bb5cf9" creation-date="10/26/2016 23:48:12" order-index="30" type="comment-connector">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="137" y1="504" x2="109" y2="339" start-border-pos="0.110049819946289" end-border-pos="0.715000003576279" name-position="0,0">
-              <points>
-                <point x="137" y="504" />
-                <point x="109" y="339" />
-              </points>
-            </layout>
-            <relation from="di316884678851142048" from-iid="016a9accea1a4f5cbbce98ea1ec33bc7" to="di227470363246689879" to-iid="e4875596d6024abba79baf6bc7d50156" />
-          </item>
-          <item id="di278570443483101152" iid="512f5bbb1c884cdeb89a6bcc5f4f335f" creation-date="10/26/2016 23:49:23" order-index="31" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="195" y1="312" x2="233" y2="310" start-border-pos="0.373794339597225" end-border-pos="0.876935258507729" name-position="-5,-50">
-              <points>
-                <point x="195" y="312" />
-                <point x="233" y="310" />
-              </points>
-            </layout>
-            <relation from="di227470363246689879" from-iid="e4875596d6024abba79baf6bc7d50156" to="di400752977867132937" to-iid="e5a0ebcdcfad4a768d068be2a91b9f23" />
+            <relation from="di910826799522976345" from-iid="ef8e961f9440484391f7244f0e927f73" to="di941043458808203067" to-iid="095c56f28bb14fa48ccbd8ce45a55ee3" />
           </item>
           <item id="di377260323213998056" iid="88460aaa5d6246a194a793cee062ba6e" creation-date="10/26/2016 23:01:37" order-index="8" type="entity">
-            <layout ax="858" ay="281.6342" awidth="48" aheight="57.5" x="858" y="281.6342" width="48" height="57.5" name-position="0,10" name-anchor="bottom" />
+            <layout ax="1075" ay="281.6342" awidth="48" aheight="57.5" x="1075" y="281.6342" width="48" height="57.5" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di785600849624031024" iid="5e542547f81b4a3fb91d770f1be6de14" creation-date="10/26/2016 23:01:52" order-index="9" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="707" y1="310" x2="858" y2="310" start-border-pos="0.373075298964977" end-border-pos="0.876670373004416" name-position="-2,-1">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="871" y1="310" x2="1075" y2="310" start-border-pos="0.373075298964977" end-border-pos="0.87667063837466" name-position="-2,-1">
               <points>
-                <point x="707" y="310" />
-                <point x="858" y="310" />
+                <point x="871" y="310" />
+                <point x="1075" y="310" />
               </points>
             </layout>
             <relation from="di777520814898361809" from-iid="54c2318e139d4724a7f4b4b5a08c78a7" to="di377260323213998056" to-iid="88460aaa5d6246a194a793cee062ba6e" />
           </item>
           <item id="di400752977867132937" iid="e5a0ebcdcfad4a768d068be2a91b9f23" creation-date="10/26/2016 23:33:33" order-index="20" type="entity">
-            <layout ax="233" ay="285.5684" awidth="100" aheight="49.63156" x="233" y="285.5684" width="100" height="49.63156" />
+            <layout ax="307" ay="244.7475" awidth="260" aheight="134" x="307" y="244.7475" width="260" height="134" />
           </item>
           <item id="di118664336674443733" iid="b2db0c4554f2435c9c6e93c3cd9a52cf" creation-date="10/26/2016 23:02:11" order-index="10" type="relation">
-            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="882" y1="281" x2="657" y2="285" start-border-pos="0.125" end-border-pos="0.125" name-position="-18,-22">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1099" y1="281" x2="821" y2="285" start-border-pos="0.125" end-border-pos="0.125" name-position="-18,-22">
               <points>
-                <point x="882" y="281" />
-                <point x="657" y="285" />
+                <point x="1099" y="281" />
+                <point x="821" y="285" />
               </points>
             </layout>
             <relation from="di377260323213998056" from-iid="88460aaa5d6246a194a793cee062ba6e" to="di777520814898361809" to-iid="54c2318e139d4724a7f4b4b5a08c78a7" />
           </item>
-          <item id="di472226377588850899" iid="4f30139ae37c41e6b4ad1d5451a002e5" creation-date="10/26/2016 23:43:28" order-index="27" type="relation">
-            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1093" y1="335" x2="145" y2="339" start-border-pos="0.626068383455276" end-border-pos="0.625" name-position="-11,19">
-              <points>
-                <point x="1093" y="335" />
-                <point x="145" y="339" />
-              </points>
-            </layout>
-            <relation from="di782953074201338836" from-iid="366bc6768685495a8b4c730e8892e2e6" to="di227470363246689879" to-iid="e4875596d6024abba79baf6bc7d50156" />
-          </item>
           <item id="di786698112566413677" iid="664770d9d4214bc38fa6270d97957af3" creation-date="10/26/2016 23:33:48" order-index="21" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="333" y1="310" x2="404" y2="310" start-border-pos="0.373064734041691" end-border-pos="0.876928105950356" name-position="-2,-22">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="567" y1="311" x2="771" y2="310" start-border-pos="0.373064734041691" end-border-pos="0.876924693584442" name-position="-2,-22">
               <points>
-                <point x="333" y="310" />
-                <point x="404" y="310" />
+                <point x="567" y="311" />
+                <point x="771" y="310" />
               </points>
             </layout>
-            <relation from="di400752977867132937" from-iid="e5a0ebcdcfad4a768d068be2a91b9f23" to="di941043458808203067" to-iid="095c56f28bb14fa48ccbd8ce45a55ee3" />
+            <relation from="di400752977867132937" from-iid="e5a0ebcdcfad4a768d068be2a91b9f23" to="di777520814898361809" to-iid="54c2318e139d4724a7f4b4b5a08c78a7" />
           </item>
           <item id="di110776866398699690" iid="5f1b2e6e750f45d9a0afc09e56e9fc25" creation-date="10/26/2016 23:05:03" order-index="12" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="905" y1="310" x2="1035" y2="310" start-border-pos="0.373329626995584" end-border-pos="0.876465896372314" name-position="-3,-36">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1099" y1="339" x2="437" y2="379" start-border-pos="0.625" end-border-pos="0.625" name-position="-3,-36">
               <points>
-                <point x="905" y="310" />
-                <point x="1035" y="310" />
+                <point x="1099" y="339" />
+                <point x="437" y="379" />
               </points>
             </layout>
-            <relation from="di377260323213998056" from-iid="88460aaa5d6246a194a793cee062ba6e" to="di782953074201338836" to-iid="366bc6768685495a8b4c730e8892e2e6" />
+            <relation from="di377260323213998056" from-iid="88460aaa5d6246a194a793cee062ba6e" to="di400752977867132937" to-iid="e5a0ebcdcfad4a768d068be2a91b9f23" />
           </item>
           <item id="di941043458808203067" iid="095c56f28bb14fa48ccbd8ce45a55ee3" creation-date="10/26/2016 23:35:25" order-index="23" type="entity">
-            <layout ax="404" ay="285.4763" awidth="100" aheight="49.81577" x="404" y="285.4763" width="100" height="49.81577" />
-          </item>
-          <item id="di782953074201338836" iid="366bc6768685495a8b4c730e8892e2e6" creation-date="10/26/2016 23:42:59" order-index="26" type="entity">
-            <layout ax="1035" ay="285.3842" awidth="117" aheight="49.81577" x="1035" y="285.3842" width="117" height="49.81577" />
+            <layout ax="90.74751" ay="283.8842" awidth="108.505" aheight="49" x="90.74751" y="283.8842" width="108.505" height="49" />
           </item>
           <item id="di777520814898361809" iid="54c2318e139d4724a7f4b4b5a08c78a7" creation-date="10/26/2016 23:37:10" order-index="24" type="entity">
-            <layout ax="607" ay="285.4303" awidth="100" aheight="49.90787" x="607" y="285.4303" width="100" height="49.90787" />
+            <layout ax="771" ay="285.4303" awidth="100" aheight="49.90787" x="771" y="285.4303" width="100" height="49.90787" />
           </item>
-          <item id="di773732476396216734" iid="47dcd43aa7954e3cacb58f71da8be7ce" creation-date="10/26/2016 23:37:20" order-index="25" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="504" y1="310" x2="607" y2="310" start-border-pos="0.373072033987536" end-border-pos="0.876924694694639" name-position="-1,-24">
+          <item id="di991669102496705234" iid="9684b1b2ec674fc1afba98d3fb36eadb" creation-date="10/27/2016 15:23:50" order-index="31" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="199" y1="308" x2="307" y2="311" start-border-pos="0.37386430054903" end-border-pos="0.876935571432114" name-position="-4,-36">
               <points>
-                <point x="504" y="310" />
-                <point x="607" y="310" />
+                <point x="199" y="308" />
+                <point x="307" y="311" />
               </points>
             </layout>
-            <relation from="di941043458808203067" from-iid="095c56f28bb14fa48ccbd8ce45a55ee3" to="di777520814898361809" to-iid="54c2318e139d4724a7f4b4b5a08c78a7" />
+            <relation from="di941043458808203067" from-iid="095c56f28bb14fa48ccbd8ce45a55ee3" to="di400752977867132937" to-iid="e5a0ebcdcfad4a768d068be2a91b9f23" />
           </item>
         </layer>
       </diagram>
@@ -586,43 +552,66 @@ Do you unset a flag or is this operation named differently?</comment>
               <trigger />
             </transition>
           </item>
+          <item id="di692550510979678556" cid="ELEM008" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di174766341629261013" cid="ELEM009" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di270323553792091450" cid="ELEM010" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di881866014480300703" cid="ELEM011" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di286765421129705182" cid="ELEM012" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di186748235690968447" cid="ELEM013" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di632634614739797319" cid="ELEM014" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di111215397932091363" iid="19b16945a9fc4f81b8d80ce22fd5a15d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di692550510979678556" iid="19b16945a9fc4f81b8d80ce22fd5a15d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="120.0049" ay="-270" awidth="1289.748" aheight="777" x="120.0049" y="-270" width="1289.748" height="777" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di764951844767369136" iid="f1195c3f1ba944bbab66027a9863ca85" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di174766341629261013" iid="f1195c3f1ba944bbab66027a9863ca85" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="122.4996" ay="-267.7832" awidth="1287.253" aheight="27.71041" x="122.4996" y="-267.7832" width="1287.253" height="27.71041" />
             <drawing-text>
               <text>ir_receive_message_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di636651526351457887" iid="ec52f8da37fd49fba8abd76cbb0b9984" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di270323553792091450" iid="ec52f8da37fd49fba8abd76cbb0b9984" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="501.6904" ay="-168.0257" awidth="500.1826" aheight="145.2026" x="501.6904" y="-168.0257" width="500.1826" height="145.2026" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di813395398594816961" iid="c1ef16966d1948d69ee53aebf65ad470" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di881866014480300703" iid="c1ef16966d1948d69ee53aebf65ad470" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="502.9378" ay="-171.3509" awidth="498.9353" aheight="27.71041" x="502.9378" y="-171.3509" width="498.9353" height="27.71041" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di876416009568869607" iid="60596b2327f44eed9cf3836ee757f388" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di286765421129705182" iid="60596b2327f44eed9cf3836ee757f388" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="502.9378" ay="-144.7489" awidth="500.1826" aheight="2.216833" x="502.9378" y="-144.7489" width="500.1826" height="2.216833" />
             <drawing-line start-point="502.9378,-144.7489" end-point="1001.873,-143.6405" />
             <style class="default" />
           </item>
-          <item id="di393740928223733296" iid="d7632764ac94465780dd557be0febb7d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di186748235690968447" iid="d7632764ac94465780dd557be0febb7d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="500.4431" ay="-142.5321" awidth="501.43" aheight="119.709" x="500.4431" y="-142.5321" width="501.43" height="119.709" />
-            <drawing-text />
+            <drawing-text>
+              <text>signal received/ received_information_channel.read()</text>
+            </drawing-text>
             <style class="default" />
           </item>
-          <item id="di640195070202928251" iid="099ca644ff09461293cfc12f66cf3db8" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di632634614739797319" iid="099ca644ff09461293cfc12f66cf3db8" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="122.4996" ay="32.59772" awidth="1288.5" aheight="1.662625" x="122.4996" y="32.59772" width="1288.5" height="1.662625" />
             <drawing-line start-point="122.4996,32.59772" end-point="1409.753,33.15192" />
             <style class="default" />
@@ -631,13 +620,13 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="212.308" ay="-129.2311" awidth="27.71041" aheight="27.71041" x="212.308" y="-129.2311" width="27.71041" height="27.71041" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di377841470169474120" iid="24e064257b484beb897348fff45e00d5" creation-date="10/27/2016 12:12:37" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="240" y1="-115" x2="500" y2="-115" start-border-pos="0.378391206146265" end-border-pos="0.94212962962963" name-position="0,-24">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="240" y1="-115" x2="500" y2="-115" start-border-pos="0.378391232658337" end-border-pos="0.94212962962963" name-position="0,-24">
               <points>
                 <point x="240" y="-115" />
                 <point x="500" y="-115" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c2856a5f5df240e6be0a9a4a51ba39c7" to="di393740928223733296" to-iid="d7632764ac94465780dd557be0febb7d" />
+            <relation from="di921381949174703792" from-iid="c2856a5f5df240e6be0a9a4a51ba39c7" to="di186748235690968447" to-iid="d7632764ac94465780dd557be0febb7d" />
           </item>
           <item id="di212408407596348288" iid="74a750ad9b144c06a66654cf94aed79e" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-54" ay="98.5485" awidth="39.90299" aheight="39.90299" x="-54" y="98.5485" width="39.903" height="39.90299" name-position="0,10" name-anchor="bottom" />
@@ -649,7 +638,7 @@ Do you unset a flag or is this operation named differently?</comment>
                 <point x="120" y="118" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="74a750ad9b144c06a66654cf94aed79e" to="di111215397932091363" to-iid="19b16945a9fc4f81b8d80ce22fd5a15d" />
+            <relation from="di212408407596348288" from-iid="74a750ad9b144c06a66654cf94aed79e" to="di692550510979678556" to-iid="19b16945a9fc4f81b8d80ce22fd5a15d" />
           </item>
           <item id="di740041487367468323" iid="f32ebb0e51d54d688c30eb674f3330cc" creation-date="10/26/2016 14:20:50" order-index="0" type="entity">
             <layout ax="173.5" ay="293" awidth="25" aheight="25" x="173.5" y="293" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -825,43 +814,66 @@ Do you unset a flag or is this operation named differently?</comment>
               <trigger>Index recieved</trigger>
             </transition>
           </item>
+          <item id="di818658126958879289" cid="ELEM015" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di611923627130165521" cid="ELEM016" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di395606609768201449" cid="ELEM017" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di272560275239534371" cid="ELEM018" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di126762454728866035" cid="ELEM019" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di660950542734082171" cid="ELEM020" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di644706529568860904" cid="ELEM021" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di111215397932091363" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di818658126958879289" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-22.71252" ay="-114" awidth="829.9099" aheight="611" x="-22.71252" y="-114" width="829.9099" height="611" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di764951844767369136" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di611923627130165521" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-21.10728" ay="-112.2568" awidth="828.3047" aheight="21.7903" x="-21.10728" y="-112.2568" width="828.3047" height="21.7903" />
             <drawing-text>
               <text>speaker_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di636651526351457887" iid="a7a1c267e762492aa91694e535bdd871" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di395606609768201449" iid="a7a1c267e762492aa91694e535bdd871" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="222.8894" ay="-33.81169" awidth="321.851" aheight="114.1812" x="222.8894" y="-33.81169" width="321.851" height="114.1812" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di813395398594816961" iid="cefe735a60614d8fa02a784cb4327b20" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di272560275239534371" iid="cefe735a60614d8fa02a784cb4327b20" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="223.6921" ay="-36.42653" awidth="321.0483" aheight="21.7903" x="223.6921" y="-36.42653" width="321.0483" height="21.7903" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di876416009568869607" iid="f3516c011db84c7f9ace284887e84517" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di126762454728866035" iid="f3516c011db84c7f9ace284887e84517" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="223.6921" ay="-15.50784" awidth="321.851" aheight="1.743224" x="223.6921" y="-15.50784" width="321.851" height="1.743224" />
             <drawing-line start-point="223.6921,-15.50784" end-point="544.7404,-14.63623" />
             <style class="default" />
           </item>
-          <item id="di393740928223733296" iid="7d02e1822f18471989418d4b11cc795d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di660950542734082171" iid="7d02e1822f18471989418d4b11cc795d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="222.0868" ay="-13.76462" awidth="322.6536" aheight="94.13409" x="222.0868" y="-13.76462" width="322.6536" height="94.13409" />
-            <drawing-text />
+            <drawing-text>
+              <text>sound available / sound_mutex.write()</text>
+            </drawing-text>
             <style class="default" />
           </item>
-          <item id="di640195070202928251" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di644706529568860904" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-21.10728" ay="123.9501" awidth="829.1073" aheight="1.307418" x="-21.10728" y="123.9501" width="829.1073" height="1.307418" />
             <drawing-line start-point="-21.10728,123.9501" end-point="807.1974,124.3859" />
             <style class="default" />
@@ -870,13 +882,13 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="36.68141" ay="-3.305275" awidth="20.06552" aheight="20.06552" x="36.68141" y="-3.305275" width="20.06552" height="20.06552" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di377841470169474120" iid="de711fc63b2b42aabe1854707a6caaf7" creation-date="10/27/2016 12:12:37" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="57" y1="7" x2="222" y2="8" start-border-pos="0.379036066821342" end-border-pos="0.94212962962963" name-position="0,-24">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="57" y1="7" x2="222" y2="8" start-border-pos="0.379036079086998" end-border-pos="0.94212962962963" name-position="0,-24">
               <points>
                 <point x="57" y="7" />
                 <point x="222" y="8" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c3d2df07e7a248f98e960f2bbde97151" to="di393740928223733296" to-iid="7d02e1822f18471989418d4b11cc795d" />
+            <relation from="di921381949174703792" from-iid="c3d2df07e7a248f98e960f2bbde97151" to="di660950542734082171" to-iid="7d02e1822f18471989418d4b11cc795d" />
           </item>
           <item id="di212408407596348288" iid="0ced3015f80349559f98d05296bdd371" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-172" ay="177.1184" awidth="28.89435" aheight="28.89435" x="-172" y="177.1184" width="28.89435" height="28.89435" name-position="0,10" name-anchor="bottom" />
@@ -888,7 +900,7 @@ Do you unset a flag or is this operation named differently?</comment>
                 <point x="-23" y="191" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di111215397932091363" to-iid="5540334909f44f8db431da6d376cbb31" />
+            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di818658126958879289" to-iid="5540334909f44f8db431da6d376cbb31" />
           </item>
           <item id="di197436568168410497" iid="2e24b80b9c75451892c00244de6c7aae" creation-date="10/26/2016 14:57:54" order-index="0" type="entity">
             <layout ax="129" ay="259" awidth="25" aheight="25" x="129" y="259" width="25" height="25" name-position="0,10" name-anchor="bottom" />
@@ -928,7 +940,7 @@ Do you unset a flag or is this operation named differently?</comment>
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p64f996de30af461fba3d4dc7e015d79a_175288693" name="register_game_parameters" order-index="4" overview-order-index="2" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="288,-243" zoom="0.9">
+      <diagram type="uml-statechart" id="p64f996de30af461fba3d4dc7e015d79a_175288693" name="register_game_parameters" order-index="4" overview-order-index="2" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="201,0" zoom="0.9">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -940,7 +952,7 @@ Do you unset a flag or is this operation named differently?</comment>
           </authors>
           <description />
           <creation-date>10/26/2016 14:57:32</creation-date>
-          <change-date>10/27/2016 12:19:44</change-date>
+          <change-date>10/27/2016 15:12:48</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -1061,70 +1073,6 @@ Do you unset a flag or is this operation named differently?</comment>
           </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di111215397932091363" iid="e7b858fce03a47218e41e2ebcbcb89ea" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
-            <layout ax="71.59744" ay="-170" awidth="1784.165" aheight="607" x="71.59744" y="-170" width="1784.165" height="607" />
-            <drawing-rounded-rect radius="10" />
-            <style class="default" />
-          </item>
-          <item id="di764951844767369136" iid="7ba44bfdd2e94cf99f477a00e87b5810" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
-            <layout ax="223.7961" ay="-168.2682" awidth="1631.966" aheight="21.64765" x="223.7961" y="-168.2682" width="1631.966" height="21.64765" />
-            <drawing-text>
-              <text>register_game_parameters
-</text>
-            </drawing-text>
-            <style class="default" />
-          </item>
-          <item id="di636651526351457887" iid="f64a270face648648ae4fe51852784fc" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
-            <layout ax="704.5303" ay="-90.33666" awidth="634.1263" aheight="113.4337" x="704.5303" y="-90.33666" width="634.1263" height="113.4337" />
-            <drawing-rounded-rect radius="10" />
-            <style class="default" />
-          </item>
-          <item id="di813395398594816961" iid="c3baab9899794174bf1722a0a0bce306" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
-            <layout ax="706.1116" ay="-92.93438" awidth="632.545" aheight="21.64765" x="706.1116" y="-92.93438" width="632.545" height="21.64765" />
-            <drawing-text>
-              <text>Interface</text>
-            </drawing-text>
-            <style class="default" />
-          </item>
-          <item id="di876416009568869607" iid="74a5dd8ac98a4943b9d6265811c2e51b" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
-            <layout ax="706.1116" ay="-72.15263" awidth="634.1263" aheight="1.731812" x="706.1116" y="-72.15263" width="634.1263" height="1.731812" />
-            <drawing-line start-point="706.1116,-72.15263" end-point="1338.657,-71.28673" />
-            <style class="default" />
-          </item>
-          <item id="di393740928223733296" iid="d08fccd9816340b6a14a7cb74235df18" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
-            <layout ax="814.6848" ay="-70.42083" awidth="463.4884" aheight="93.51784" x="814.6848" y="-70.42083" width="463.4884" height="93.51784" />
-            <drawing-text />
-            <style class="default" />
-          </item>
-          <item id="di640195070202928251" iid="7fc180f127254dddb43a7b9d9ddb6bd9" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
-            <layout ax="71.59744" ay="66.82526" awidth="1784.993" aheight="8.129745" x="71.59744" y="66.82526" width="1784.993" height="8.129745" />
-            <drawing-line start-point="71.59744,74.00359" end-point="1855.762,66.82526" />
-            <style class="default" />
-          </item>
-          <item id="di921381949174703792" iid="fb771593dd1b452081b53b71667152ca" creation-date="10/27/2016 12:12:26" order-index="7" type="entity">
-            <layout ax="533.6802" ay="-59.63258" awidth="18.49805" aheight="18.49805" x="533.6802" y="-59.63258" width="18.49805" height="21.2557" name-position="0,10" name-anchor="bottom" />
-          </item>
-          <item id="di377841470169474120" iid="8e89c286ba524636a93a7851f31e27b6" creation-date="10/27/2016 12:12:37" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="552" y1="-50" x2="815" y2="-49" start-border-pos="0.380630957612597" end-border-pos="0.94212962962963" name-position="0,-24">
-              <points>
-                <point x="552" y="-50" />
-                <point x="815" y="-49" />
-              </points>
-            </layout>
-            <relation from="di921381949174703792" from-iid="fb771593dd1b452081b53b71667152ca" to="di393740928223733296" to-iid="d08fccd9816340b6a14a7cb74235df18" />
-          </item>
-          <item id="di212408407596348288" iid="a8aef279e1334e118b8cb5972497f729" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
-            <layout ax="-73.5" ay="119.2126" awidth="26.6372" aheight="26.6372" x="-73.5" y="119.2126" width="26.6372" height="30.60822" name-position="0,10" name-anchor="bottom" />
-          </item>
-          <item id="di245872948617476502" iid="009ed9611a60496db2ee8f30d6bd926e" creation-date="10/27/2016 12:13:21" order-index="10" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="-47" y1="133" x2="72" y2="133" start-border-pos="0.375" end-border-pos="0.875178316690442" name-position="-3,-19">
-              <points>
-                <point x="-47" y="133" />
-                <point x="72" y="133" />
-              </points>
-            </layout>
-            <relation from="di212408407596348288" from-iid="a8aef279e1334e118b8cb5972497f729" to="di111215397932091363" to-iid="e7b858fce03a47218e41e2ebcbcb89ea" />
-          </item>
           <item id="di964862638694590867" iid="3e17f171052b44a0a54f4f8d98bd3688" creation-date="10/26/2016 15:32:06" order-index="0" type="entity">
             <layout ax="113.6229" ay="267.6489" awidth="20.69944" aheight="20.69944" x="113.6229" y="267.6489" width="20.69944" height="23.78527" name-position="0,10" name-anchor="bottom" />
           </item>
@@ -1138,7 +1086,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="415.4207" ay="250.9992" awidth="33.1191" aheight="57.08464" x="415.4207" y="250.9992" width="33.1191" height="57.08464" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di526259996145721782" iid="761e7ec2354b4bb8b4ee4dd466c2a17d" creation-date="10/26/2016 15:58:56" order-index="5" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="307" y1="280" x2="415" y2="280" start-border-pos="0.377409459092101" end-border-pos="0.872992200954853" name-position="-10,-23">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="307" y1="280" x2="415" y2="280" start-border-pos="0.377409228738071" end-border-pos="0.872992200954853" name-position="-10,-23">
               <points>
                 <point x="307" y="280" />
                 <point x="415" y="280" />
@@ -1147,7 +1095,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <relation from="di577866946663188682" from-iid="951cffb7cb0047e2a464a341423fd457" to="di430781995959106543" to-iid="18b392cecb3a481280c268f9195ae19f" />
           </item>
           <item id="di772088164745296570" iid="7259b22386394f09a24af09a2fdbb59e" creation-date="10/26/2016 15:59:34" order-index="6" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="134" y1="278" x2="199" y2="279" start-border-pos="0.376889132847779" end-border-pos="0.876990384376356" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="134" y1="278" x2="199" y2="279" start-border-pos="0.376889109463396" end-border-pos="0.876990715321143" name-position="0,0">
               <points>
                 <point x="134" y="278" />
                 <point x="199" y="279" />
@@ -1179,7 +1127,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="778.0748" ay="250.9992" awidth="33.1191" aheight="57.08464" x="778.0748" y="250.9992" width="33.1191" height="57.08464" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di903234673303635418" iid="b7d243a368874f4e91cbee1fed9d7414" creation-date="10/26/2016 16:04:08" order-index="10" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="651" y1="280" x2="778" y2="280" start-border-pos="0.377409459092101" end-border-pos="0.872992200954853" name-position="2,21" name-width="106">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="651" y1="280" x2="778" y2="280" start-border-pos="0.377409228738071" end-border-pos="0.872992200954853" name-position="2,21" name-width="106">
               <points>
                 <point x="651" y="280" />
                 <point x="778" y="280" />
@@ -1202,7 +1150,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="929.5947" ay="254.567" awidth="117.5728" aheight="49.94906" x="929.5947" y="254.567" width="117.5728" height="49.94906" />
           </item>
           <item id="di999387399706506931" iid="dc86cb99f53e4555b1a21e35cbd7ef43" creation-date="10/26/2016 16:07:53" order-index="13" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="810" y1="280" x2="930" y2="280" start-border-pos="0.37700786587043" end-border-pos="0.872705429711026" name-position="-12,-17">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="810" y1="280" x2="930" y2="280" start-border-pos="0.37700786587043" end-border-pos="0.872705276967516" name-position="-12,-17">
               <points>
                 <point x="810" y="280" />
                 <point x="930" y="280" />
@@ -1217,7 +1165,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="1150.665" ay="250.9992" awidth="33.1191" aheight="57.08464" x="1150.665" y="250.9992" width="33.1191" height="57.08464" name-position="3,10" name-anchor="bottom" />
           </item>
           <item id="di874141036640716622" iid="b51a3c10a84a45e7a10f8ba2875704c8" creation-date="10/26/2016 16:10:58" order-index="16" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1047" y1="280" x2="1150" y2="280" start-border-pos="0.377294608474851" end-border-pos="0.872992200954853" name-position="-2,-25">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1047" y1="280" x2="1150" y2="280" start-border-pos="0.377294684846607" end-border-pos="0.872992200954853" name-position="-2,-25">
               <points>
                 <point x="1047" y="280" />
                 <point x="1150" y="280" />
@@ -1257,7 +1205,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <relation from="di825811238298753052" from-iid="2acbe9e1fb464c549eb877387a355fab" to="di855933729982015380" to-iid="45da0413149a4dd0a1335f841367b988" />
           </item>
           <item id="di816024218663293053" iid="b7d96ab4594b401ba8190bb9ed93d44a" creation-date="10/26/2016 16:24:39" order-index="22" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1407" y1="279" x2="1517" y2="276" start-border-pos="0.370365700025581" end-border-pos="0.874367465282261" name-position="-9,-23">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1407" y1="279" x2="1517" y2="276" start-border-pos="0.370365469106709" end-border-pos="0.874367598932827" name-position="-9,-23">
               <points>
                 <point x="1407" y="279" />
                 <point x="1517" y="276" />
@@ -1269,7 +1217,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="1517.459" ay="247.6693" awidth="33.1191" aheight="57.08464" x="1517.459" y="247.6693" width="33.1191" height="57.08464" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di507126686953029509" iid="efa7279f4672474f93e2c36d46a482d2" creation-date="10/26/2016 16:19:56" order-index="20" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1550" y1="276" x2="1789" y2="275" start-border-pos="0.375" end-border-pos="0.87051343906537" name-position="-10,-27">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1550" y1="276" x2="1789" y2="275" start-border-pos="0.375" end-border-pos="0.870513785435718" name-position="-10,-27">
               <points>
                 <point x="1550" y="276" />
                 <point x="1789" y="275" />
@@ -1317,43 +1265,67 @@ Do you unset a flag or is this operation named differently?</comment>
               <trigger>color received</trigger>
             </transition>
           </item>
+          <item id="di679331655627094029" cid="ELEM032" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di400457720634896885" cid="ELEM033" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di961325715840151782" cid="ELEM034" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di568022500330521432" cid="ELEM035" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di773956741984301328" cid="ELEM042" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di311315923335659942" cid="ELEM044" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di600605506682830767" cid="ELEM047" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di111215397932091363" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di679331655627094029" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-9.804672" ay="-117" awidth="1032.306" aheight="632" x="-9.804672" y="-117" width="1032.306" height="632" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di764951844767369136" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di400457720634896885" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-7.807938" ay="-115.1969" awidth="1030.31" aheight="22.53923" x="-7.807938" y="-115.1969" width="1030.31" height="22.53923" />
             <drawing-text>
               <text>led_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di636651526351457887" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di961325715840151782" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="295.6941" ay="-34.05563" awidth="400.3432" aheight="118.1056" x="295.6941" y="-34.05563" width="400.3432" height="118.1056" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di813395398594816961" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di568022500330521432" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="296.6925" ay="-36.76035" awidth="399.3448" aheight="22.53923" x="296.6925" y="-36.76035" width="399.3448" height="22.53923" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di876416009568869607" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di773956741984301328" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="296.6925" ay="-15.12268" awidth="400.3432" aheight="1.803138" x="296.6925" y="-15.12268" width="400.3432" height="1.803138" />
             <drawing-line start-point="296.6925,-15.12268" end-point="696.0373,-14.22111" />
             <style class="default" />
           </item>
-          <item id="di393740928223733296" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di311315923335659942" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="294.6957" ay="-13.31954" awidth="401.3415" aheight="97.36947" x="294.6957" y="-13.31954" width="401.3415" height="97.36947" />
-            <drawing-text />
+            <drawing-text>
+              <text>100ms/????
+color information available/ led_color_channel.write()</text>
+            </drawing-text>
             <style class="default" />
           </item>
-          <item id="di640195070202928251" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di600605506682830767" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.807938" ay="129.1284" awidth="1031.308" aheight="1.352354" x="-7.807938" y="129.1284" width="1031.308" height="1.352354" />
             <drawing-line start-point="-7.807938,129.1284" end-point="1022.502,129.5792" />
             <style class="default" />
@@ -1362,13 +1334,13 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="64.07413" ay="-2.50071" awidth="22.53923" aheight="22.53923" x="64.07413" y="-2.50071" width="22.53923" height="22.53923" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di377841470169474120" iid="e8cac8d9558c4f5eb4bbc32d8fd198bc" creation-date="10/27/2016 12:12:37" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="87" y1="9" x2="295" y2="9" start-border-pos="0.37756324591387" end-border-pos="0.94212962962963" name-position="0,-24">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="87" y1="9" x2="295" y2="9" start-border-pos="0.377563251202839" end-border-pos="0.94212962962963" name-position="0,-24">
               <points>
                 <point x="87" y="9" />
                 <point x="295" y="9" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di393740928223733296" to-iid="64023965acba46e89afde9416ba9af23" />
+            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di311315923335659942" to-iid="64023965acba46e89afde9416ba9af23" />
           </item>
           <item id="di212408407596348288" iid="ee38d5525fc14eb2997782fe31a0344a" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-195.5" ay="184.1241" awidth="32.45649" aheight="32.45649" x="-195.5" y="184.1241" width="32.45649" height="32.45649" name-position="0,10" name-anchor="bottom" />
@@ -1380,7 +1352,7 @@ Do you unset a flag or is this operation named differently?</comment>
                 <point x="-10" y="199" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di111215397932091363" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
+            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di679331655627094029" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
           </item>
           <item id="di410899400829129035" iid="684e519f3e0a440ea0d13bde4106826b" creation-date="10/26/2016 15:11:14" order-index="0" type="entity">
             <layout ax="229" ay="288" awidth="25" aheight="25" x="229" y="288" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -1457,58 +1429,82 @@ Do you unset a flag or is this operation named differently?</comment>
               <trigger>Flag set</trigger>
             </transition>
           </item>
+          <item id="di857977570453256757" cid="ELEM049" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di376160993613389429" cid="ELEM053" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di422339998816346851" cid="ELEM054" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di863386500390316510" cid="ELEM057" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di466360287122806089" cid="ELEM059" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di895667837233256458" cid="ELEM060" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di631929863131473197" cid="ELEM061" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di111215397932091363" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
-            <layout ax="0.513504" ay="-69" awidth="875.6396" aheight="602" x="0.513504" y="-69" width="875.6396" height="602" />
+          <item id="di857977570453256757" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+            <layout ax="0.513504" ay="-69" awidth="1175.64" aheight="602" x="0.513504" y="-69" width="1175.64" height="602" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di764951844767369136" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
-            <layout ax="2.207199" ay="-67.28246" awidth="873.9459" aheight="21.46933" x="2.207199" y="-67.28246" width="873.9459" height="21.46933" />
+          <item id="di376160993613389429" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+            <layout ax="179.6756" ay="-69" awidth="873.946" aheight="21.46933" x="179.6756" y="-69" width="873.946" height="21.46933" />
             <drawing-text>
               <text>lcd_display_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di636651526351457887" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
-            <layout ax="259.6486" ay="10.00713" awidth="339.5856" aheight="112.4993" x="259.6486" y="10.00713" width="339.5856" height="112.4993" />
+          <item id="di422339998816346851" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+            <layout ax="185.6486" ay="10.00713" awidth="862" aheight="137" x="185.6486" y="10.00713" width="862" height="137" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di813395398594816961" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
-            <layout ax="260.4955" ay="7.430809" awidth="338.7387" aheight="21.46933" x="260.4955" y="7.430809" width="338.7387" height="21.46933" />
+          <item id="di863386500390316510" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+            <layout ax="269.2792" ay="11.92088" awidth="695.7388" aheight="21.75748" x="269.2792" y="11.92088" width="695.7388" height="21.75748" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di876416009568869607" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
-            <layout ax="260.4955" ay="28.04137" awidth="339.5856" aheight="1.717546" x="260.4955" y="28.04137" width="339.5856" height="1.717546" />
-            <drawing-line start-point="260.4955,28.04137" end-point="599.2343,28.90014" />
+          <item id="di466360287122806089" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+            <layout ax="185.6486" ay="33.67836" awidth="863" aheight="1" x="185.6486" y="29.75891" width="655" height="4.919451" />
+            <drawing-line start-point="185.6486,33.67836" end-point="1047.649,33.67836" />
             <style class="default" />
           </item>
-          <item id="di393740928223733296" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
-            <layout ax="258.8018" ay="29.75891" awidth="340.4324" aheight="92.74751" x="258.8018" y="29.75891" width="340.4324" height="92.74751" />
-            <drawing-text />
+          <item id="di895667837233256458" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+            <layout ax="185.6486" ay="33.67836" awidth="831" aheight="108" x="185.6486" y="33.67836" width="831" height="108" />
+            <drawing-text>
+              <text>information has changed/ lcd_mutex.wait(); lcd_pool.write(); lcd_mutex.signal(); lcd_information_changed.set()
+</text>
+            </drawing-text>
             <style class="default" />
           </item>
-          <item id="di640195070202928251" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
-            <layout ax="2.207199" ay="165.4451" awidth="874.7928" aheight="1.28816" x="2.207199" y="165.4451" width="874.7928" height="1.28816" />
-            <drawing-line start-point="2.207199,165.4451" end-point="876.1531,165.8745" />
+          <item id="di631929863131473197" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+            <layout ax="2.207199" ay="164.8745" awidth="1174.946" aheight="1.570602" x="2.207199" y="165.4451" width="874.7928" height="1.28816" />
+            <drawing-line start-point="2.207199,165.4451" end-point="1176.153,164.8745" />
             <style class="default" />
           </item>
           <item id="di921381949174703792" iid="c6fde7b4c711422ca8e654184bc510e8" creation-date="10/27/2016 12:12:26" order-index="7" type="entity">
-            <layout ax="63.18018" ay="40.06419" awidth="18.18123" aheight="18.18123" x="63.18018" y="40.06419" width="18.18123" height="18.18123" name-position="0,10" name-anchor="bottom" />
+            <layout ax="65.18018" ay="78.50713" awidth="18.18123" aheight="18.18123" x="65.18018" y="78.50713" width="18.18123" height="18.18123" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di377841470169474120" iid="5d0ff9e71b0e4dd0bc65efe0fde6e20d" creation-date="10/27/2016 12:12:37" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="81" y1="49" x2="259" y2="51" start-border-pos="0.374194847717784" end-border-pos="0.94212962962963" name-position="0,-24">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="83" y1="87" x2="186" y2="79" start-border-pos="0.370586748074946" end-border-pos="0.874100595712662" name-position="0,-24">
               <points>
-                <point x="81" y="49" />
-                <point x="259" y="51" />
+                <point x="83" y="87" />
+                <point x="186" y="79" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di393740928223733296" to-iid="d99ea8b5eb8948298c2f5341c127b5e1" />
+            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di422339998816346851" to-iid="3b6868877c20460ab615baa22a52ec55" />
           </item>
           <item id="di212408407596348288" iid="12ea1c53345943a2a997b56abaec5cbc" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-157" ay="217.8302" awidth="26.18097" aheight="26.18097" x="-157" y="217.8302" width="26.18097" height="26.18097" name-position="0,10" name-anchor="bottom" />
@@ -1520,7 +1516,7 @@ Do you unset a flag or is this operation named differently?</comment>
                 <point x="1" y="232" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di111215397932091363" to-iid="55c7593b504b441ba7d864096eaa8d07" />
+            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di857977570453256757" to-iid="55c7593b504b441ba7d864096eaa8d07" />
           </item>
           <item id="di626022405602891561" iid="e98095359bcd4e0dbcf709696d0f1ff7" creation-date="10/26/2016 15:31:50" order-index="0" type="entity">
             <layout ax="132" ay="286" awidth="25" aheight="25" x="132" y="286" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -1560,7 +1556,7 @@ Do you unset a flag or is this operation named differently?</comment>
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p15559c4ac85a41529a659edc42a4cb3e_201626250" name="Run_game" order-index="8" overview-order-index="6" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-126,12">
+      <diagram type="uml-statechart" id="p15559c4ac85a41529a659edc42a4cb3e_201626250" name="Run_game" order-index="8" overview-order-index="6" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-126,0">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1641,58 +1637,88 @@ Do you unset a flag or is this operation named differently?</comment>
             <state-invariant />
             <actions />
           </item>
+          <item id="di571828740886869599" cid="ELEM062" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di101737191305915832" cid="ELEM063" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di508942360701049894" cid="ELEM064" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di906232423770115035" cid="ELEM065" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di504229596626044141" cid="ELEM066" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di272232816995917521" cid="ELEM067" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
+          <item id="di425322013491215523" cid="ELEM068" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 14:10:20">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di111215397932091363" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di571828740886869599" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="124" ay="60.38583" awidth="1034" aheight="701" x="124" y="60.38583" width="1034" height="701" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di764951844767369136" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di101737191305915832" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="126" ay="62.38583" awidth="1032" aheight="25" x="126" y="62.38583" width="1032" height="25" />
             <drawing-text>
               <text>run_game</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di636651526351457887" iid="e03c627f58e240da9b2bbc15f427b1c4" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
-            <layout ax="430" ay="152.3858" awidth="401" aheight="131" x="430" y="152.3858" width="401" height="131" />
+          <item id="di508942360701049894" iid="e03c627f58e240da9b2bbc15f427b1c4" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+            <layout ax="312.1982" ay="107.3858" awidth="715.6912" aheight="208" x="312.1982" y="107.3858" width="715.6912" height="208" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di813395398594816961" iid="8068cfbcaaa0485a96fedbc6c526bf7d" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
-            <layout ax="431" ay="149.3858" awidth="400" aheight="25" x="431" y="149.3858" width="400" height="25" />
+          <item id="di906232423770115035" iid="8068cfbcaaa0485a96fedbc6c526bf7d" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+            <layout ax="324" ay="110.3858" awidth="691" aheight="21" x="324" y="110.3858" width="691" height="21" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di876416009568869607" iid="d3378f9ff32440e087246790c04e8530" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
-            <layout ax="431" ay="173.3858" awidth="401" aheight="2" x="431" y="173.3858" width="401" height="2" />
-            <drawing-line start-point="431,173.3858" end-point="831,174.3858" />
+          <item id="di504229596626044141" iid="d3378f9ff32440e087246790c04e8530" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+            <layout ax="312.1982" ay="131.3858" awidth="716.6912" aheight="2" x="312.1982" y="131.3858" width="584.6912" height="1" />
+            <drawing-line start-point="312.1982,131.3858" end-point="1027.889,132.3858" />
             <style class="default" />
           </item>
-          <item id="di393740928223733296" iid="b8854f50ac994dbd94ff26a1bc219633" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
-            <layout ax="429" ay="175.3858" awidth="402" aheight="108" x="429" y="175.3858" width="402" height="108" />
-            <drawing-text />
+          <item id="di272232816995917521" iid="b8854f50ac994dbd94ff26a1bc219633" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+            <layout ax="312.1982" ay="132.3858" awidth="715.6912" aheight="183" x="312.1982" y="132.3858" width="715.6912" height="183" />
+            <drawing-text>
+              <text>information received/received_information_channel.write()
+game time changed/game_time_mutex.wait(); game_time_pool; game_time_mutex.signal()
+sound needed/sound_mutex.wait(); sound_pool.read(); sound_mutex.signal()
+color change needed/ led_color_channel.read(); 
+50ms past/????????????????????????
+information for lcd/lcd_information_changed.wait();lcd_mutex.wait();lcd_pool.read();lcd_mutex.signal()
+fire button pressed/ button_pressed_flag.wait();
+</text>
+            </drawing-text>
             <style class="default" />
           </item>
-          <item id="di640195070202928251" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di425322013491215523" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="126" ay="333.3858" awidth="1033" aheight="1.5" x="126" y="333.3858" width="1033" height="1.5" />
             <drawing-line start-point="126,333.3858" end-point="1158,333.8858" />
             <style class="default" />
           </item>
           <item id="di921381949174703792" iid="269472afefcb4dd0b4cdee133d035145" creation-date="10/27/2016 12:12:26" order-index="7" type="entity">
-            <layout ax="198" ay="187.3858" awidth="25" aheight="25" x="198" y="187.3858" width="25" height="25" name-position="0,10" name-anchor="bottom" />
+            <layout ax="211" ay="197.3858" awidth="16" aheight="16" x="211" y="197.3858" width="16" height="36" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di377841470169474120" iid="ed6229265ddf4c3b91f646aa9a80ea06" creation-date="10/27/2016 12:12:37" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="223" y1="200" x2="429" y2="200" start-border-pos="0.376141662597656" end-border-pos="0.94212962962963" name-position="0,-24">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="227" y1="206" x2="312" y2="212" start-border-pos="0.378380537033081" end-border-pos="0.87478207051754" name-position="0,-24">
               <points>
-                <point x="223" y="200" />
-                <point x="429" y="200" />
+                <point x="227" y="206" />
+                <point x="312" y="212" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="269472afefcb4dd0b4cdee133d035145" to="di393740928223733296" to-iid="b8854f50ac994dbd94ff26a1bc219633" />
+            <relation from="di921381949174703792" from-iid="269472afefcb4dd0b4cdee133d035145" to="di508942360701049894" to-iid="e03c627f58e240da9b2bbc15f427b1c4" />
           </item>
           <item id="di212408407596348288" iid="7c76752569d2477882d999eb78e3f635" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-19" ay="392.8858" awidth="36" aheight="36" x="-19" y="392.8858" width="36" height="36" name-position="0,10" name-anchor="bottom" />
@@ -1704,7 +1730,7 @@ Do you unset a flag or is this operation named differently?</comment>
                 <point x="124" y="410" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di111215397932091363" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
+            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di571828740886869599" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
           </item>
           <item id="di626712423754497151" iid="c3a3cfb03c584ec1b6f716cdc3c2d68f" creation-date="10/27/2016 00:18:19" order-index="0" type="entity">
             <layout ax="158.302" ay="542.2571" awidth="16.58126" aheight="16.58126" x="158.302" y="542.2571" width="16.58126" height="16.58126" name-position="0,10" name-anchor="bottom" />
@@ -1713,7 +1739,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="191.5723" ay="395.7233" awidth="219" aheight="66.32504" x="191.5723" y="395.7233" width="219" height="66.32504" />
           </item>
           <item id="di124605139916277461" iid="c965133bb24c4da9a06d8a4692c1ec5d" creation-date="10/27/2016 00:25:10" order-index="4" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="175" y1="551" x2="312" y2="553" start-border-pos="0.383275127956928" end-border-pos="0.877499997615814" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="175" y1="551" x2="312" y2="553" start-border-pos="0.38327511262624" end-border-pos="0.877499997615814" name-position="0,0">
               <points>
                 <point x="175" y="551" />
                 <point x="312" y="553" />
@@ -1728,7 +1754,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="546.9813" ay="536.0519" awidth="100" aheight="33.16252" x="546.9813" y="536.0519" width="100" height="33.16252" />
           </item>
           <item id="di735890336876847878" iid="de93381a35e44703b44b9f6af3b289cc" creation-date="10/27/2016 00:28:44" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="412" y1="553" x2="547" y2="553" start-border-pos="0.373988034539024" end-border-pos="0.872234511302023" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="412" y1="553" x2="547" y2="553" start-border-pos="0.373988020276634" end-border-pos="0.872234497241342" name-position="0,0">
               <points>
                 <point x="412" y="553" />
                 <point x="547" y="553" />
@@ -1740,7 +1766,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="418.4921" ay="626.0216" awidth="140" aheight="66.32504" x="418.4921" y="626.0216" width="140" height="66.32504" />
           </item>
           <item id="di946694573705381432" iid="b31fe0f4558d41a18cbde6618fd59d47" creation-date="10/27/2016 00:29:04" order-index="9" type="comment-connector">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="486" y1="626" x2="488" y2="553" start-border-pos="0.119673756190709" end-border-pos="0.562962962962963" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="486" y1="626" x2="488" y2="553" start-border-pos="0.119673810686384" end-border-pos="0.562962962962963" name-position="0,0">
               <points>
                 <point x="486" y="626" />
                 <point x="488" y="553" />
@@ -1752,7 +1778,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="735.5356" ay="530.1504" awidth="59" aheight="36.47877" x="735.5356" y="530.1504" width="59" height="36.47877" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di439756946823176800" iid="bb2e67a62d58401083ecc7aae624c628" creation-date="10/27/2016 00:30:24" order-index="11" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="647" y1="552" x2="736" y2="549" start-border-pos="0.366771948229423" end-border-pos="0.87155197736704" name-position="-3,-28">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="647" y1="552" x2="736" y2="549" start-border-pos="0.366771934797103" end-border-pos="0.87155197736704" name-position="-3,-28">
               <points>
                 <point x="647" y="552" />
                 <point x="736" y="549" />
@@ -1773,7 +1799,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="895.8894" ay="531.1642" awidth="100" aheight="33.16252" x="895.8894" y="531.1642" width="100" height="33.16252" />
           </item>
           <item id="di227425820869154299" iid="a67c01d8a0e344469b5762d90d9374bc" creation-date="10/27/2016 00:32:31" order-index="14" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="793" y1="548" x2="896" y2="548" start-border-pos="0.372328746165698" end-border-pos="0.873081134958828" name-position="0,-23">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="793" y1="548" x2="896" y2="548" start-border-pos="0.372328746165698" end-border-pos="0.873081120800759" name-position="0,-23">
               <points>
                 <point x="793" y="548" />
                 <point x="896" y="548" />
@@ -1785,7 +1811,7 @@ Do you unset a flag or is this operation named differently?</comment>
             <layout ax="1084.912" ay="540.8366" awidth="16.58126" aheight="16.58126" x="1084.912" y="540.8366" width="16.58126" height="16.58126" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di219103038919185274" iid="9aaeec8830e94f09a66f8345294261dc" creation-date="10/27/2016 00:33:06" order-index="16" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="996" y1="548" x2="1085" y2="549" start-border-pos="0.379431732627967" end-border-pos="0.87784109242059" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="996" y1="548" x2="1085" y2="549" start-border-pos="0.379431717739386" end-border-pos="0.877841077714981" name-position="0,0">
               <points>
                 <point x="996" y="548" />
                 <point x="1085" y="549" />
