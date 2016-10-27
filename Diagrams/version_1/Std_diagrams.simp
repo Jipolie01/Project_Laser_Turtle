@@ -83,7 +83,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>123</value>
+        <value>117</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -169,7 +169,7 @@ Note: If so some of the stds need to be changed </comment>
     <item id="di921381949174703792" cid="IS012" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:26">
       <style class="default" />
     </item>
-    <item id="di377841470169474120" cid="ELEM107" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:37" from="di921381949174703792" to="di147884655400031204">
+    <item id="di377841470169474120" cid="ELEM107" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:37" from="di921381949174703792" to="di780427059149010062">
       <style class="default" />
       <transition guard="" behaviourExpression=" ">
         <trigger />
@@ -178,7 +178,7 @@ Note: If so some of the stds need to be changed </comment>
     <item id="di212408407596348288" cid="IS013" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:11">
       <style class="default" />
     </item>
-    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di867029925230944758">
+    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di679854147302613087">
       <style class="default" />
       <transition guard="" behaviourExpression=" ">
         <trigger>main()</trigger>
@@ -332,45 +332,66 @@ Note: If so some of the stds need to be changed </comment>
           <item id="di557883440981770962" cid="ELEM014" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 15:38:00">
             <style class="default" />
           </item>
+          <item id="di510321798268534604" cid="ELEM015" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 16:55:23">
+            <style class="default" />
+          </item>
+          <item id="di137320596527672896" cid="ELEM016" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di859362640661893731" cid="ELEM017" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di288254983750617574" cid="ELEM018" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di635911385339280420" cid="ELEM019" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di822316691902868318" cid="ELEM020" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di945520152909761677" cid="ELEM021" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di775345817426027003" iid="be900456a0d048068a1e5cab7b68f4c3" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di510321798268534604" iid="be900456a0d048068a1e5cab7b68f4c3" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-10.33415" ay="-180" awidth="1221.153" aheight="807.9999" x="-10.33415" y="-180" width="1221.153" height="807.9999" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di919632299556823485" iid="daa79a99e5b649f783b9f04139b443d1" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di137320596527672896" iid="daa79a99e5b649f783b9f04139b443d1" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-7.972153" ay="-177.6947" awidth="1218.791" aheight="28.81598" x="-7.972153" y="-177.6947" width="1218.791" height="28.81598" />
             <drawing-text>
               <text>ir_message_send_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di159145886210676189" iid="48a6289bbfba4e22944d2130486dad7e" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di859362640661893731" iid="48a6289bbfba4e22944d2130486dad7e" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="351.0516" ay="-73.95721" awidth="473.5807" aheight="150.9957" x="351.0516" y="-73.95721" width="473.5807" height="150.9957" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di815188198298430065" iid="3403f91dda9b465aaff7c41a846276b1" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di288254983750617574" iid="3403f91dda9b465aaff7c41a846276b1" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="352.2326" ay="-77.41512" awidth="472.3997" aheight="28.81598" x="352.2326" y="-77.41512" width="472.3997" height="28.81598" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di791070936978025487" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di635911385339280420" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="352.2326" ay="-49.75179" awidth="473.5807" aheight="2.305278" x="352.2326" y="-49.75179" width="473.5807" height="2.305278" />
             <drawing-line start-point="352.2326,-49.75179" end-point="824.6323,-48.59914" />
             <style class="default" />
           </item>
-          <item id="di963681215668233365" iid="5db3f57a267849b58d563efa5f8c1f2a" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di822316691902868318" iid="5db3f57a267849b58d563efa5f8c1f2a" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="349.8706" ay="-47.44652" awidth="474.7617" aheight="124.485" x="349.8706" y="-47.44652" width="474.7617" height="124.485" />
             <drawing-text>
               <text>button pressed/ button_pressed_flag.set()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di557883440981770962" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di945520152909761677" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.972153" ay="134.6704" awidth="1219.972" aheight="1.728959" x="-7.972153" y="134.6704" width="1219.972" height="1.728959" />
             <drawing-line start-point="-7.972153,134.6704" end-point="1210.819,135.2468" />
             <style class="default" />
@@ -385,7 +406,7 @@ Note: If so some of the stds need to be changed </comment>
                 <point x="350" y="-19" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="0271291ba0e64f5eb3705b2eeab67e24" to="di963681215668233365" to-iid="5db3f57a267849b58d563efa5f8c1f2a" />
+            <relation from="di921381949174703792" from-iid="0271291ba0e64f5eb3705b2eeab67e24" to="di822316691902868318" to-iid="5db3f57a267849b58d563efa5f8c1f2a" />
           </item>
           <item id="di212408407596348288" iid="59b6992316604eedbd09c4d2c27dcc45" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-172" ay="203.2525" awidth="41.49501" aheight="41.49501" x="-172" y="203.2525" width="41.49501" height="41.49501" name-position="0,10" name-anchor="bottom" />
@@ -397,7 +418,7 @@ Note: If so some of the stds need to be changed </comment>
                 <point x="-10" y="223" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="59b6992316604eedbd09c4d2c27dcc45" to="di775345817426027003" to-iid="be900456a0d048068a1e5cab7b68f4c3" />
+            <relation from="di212408407596348288" from-iid="59b6992316604eedbd09c4d2c27dcc45" to="di510321798268534604" to-iid="be900456a0d048068a1e5cab7b68f4c3" />
           </item>
           <item id="di910826799522976345" iid="ef8e961f9440484391f7244f0e927f73" creation-date="10/26/2016 13:26:13" order-index="2" type="entity">
             <layout ax="18.02785" ay="294.3842" awidth="28" aheight="28" x="18.02785" y="294.3842" width="28" height="28" name-position="0,10" name-anchor="bottom" />
@@ -470,7 +491,7 @@ Note: If so some of the stds need to be changed </comment>
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p4d54399d2af84c5797e16fbf3f56e29d_457827324" name="IR_receive_message_controller" order-index="2" overview-order-index="0" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="39,-254" zoom="0.6878572">
+      <diagram type="uml-statechart" id="p4d54399d2af84c5797e16fbf3f56e29d_457827324" name="IR_receive_message_controller" order-index="2" overview-order-index="0" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-136,-254" zoom="0.6878572">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -660,47 +681,68 @@ Note: If so some of the stds need to be changed </comment>
               <trigger />
             </transition>
           </item>
+          <item id="di726554637690529695" cid="ELEM022" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di486101775816494796" cid="ELEM023" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di875114999524118557" cid="ELEM024" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di778736579307933108" cid="ELEM025" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di860652006849617284" cid="ELEM026" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di299126055253806015" cid="ELEM027" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di516991126117212437" cid="ELEM028" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di362486812851641843" iid="19b16945a9fc4f81b8d80ce22fd5a15d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di726554637690529695" iid="19b16945a9fc4f81b8d80ce22fd5a15d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="120.0049" ay="-270" awidth="1679.995" aheight="780" x="120.0049" y="-270" width="1679.995" height="780" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di505180714577810539" iid="f1195c3f1ba944bbab66027a9863ca85" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di486101775816494796" iid="f1195c3f1ba944bbab66027a9863ca85" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="122.4996" ay="-267.7832" awidth="1287.253" aheight="27.71041" x="122.4996" y="-267.7832" width="1287.253" height="27.71041" />
             <drawing-text>
               <text>ir_receive_message_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di122858003928978921" iid="ec52f8da37fd49fba8abd76cbb0b9984" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di875114999524118557" iid="ec52f8da37fd49fba8abd76cbb0b9984" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="501.6904" ay="-168.0257" awidth="500.1826" aheight="145.2026" x="501.6904" y="-168.0257" width="500.1826" height="145.2026" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di809228664464440877" iid="c1ef16966d1948d69ee53aebf65ad470" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di778736579307933108" iid="c1ef16966d1948d69ee53aebf65ad470" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="502.9378" ay="-171.3509" awidth="498.9353" aheight="27.71041" x="502.9378" y="-171.3509" width="498.9353" height="27.71041" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di966737202164404919" iid="60596b2327f44eed9cf3836ee757f388" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di860652006849617284" iid="60596b2327f44eed9cf3836ee757f388" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="502.9378" ay="-144.7489" awidth="500.1826" aheight="2.216833" x="502.9378" y="-144.7489" width="500.1826" height="2.216833" />
             <drawing-line start-point="502.9378,-144.7489" end-point="1001.873,-143.6405" />
             <style class="default" />
           </item>
-          <item id="di402684737585145696" iid="d7632764ac94465780dd557be0febb7d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di299126055253806015" iid="d7632764ac94465780dd557be0febb7d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="500.4431" ay="-142.5321" awidth="501.43" aheight="119.709" x="500.4431" y="-142.5321" width="501.43" height="119.709" />
             <drawing-text>
               <text>signal received/ received_information_channel.read()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di383083399220098469" iid="099ca644ff09461293cfc12f66cf3db8" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
-            <layout ax="122.4996" ay="32.59772" awidth="1288.5" aheight="1.662625" x="122.4996" y="32.59772" width="1288.5" height="1.662625" />
-            <drawing-line start-point="122.4996,32.59772" end-point="1409.753,33.15192" />
+          <item id="di516991126117212437" iid="099ca644ff09461293cfc12f66cf3db8" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+            <layout ax="122.4996" ay="32.59772" awidth="1678.5" aheight="8.402279" x="122.4996" y="32.59772" width="1288.5" height="1.662625" />
+            <drawing-line start-point="122.4996,32.59772" end-point="1800,40" />
             <style class="default" />
           </item>
           <item id="di921381949174703792" iid="c2856a5f5df240e6be0a9a4a51ba39c7" creation-date="10/27/2016 12:12:26" order-index="7" type="entity">
@@ -713,7 +755,7 @@ Note: If so some of the stds need to be changed </comment>
                 <point x="500" y="-115" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c2856a5f5df240e6be0a9a4a51ba39c7" to="di402684737585145696" to-iid="d7632764ac94465780dd557be0febb7d" />
+            <relation from="di921381949174703792" from-iid="c2856a5f5df240e6be0a9a4a51ba39c7" to="di299126055253806015" to-iid="d7632764ac94465780dd557be0febb7d" />
           </item>
           <item id="di212408407596348288" iid="74a750ad9b144c06a66654cf94aed79e" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-54" ay="98.5485" awidth="39.90299" aheight="39.90299" x="-54" y="98.5485" width="39.903" height="39.90299" name-position="0,10" name-anchor="bottom" />
@@ -725,7 +767,7 @@ Note: If so some of the stds need to be changed </comment>
                 <point x="120" y="119" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="74a750ad9b144c06a66654cf94aed79e" to="di362486812851641843" to-iid="19b16945a9fc4f81b8d80ce22fd5a15d" />
+            <relation from="di212408407596348288" from-iid="74a750ad9b144c06a66654cf94aed79e" to="di726554637690529695" to-iid="19b16945a9fc4f81b8d80ce22fd5a15d" />
           </item>
           <item id="di740041487367468323" iid="f32ebb0e51d54d688c30eb674f3330cc" creation-date="10/26/2016 14:20:50" order-index="0" type="entity">
             <layout ax="140" ay="290" awidth="25" aheight="25" x="140" y="290" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -966,45 +1008,66 @@ Note: If so some of the stds need to be changed </comment>
           <item id="di662967941335220481" cid="ELEM030" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 15:38:00">
             <style class="default" />
           </item>
+          <item id="di926683537374622778" cid="ELEM031" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di754743600459452346" cid="ELEM032" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di667091309216161617" cid="ELEM033" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di905556159822832048" cid="ELEM034" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di954686467185376210" cid="ELEM035" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di308097669628994896" cid="ELEM036" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di390506649740560827" cid="ELEM037" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di964251745506699607" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di926683537374622778" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-22.71252" ay="-114" awidth="829.9099" aheight="611" x="-22.71252" y="-114" width="829.9099" height="611" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di501632853659559345" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di754743600459452346" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-21.10728" ay="-112.2568" awidth="828.3047" aheight="21.7903" x="-21.10728" y="-112.2568" width="828.3047" height="21.7903" />
             <drawing-text>
               <text>speaker_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di923639865525973760" iid="a7a1c267e762492aa91694e535bdd871" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di667091309216161617" iid="a7a1c267e762492aa91694e535bdd871" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="222.8894" ay="-33.81169" awidth="321.851" aheight="114.1812" x="222.8894" y="-33.81169" width="321.851" height="114.1812" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di660924605852596501" iid="cefe735a60614d8fa02a784cb4327b20" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di905556159822832048" iid="cefe735a60614d8fa02a784cb4327b20" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="223.6921" ay="-36.42653" awidth="321.0483" aheight="21.7903" x="223.6921" y="-36.42653" width="321.0483" height="21.7903" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di689454547651765191" iid="f3516c011db84c7f9ace284887e84517" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di954686467185376210" iid="f3516c011db84c7f9ace284887e84517" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="223.6921" ay="-15.50784" awidth="321.851" aheight="1.743224" x="223.6921" y="-15.50784" width="321.851" height="1.743224" />
             <drawing-line start-point="223.6921,-15.50784" end-point="544.7404,-14.63623" />
             <style class="default" />
           </item>
-          <item id="di257466467767078717" iid="7d02e1822f18471989418d4b11cc795d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di308097669628994896" iid="7d02e1822f18471989418d4b11cc795d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="222.0868" ay="-13.76462" awidth="322.6536" aheight="94.13409" x="222.0868" y="-13.76462" width="322.6536" height="94.13409" />
             <drawing-text>
               <text>sound available / sound_mutex.write()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di662967941335220481" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di390506649740560827" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-21.10728" ay="123.9501" awidth="829.1073" aheight="1.307418" x="-21.10728" y="123.9501" width="829.1073" height="1.307418" />
             <drawing-line start-point="-21.10728,123.9501" end-point="807.1974,124.3859" />
             <style class="default" />
@@ -1019,7 +1082,7 @@ Note: If so some of the stds need to be changed </comment>
                 <point x="222" y="8" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c3d2df07e7a248f98e960f2bbde97151" to="di257466467767078717" to-iid="7d02e1822f18471989418d4b11cc795d" />
+            <relation from="di921381949174703792" from-iid="c3d2df07e7a248f98e960f2bbde97151" to="di308097669628994896" to-iid="7d02e1822f18471989418d4b11cc795d" />
           </item>
           <item id="di212408407596348288" iid="0ced3015f80349559f98d05296bdd371" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-172" ay="177.1184" awidth="28.89435" aheight="28.89435" x="-172" y="177.1184" width="28.89435" height="28.89435" name-position="0,10" name-anchor="bottom" />
@@ -1031,7 +1094,7 @@ Note: If so some of the stds need to be changed </comment>
                 <point x="-23" y="191" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di964251745506699607" to-iid="5540334909f44f8db431da6d376cbb31" />
+            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di926683537374622778" to-iid="5540334909f44f8db431da6d376cbb31" />
           </item>
           <item id="di197436568168410497" iid="2e24b80b9c75451892c00244de6c7aae" creation-date="10/26/2016 14:57:54" order-index="0" type="entity">
             <layout ax="129" ay="259" awidth="25" aheight="25" x="129" y="259" width="25" height="25" name-position="0,10" name-anchor="bottom" />
@@ -1438,38 +1501,59 @@ Note: If so some of the stds need to be changed </comment>
           <item id="di821167798491299748" cid="ELEM061" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 15:38:00">
             <style class="default" />
           </item>
+          <item id="di677152496398829374" cid="ELEM062" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di192610269428015306" cid="ELEM063" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di805434723659340492" cid="ELEM064" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di416450936533274425" cid="ELEM065" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di958835909964508513" cid="ELEM066" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di927730904253025741" cid="ELEM067" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di511704724379380746" cid="ELEM068" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di565327992876012442" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di677152496398829374" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-9.804672" ay="-117" awidth="1032.306" aheight="632" x="-9.804672" y="-117" width="1032.306" height="632" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di831443743535335570" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di192610269428015306" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-7.807938" ay="-115.1969" awidth="1030.31" aheight="22.53923" x="-7.807938" y="-115.1969" width="1030.31" height="22.53923" />
             <drawing-text>
               <text>led_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di699479645725436568" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di805434723659340492" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="295.6941" ay="-34.05563" awidth="400.3432" aheight="118.1056" x="295.6941" y="-34.05563" width="400.3432" height="118.1056" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di976438173147223999" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di416450936533274425" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="296.6925" ay="-36.76035" awidth="399.3448" aheight="22.53923" x="296.6925" y="-36.76035" width="399.3448" height="22.53923" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di942147730742018371" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di958835909964508513" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="296.6925" ay="-15.12268" awidth="400.3432" aheight="1.803138" x="296.6925" y="-15.12268" width="400.3432" height="1.803138" />
             <drawing-line start-point="296.6925,-15.12268" end-point="696.0373,-14.22111" />
             <style class="default" />
           </item>
-          <item id="di494141033250767932" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di927730904253025741" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="294.6957" ay="-13.31954" awidth="401.3415" aheight="97.36947" x="294.6957" y="-13.31954" width="401.3415" height="97.36947" />
             <drawing-text>
               <text>100ms/????
@@ -1477,7 +1561,7 @@ color information available/ led_color_channel.write()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di821167798491299748" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di511704724379380746" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.807938" ay="129.1284" awidth="1031.308" aheight="1.352354" x="-7.807938" y="129.1284" width="1031.308" height="1.352354" />
             <drawing-line start-point="-7.807938,129.1284" end-point="1022.502,129.5792" />
             <style class="default" />
@@ -1492,7 +1576,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="295" y="9" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di494141033250767932" to-iid="64023965acba46e89afde9416ba9af23" />
+            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di927730904253025741" to-iid="64023965acba46e89afde9416ba9af23" />
           </item>
           <item id="di212408407596348288" iid="ee38d5525fc14eb2997782fe31a0344a" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-195.5" ay="184.1241" awidth="32.45649" aheight="32.45649" x="-195.5" y="184.1241" width="32.45649" height="32.45649" name-position="0,10" name-anchor="bottom" />
@@ -1504,7 +1588,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="-10" y="199" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di565327992876012442" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
+            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di677152496398829374" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
           </item>
           <item id="di410899400829129035" iid="684e519f3e0a440ea0d13bde4106826b" creation-date="10/26/2016 15:11:14" order-index="0" type="entity">
             <layout ax="229" ay="288" awidth="25" aheight="25" x="229" y="288" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -1623,45 +1707,66 @@ color information available/ led_color_channel.write()</text>
           <item id="di725203591619963437" cid="ELEM068" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 15:38:00">
             <style class="default" />
           </item>
+          <item id="di891981700164107896" cid="ELEM069" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di687496427800623213" cid="ELEM070" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di127131445548373958" cid="ELEM071" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di760257065217948915" cid="ELEM072" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di140246873842718191" cid="ELEM073" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di108045658696094025" cid="ELEM074" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di516286374408888314" cid="ELEM075" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di598264467968999104" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di891981700164107896" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="0.513504" ay="-69" awidth="1175.64" aheight="602" x="0.513504" y="-69" width="1175.64" height="602" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di852525759652267702" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di687496427800623213" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="179.6756" ay="-69" awidth="873.946" aheight="21.46933" x="179.6756" y="-69" width="873.946" height="21.46933" />
             <drawing-text>
               <text>lcd_display_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di418069734337163780" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di127131445548373958" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="185.6486" ay="10.00713" awidth="862" aheight="137" x="185.6486" y="10.00713" width="862" height="137" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di367781614716815133" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di760257065217948915" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="269.2792" ay="11.92088" awidth="695.7388" aheight="21.75748" x="269.2792" y="11.92088" width="695.7388" height="21.75748" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di364316489728907750" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di140246873842718191" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="185.6486" ay="33.67836" awidth="863" aheight="1" x="185.6486" y="29.75891" width="655" height="4.919451" />
             <drawing-line start-point="185.6486,33.67836" end-point="1047.649,33.67836" />
             <style class="default" />
           </item>
-          <item id="di494537132823056958" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di108045658696094025" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="185.6486" ay="33.67836" awidth="831" aheight="108" x="185.6486" y="33.67836" width="831" height="108" />
             <drawing-text>
               <text>information has changed/ lcd_mutex.wait(); lcd_pool.write(); lcd_mutex.signal(); lcd_information_changed.set()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di725203591619963437" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di516286374408888314" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="2.207199" ay="164.8745" awidth="1174.946" aheight="1.570602" x="2.207199" y="165.4451" width="874.7928" height="1.28816" />
             <drawing-line start-point="2.207199,165.4451" end-point="1176.153,164.8745" />
             <style class="default" />
@@ -1676,7 +1781,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="186" y="79" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di418069734337163780" to-iid="3b6868877c20460ab615baa22a52ec55" />
+            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di127131445548373958" to-iid="3b6868877c20460ab615baa22a52ec55" />
           </item>
           <item id="di212408407596348288" iid="12ea1c53345943a2a997b56abaec5cbc" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-157" ay="217.8302" awidth="26.18097" aheight="26.18097" x="-157" y="217.8302" width="26.18097" height="26.18097" name-position="0,10" name-anchor="bottom" />
@@ -1688,7 +1793,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="1" y="232" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di598264467968999104" to-iid="55c7593b504b441ba7d864096eaa8d07" />
+            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di891981700164107896" to-iid="55c7593b504b441ba7d864096eaa8d07" />
           </item>
           <item id="di626022405602891561" iid="e98095359bcd4e0dbcf709696d0f1ff7" creation-date="10/26/2016 15:31:50" order-index="0" type="entity">
             <layout ax="132" ay="286" awidth="25" aheight="25" x="132" y="286" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -1851,38 +1956,59 @@ color information available/ led_color_channel.write()</text>
           <item id="di248770889283200004" cid="ELEM075" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 15:38:00">
             <style class="default" />
           </item>
+          <item id="di679854147302613087" cid="ELEM076" type="shape" name="Element5" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di244557164635202653" cid="ELEM077" type="text" name="Element6" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di780427059149010062" cid="ELEM078" type="shape" name="Element7" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di639228308453412711" cid="ELEM088" type="text" name="Element8" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di432153610982554315" cid="ELEM089" type="shape" name="Element9" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di819379943890830246" cid="ELEM099" type="text" name="Element10" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
+          <item id="di171122128662915446" cid="ELEM100" type="shape" name="Element11" style-class="" visibility="package" creation-date="10/27/2016 16:55:24">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di867029925230944758" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di679854147302613087" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="124" ay="60.38583" awidth="1034" aheight="701" x="124" y="60.38583" width="1034" height="701" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di322737025565464506" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di244557164635202653" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="126" ay="62.38583" awidth="1032" aheight="25" x="126" y="62.38583" width="1032" height="25" />
             <drawing-text>
               <text>run_game</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di147884655400031204" iid="e03c627f58e240da9b2bbc15f427b1c4" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di780427059149010062" iid="e03c627f58e240da9b2bbc15f427b1c4" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="312.1982" ay="107.3858" awidth="715.6912" aheight="208" x="312.1982" y="107.3858" width="715.6912" height="208" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di227373207922258617" iid="8068cfbcaaa0485a96fedbc6c526bf7d" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di639228308453412711" iid="8068cfbcaaa0485a96fedbc6c526bf7d" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="324" ay="110.3858" awidth="691" aheight="21" x="324" y="110.3858" width="691" height="21" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di972890193361667379" iid="d3378f9ff32440e087246790c04e8530" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di432153610982554315" iid="d3378f9ff32440e087246790c04e8530" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="312.1982" ay="131.3858" awidth="716.6912" aheight="2" x="312.1982" y="131.3858" width="584.6912" height="1" />
             <drawing-line start-point="312.1982,131.3858" end-point="1027.889,132.3858" />
             <style class="default" />
           </item>
-          <item id="di666606709679414284" iid="b8854f50ac994dbd94ff26a1bc219633" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di819379943890830246" iid="b8854f50ac994dbd94ff26a1bc219633" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="312.1982" ay="132.3858" awidth="715.6912" aheight="183" x="312.1982" y="132.3858" width="715.6912" height="183" />
             <drawing-text>
               <text>information received/received_information_channel.write()
@@ -1895,7 +2021,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di248770889283200004" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di171122128662915446" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="126" ay="333.3858" awidth="1033" aheight="1.5" x="126" y="333.3858" width="1033" height="1.5" />
             <drawing-line start-point="126,333.3858" end-point="1158,333.8858" />
             <style class="default" />
@@ -1910,7 +2036,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
                 <point x="312" y="212" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="269472afefcb4dd0b4cdee133d035145" to="di147884655400031204" to-iid="e03c627f58e240da9b2bbc15f427b1c4" />
+            <relation from="di921381949174703792" from-iid="269472afefcb4dd0b4cdee133d035145" to="di780427059149010062" to-iid="e03c627f58e240da9b2bbc15f427b1c4" />
           </item>
           <item id="di212408407596348288" iid="7c76752569d2477882d999eb78e3f635" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-19" ay="392.8858" awidth="36" aheight="36" x="-19" y="392.8858" width="36" height="36" name-position="0,10" name-anchor="bottom" />
@@ -1922,7 +2048,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
                 <point x="124" y="410" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di867029925230944758" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
+            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di679854147302613087" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
           </item>
           <item id="di626712423754497151" iid="c3a3cfb03c584ec1b6f716cdc3c2d68f" creation-date="10/27/2016 00:18:19" order-index="0" type="entity">
             <layout ax="158.302" ay="542.2571" awidth="16.58126" aheight="16.58126" x="158.302" y="542.2571" width="16.58126" height="16.58126" name-position="0,10" name-anchor="bottom" />
@@ -2130,7 +2256,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
             <layout ax="577" ay="295" awidth="100" aheight="50" x="577" y="295" width="100" height="50" />
           </item>
           <item id="di712432832124955691" iid="6a9fee753f4143bc86739a20514d614e" creation-date="10/26/2016 23:01:09" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="485" y1="320" x2="577" y2="320" start-border-pos="0.375" end-border-pos="0.875" name-position="-5,35">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="485" y1="320" x2="577" y2="320" start-border-pos="0.375" end-border-pos="0.875" name-position="-1,48">
               <points>
                 <point x="485" y="320" />
                 <point x="577" y="320" />
