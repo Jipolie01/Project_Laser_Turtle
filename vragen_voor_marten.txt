@@ -1,2 +1,2 @@
-1. Moet de run_game alle threads beheren of moet deze ook nog iets functioneels doen? 
-2. 
+1. mogen wij via run game de game time ontvangen van de game leider en dan doorgeven aan register game parameters
+2. moeten de klokken in de interfaces in stds
