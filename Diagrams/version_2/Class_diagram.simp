@@ -71,7 +71,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>3</value>
+        <value>10</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -180,7 +180,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="309,-363" zoom="0.7828572">
+      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="56,349" zoom="0.7828572">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1032,7 +1032,7 @@
               </attribute>
             </attributes>
             <operations>
-              <operation id="od9b0754d59d04150bbef85f4b43e293e994" cid="ELEM033" name="sound_speaker" type="" type-id="" visibility="public">
+              <operation id="od9b0754d59d04150bbef85f4b43e293e994" cid="ELEM033" name="speaker" type="" type-id="" visibility="public">
                 <style class="default" />
                 <parameters>
                   <parameter id="p074e6a25ed8846dda89e5062c2da7305" name="speaker_pin" type="hwlib::pin_out &amp;" type-id="hwlib::pin_out &amp;" />
@@ -2151,7 +2151,7 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-class" id="pd576d46ac1144b7db1a3741545c5ea45_647645452" name="Initialize_diagram" order-index="2" overview-order-index="0" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-179,-186" zoom="0.6878572">
+      <diagram type="uml-class" id="pd576d46ac1144b7db1a3741545c5ea45_647645452" name="Initialize_diagram" order-index="2" overview-order-index="0" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="166,-186" zoom="0.6878572">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
