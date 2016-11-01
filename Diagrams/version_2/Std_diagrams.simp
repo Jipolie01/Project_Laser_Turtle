@@ -17,7 +17,7 @@
       </counter>
       <counter>
         <item-type type-id="final-state" type="UmlFinalState" />
-        <value>12</value>
+        <value>13</value>
       </counter>
       <counter>
         <item-type type-id="composite-state" type="UmlCompositeState" />
@@ -43,11 +43,11 @@
       </counter>
       <counter>
         <item-type type-id="final-state" type="UmlFinalState" />
-        <value>13</value>
+        <value>14</value>
       </counter>
       <counter>
         <item-type type-id="general-transition" type="UmlTransition" />
-        <value>200</value>
+        <value>201</value>
       </counter>
       <counter>
         <item-type type-id="decision" type="UmlDecision" />
@@ -55,7 +55,7 @@
       </counter>
       <counter>
         <item-type type-id="comment" type="UmlComment" />
-        <value>16</value>
+        <value>18</value>
       </counter>
       <counter>
         <item-type type-id="comment-connector" type="UmlCommentConnector" />
@@ -87,7 +87,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>245</value>
+        <value>233</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -135,7 +135,7 @@
       <comment>Question: Does here need to be states for leaving the std because of the yield command in the rtos libary. 
 Our idea is to give the cpu back after every letter is printed, so the send_control can be checked</comment>
     </item>
-    <item id="di700144974488381380" cid="CN002" type="comment-connector" name="" style-class="" visibility="package" creation-date="10/26/2016 23:16:26" from="di997010514371233226" to="di808819448479370166">
+    <item id="di700144974488381380" cid="CN002" type="comment-connector" name="" style-class="" visibility="package" creation-date="10/26/2016 23:16:26" from="di997010514371233226">
       <style class="default" />
     </item>
     <item id="di874146666817399531" cid="FS009" type="final-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 00:10:52">
@@ -156,7 +156,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
     <item id="di921381949174703792" cid="IS012" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:26">
       <style class="default" />
     </item>
-    <item id="di377841470169474120" cid="ELEM107" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:37" from="di921381949174703792" to="di590222701586437558">
+    <item id="di377841470169474120" cid="ELEM107" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:12:37" from="di921381949174703792" to="di895674089232017367">
       <style class="default" />
       <transition guard="" behaviourExpression=" ">
         <trigger />
@@ -165,7 +165,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
     <item id="di212408407596348288" cid="IS013" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:11">
       <style class="default" />
     </item>
-    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di384001026292359079">
+    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di734886832387172767">
       <style class="default" />
       <transition guard="" behaviourExpression=" ">
         <trigger>main()</trigger>
@@ -535,45 +535,66 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
               <trigger />
             </transition>
           </item>
+          <item id="di980073743383382946" cid="ELEM064" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 21:26:56">
+            <style class="default" />
+          </item>
+          <item id="di177255324906597994" cid="ELEM065" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di265929901703479039" cid="ELEM066" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di173669365785550073" cid="ELEM067" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di675846114718205518" cid="ELEM068" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di287124178138924769" cid="ELEM069" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di524795113916729553" cid="ELEM070" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di661979588787734726" iid="be900456a0d048068a1e5cab7b68f4c3" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di980073743383382946" iid="be900456a0d048068a1e5cab7b68f4c3" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-7.517395" ay="-179.5" awidth="1540.607" aheight="807" x="-7.517395" y="-179.5" width="1540.607" height="807" />
             <drawing-rounded-rect radius="174" />
             <style class="default" />
           </item>
-          <item id="di759161168410949775" iid="daa79a99e5b649f783b9f04139b443d1" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di177255324906597994" iid="daa79a99e5b649f783b9f04139b443d1" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-7.972153" ay="-177.6947" awidth="1218.791" aheight="28.81598" x="-7.972153" y="-177.6947" width="1218.791" height="28.81598" />
             <drawing-text>
               <text>ir_message_send_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di432200588779735690" iid="48a6289bbfba4e22944d2130486dad7e" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di265929901703479039" iid="48a6289bbfba4e22944d2130486dad7e" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="351.6421" ay="-73.95721" awidth="473.5807" aheight="83.51068" x="351.6421" y="-73.95721" width="473.5807" height="83.51068" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di896406493749583894" iid="3403f91dda9b465aaff7c41a846276b1" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di173669365785550073" iid="3403f91dda9b465aaff7c41a846276b1" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="352.2326" ay="-77.41512" awidth="472.3997" aheight="28.81598" x="352.2326" y="-77.41512" width="472.3997" height="28.81598" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di357751959222557299" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di675846114718205518" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="352.2326" ay="-49.75179" awidth="473.5807" aheight="2.305278" x="352.2326" y="-49.75179" width="473.5807" height="2.305278" />
             <drawing-line start-point="352.2326,-49.75179" end-point="824.6323,-48.59914" />
             <style class="default" />
           </item>
-          <item id="di430420855174114001" iid="5db3f57a267849b58d563efa5f8c1f2a" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di287124178138924769" iid="5db3f57a267849b58d563efa5f8c1f2a" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="352.2326" ay="-47.44653" awidth="429.3997" aheight="57" x="352.2326" y="-47.44653" width="429.3997" height="57" />
             <drawing-text>
               <text>button pressed/ send_message_flag.set()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di617772374531437972" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di524795113916729553" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.972153" ay="133.2468" awidth="1541.062" aheight="2.423599" x="-7.972153" y="133.2468" width="1325.972" height="2.423599" />
             <drawing-line start-point="-7.972153,134.6704" end-point="1532.09,133.2468" />
             <style class="default" />
@@ -588,7 +609,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="352" y="-30" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="0271291ba0e64f5eb3705b2eeab67e24" to="di430420855174114001" to-iid="5db3f57a267849b58d563efa5f8c1f2a" />
+            <relation from="di921381949174703792" from-iid="0271291ba0e64f5eb3705b2eeab67e24" to="di287124178138924769" to-iid="5db3f57a267849b58d563efa5f8c1f2a" />
           </item>
           <item id="di212408407596348288" iid="59b6992316604eedbd09c4d2c27dcc45" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-172" ay="203.2525" awidth="41.49501" aheight="41.49501" x="-172" y="203.2525" width="41.49501" height="41.49501" name-position="0,10" name-anchor="bottom" />
@@ -600,13 +621,13 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="-8" y="223" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="59b6992316604eedbd09c4d2c27dcc45" to="di661979588787734726" to-iid="be900456a0d048068a1e5cab7b68f4c3" />
+            <relation from="di212408407596348288" from-iid="59b6992316604eedbd09c4d2c27dcc45" to="di980073743383382946" to-iid="be900456a0d048068a1e5cab7b68f4c3" />
           </item>
           <item id="di910826799522976345" iid="ef8e961f9440484391f7244f0e927f73" creation-date="10/26/2016 13:26:13" order-index="2" type="entity">
             <layout ax="15.02785" ay="294.3842" awidth="28" aheight="28" x="15.02785" y="294.3842" width="28" height="28" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di534752053548473836" iid="aafd2f860b784d149a6cf5d84437b4c8" creation-date="10/26/2016 23:34:12" order-index="22" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="43" y1="308" x2="77" y2="309" start-border-pos="0.374173854022289" end-border-pos="0.892159759998322" name-position="-3,-14">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="43" y1="308" x2="77" y2="309" start-border-pos="0.374173845563616" end-border-pos="0.892159759998322" name-position="-3,-14">
               <points>
                 <point x="43" y="308" />
                 <point x="77" y="309" />
@@ -1425,21 +1446,30 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di395647938799589533" cid="ELEM066" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 19:59:07">
             <style class="default" />
           </item>
+          <item id="di998770638443433612" cid="ELEM071" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di298548961205693204" cid="ELEM072" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di572910809835555711" cid="ELEM073" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di680676483847785391" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di998770638443433612" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-21.40991" ay="-140" awidth="1590.91" aheight="611" x="-21.40991" y="-140" width="1590.91" height="611" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di464819648281949854" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di298548961205693204" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="143.8927" ay="-114" awidth="828.3047" aheight="21.7903" x="143.8927" y="-114" width="828.3047" height="21.7903" />
             <drawing-text>
               <text>speaker_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di395647938799589533" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di572910809835555711" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-21.40991" ay="80.3859" awidth="1591.91" aheight="6.564201" x="-21.10728" y="118.3859" width="1590.305" height="6.564201" />
             <drawing-line start-point="-21.40991,85.9501" end-point="1569.5,80.3859" />
             <style class="default" />
@@ -1466,7 +1496,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="-21" y="165" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di680676483847785391" to-iid="5540334909f44f8db431da6d376cbb31" />
+            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di998770638443433612" to-iid="5540334909f44f8db431da6d376cbb31" />
           </item>
           <item id="di197436568168410497" iid="2e24b80b9c75451892c00244de6c7aae" creation-date="10/26/2016 14:57:54" order-index="0" type="entity">
             <layout ax="-2.785829" ay="259" awidth="25" aheight="25" x="-2.785829" y="259" width="25" height="25" name-position="0,10" name-anchor="bottom" />
@@ -1554,7 +1584,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p64f996de30af461fba3d4dc7e015d79a_175288693" name="register_game_parameters" order-index="4" overview-order-index="2" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="479,0">
+      <diagram type="uml-statechart" id="p64f996de30af461fba3d4dc7e015d79a_175288693" name="register_game_parameters" order-index="4" overview-order-index="2" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-204,0">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1854,7 +1884,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </authors>
           <description />
           <creation-date>10/26/2016 15:11:01</creation-date>
-          <change-date>11/01/2016 20:41:24</change-date>
+          <change-date>11/01/2016 21:40:28</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -2081,45 +2111,66 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
               <trigger>after(led.time)</trigger>
             </transition>
           </item>
+          <item id="di491938931684430408" cid="ELEM139" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di339532027224916790" cid="ELEM140" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di584052407810715819" cid="ELEM141" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di612340786908919507" cid="ELEM142" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di628227655861676919" cid="ELEM147" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di380057976753768427" cid="ELEM148" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di799352246481863915" cid="ELEM149" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di635235608719619640" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di491938931684430408" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-9.804672" ay="-117" awidth="1032.306" aheight="632" x="-9.804672" y="-117" width="1032.306" height="632" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di432509288739625208" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di339532027224916790" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-7.807938" ay="-115.1969" awidth="1030.31" aheight="22.53923" x="-7.807938" y="-115.1969" width="1030.31" height="22.53923" />
             <drawing-text>
               <text>led_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di290693433233757821" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di584052407810715819" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="295.6941" ay="-34.05563" awidth="400.3432" aheight="118.1056" x="295.6941" y="-34.05563" width="400.3432" height="118.1056" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di137508691317460183" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di612340786908919507" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="296.6925" ay="-36.76035" awidth="399.3448" aheight="22.53923" x="296.6925" y="-36.76035" width="399.3448" height="22.53923" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di231539345746769297" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di628227655861676919" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="296.6925" ay="-15.12268" awidth="400.3432" aheight="1.803138" x="296.6925" y="-15.12268" width="400.3432" height="1.803138" />
             <drawing-line start-point="296.6925,-15.12268" end-point="696.0373,-14.22111" />
             <style class="default" />
           </item>
-          <item id="di705794145442616274" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di380057976753768427" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="296.1934" ay="-15.12268" awidth="401.3415" aheight="97.36947" x="296.1934" y="-15.12268" width="401.3415" height="97.36947" />
             <drawing-text>
               <text>color information available/ led_color_channel.write()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di829266595847522674" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di799352246481863915" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.807938" ay="129.1284" awidth="1031.308" aheight="1.352354" x="-7.807938" y="129.1284" width="1031.308" height="1.352354" />
             <drawing-line start-point="-7.807938,129.1284" end-point="1022.502,129.5792" />
             <style class="default" />
@@ -2134,7 +2185,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="296" y="33" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di705794145442616274" to-iid="64023965acba46e89afde9416ba9af23" />
+            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di380057976753768427" to-iid="64023965acba46e89afde9416ba9af23" />
           </item>
           <item id="di212408407596348288" iid="ee38d5525fc14eb2997782fe31a0344a" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-195.5" ay="184.1241" awidth="32.45649" aheight="32.45649" x="-195.5" y="184.1241" width="32.45649" height="32.45649" name-position="0,10" name-anchor="bottom" />
@@ -2146,7 +2197,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="-10" y="199" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di635235608719619640" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
+            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di491938931684430408" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
           </item>
           <item id="di410899400829129035" iid="684e519f3e0a440ea0d13bde4106826b" creation-date="10/26/2016 15:11:14" order-index="0" type="entity">
             <layout ax="91.84373" ay="279.25" awidth="25" aheight="25" x="91.84373" y="279.25" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -2450,45 +2501,66 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di172053774476649714" cid="ELEM152" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 19:59:07">
             <style class="default" />
           </item>
+          <item id="di992493338572001044" cid="ELEM153" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di473072068888975619" cid="ELEM154" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di780510292620074506" cid="ELEM155" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di347900392329604769" cid="ELEM156" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di934945080926081287" cid="ELEM157" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di838234529752095036" cid="ELEM158" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di851860585909514315" cid="ELEM159" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di305153358938530758" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di992493338572001044" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="1.860229" ay="-70.07932" awidth="1175.64" aheight="602" x="1.860229" y="-70.07932" width="1175.64" height="602" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di386170224108823275" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di473072068888975619" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="179.6756" ay="-69" awidth="873.946" aheight="21.46933" x="179.6756" y="-69" width="873.946" height="21.46933" />
             <drawing-text>
               <text>lcd_display_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di587142506710979036" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di780510292620074506" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="185.6486" ay="10.00713" awidth="862" aheight="137" x="185.6486" y="10.00713" width="862" height="137" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di503708987179136892" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di347900392329604769" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="269.2792" ay="11.92088" awidth="695.7388" aheight="21.75748" x="269.2792" y="11.92088" width="695.7388" height="21.75748" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di330161489839193540" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di934945080926081287" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="185.6486" ay="33.67836" awidth="863" aheight="1" x="185.6486" y="29.75891" width="655" height="4.919451" />
             <drawing-line start-point="185.6486,33.67836" end-point="1047.649,33.67836" />
             <style class="default" />
           </item>
-          <item id="di462318417252564311" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di838234529752095036" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="185.6486" ay="33.67836" awidth="831" aheight="108" x="185.6486" y="33.67836" width="831" height="108" />
             <drawing-text>
               <text>information changed/ lcd_mutex.wait(); lcd_pool.write(); lcd_mutex.signal(); lcd_information_changed_flag.set()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di172053774476649714" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di851860585909514315" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="2.207199" ay="164.8745" awidth="1174.946" aheight="1.570602" x="2.207199" y="165.4451" width="874.7928" height="1.28816" />
             <drawing-line start-point="2.207199,165.4451" end-point="1176.153,164.8745" />
             <style class="default" />
@@ -2503,7 +2575,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="186" y="79" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di587142506710979036" to-iid="3b6868877c20460ab615baa22a52ec55" />
+            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di780510292620074506" to-iid="3b6868877c20460ab615baa22a52ec55" />
           </item>
           <item id="di212408407596348288" iid="12ea1c53345943a2a997b56abaec5cbc" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-157" ay="217.8302" awidth="26.18097" aheight="26.18097" x="-157" y="217.8302" width="26.18097" height="26.18097" name-position="0,10" name-anchor="bottom" />
@@ -2515,7 +2587,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="2" y="230" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di305153358938530758" to-iid="55c7593b504b441ba7d864096eaa8d07" />
+            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di992493338572001044" to-iid="55c7593b504b441ba7d864096eaa8d07" />
           </item>
           <item id="di626022405602891561" iid="e98095359bcd4e0dbcf709696d0f1ff7" creation-date="10/26/2016 15:31:50" order-index="0" type="entity">
             <layout ax="37.18018" ay="286" awidth="25" aheight="25" x="37.18018" y="286" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -2962,21 +3034,30 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di190705425897209923" cid="ELEM155" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 19:59:07">
             <style class="default" />
           </item>
+          <item id="di118483541274977774" cid="ELEM160" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di975682328859228641" cid="ELEM165" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di851512379804584949" cid="ELEM166" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di533418225308936729" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di118483541274977774" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="124" ay="60.38583" awidth="2274" aheight="945" x="124" y="60.38583" width="2274" height="945" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di901157519463429417" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di975682328859228641" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="413" ay="60.38583" awidth="1032" aheight="25" x="413" y="60.38583" width="1032" height="25" />
             <drawing-text>
               <text>run_game</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di190705425897209923" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di851512379804584949" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="124" ay="303.3858" awidth="2261" aheight="9.999969" x="124" y="303.3858" width="2044" height="4.999969" />
             <drawing-line start-point="124,303.3858" end-point="2384,312.3858" />
             <style class="default" />
@@ -3003,7 +3084,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="124" y="532" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di533418225308936729" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
+            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di118483541274977774" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
           </item>
           <item id="di626712423754497151" iid="c3a3cfb03c584ec1b6f716cdc3c2d68f" creation-date="10/27/2016 00:18:19" order-index="0" type="entity">
             <layout ax="198.9911" ay="531.6652" awidth="16.58124" aheight="16.58124" x="198.9911" y="531.6652" width="16.58124" height="16.58124" name-position="0,10" name-anchor="bottom" />
@@ -3190,7 +3271,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-statechart" id="pb396d819b11e4cc99be4ec561c950842_945371363" name="IR_send_controller" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-227,-214" zoom="0.8">
+      <diagram type="uml-statechart" id="pb396d819b11e4cc99be4ec561c950842_945371363" name="IR_send_controller" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-291,-214" zoom="0.8">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -3402,9 +3483,18 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di648130114466637230" cid="FS012" type="final-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="11/01/2016 21:11:23">
             <style class="default" />
           </item>
+          <item id="di734886832387172767" cid="ELEM167" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di367968296933176102" cid="ELEM168" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
+          <item id="di240704349257169847" cid="ELEM169" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 21:26:57">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di384001026292359079" iid="ad7be5c53b9d44749860eafe4f442429" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di734886832387172767" iid="ad7be5c53b9d44749860eafe4f442429" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-121.9722" ay="-200.5" awidth="1635" aheight="928" x="-121.9722" y="-200.5" width="1635" height="928" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
@@ -3427,14 +3517,14 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di128020023497002470" iid="95264e42af234a54b2723c44caf9665b" creation-date="10/26/2016 23:05:41" order-index="13" type="entity">
             <layout ax="38.37576" ay="251" awidth="25" aheight="25" x="38.37576" y="251" width="25" height="25" name-position="0,10" name-anchor="bottom" />
           </item>
-          <item id="di302684744317765026" iid="f3572eea09ec4f2488e997657ab2b06d" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di367968296933176102" iid="f3572eea09ec4f2488e997657ab2b06d" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-121.9722" ay="-198.6947" awidth="1218.791" aheight="28.81598" x="-121.9722" y="-198.6947" width="1218.791" height="28.81598" />
             <drawing-text>
               <text>IR_send_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di336555560873402831" iid="f6843e441d0f40d380100e354cce3b00" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di240704349257169847" iid="f6843e441d0f40d380100e354cce3b00" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-121.9722" ay="104.2468" awidth="1636" aheight="10.4236" x="-121.9722" y="113.6704" width="1554" height="1.576401" />
             <drawing-line start-point="-121.9722,113.6704" end-point="1513.028,104.2468" />
             <style class="default" />
@@ -3461,7 +3551,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="-122" y="203" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="2c897414a69044d783ae293dac4068d0" to="di384001026292359079" to-iid="ad7be5c53b9d44749860eafe4f442429" />
+            <relation from="di212408407596348288" from-iid="2c897414a69044d783ae293dac4068d0" to="di734886832387172767" to-iid="ad7be5c53b9d44749860eafe4f442429" />
           </item>
           <item id="di895674089232017367" iid="e109e9392e7c433788e9de546f5c08da" creation-date="10/28/2016 10:49:27" order-index="16" type="entity">
             <layout ax="144" ay="-85.20685" awidth="742" aheight="90" x="144" y="-85.20685" width="742" height="90" />
@@ -3593,7 +3683,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <layout ax="1347.758" ay="342.7823" awidth="40" aheight="74.60187" x="1347.758" y="342.7823" width="40" height="74.60187" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di819240232893414799" iid="7f4bed41e65f4850bc3feedf01f9d8ac" creation-date="11/01/2016 21:15:37" order-index="58" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="51" y1="276" x2="51" y2="352" start-border-pos="0.623757629394531" end-border-pos="0.125112533569336" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="51" y1="276" x2="51" y2="352" start-border-pos="0.623757591247559" end-border-pos="0.125112533569336" name-position="0,0">
               <points>
                 <point x="51" y="276" />
                 <point x="51" y="352" />
@@ -3612,7 +3702,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p3e1e240760ba4f80977df689f3f36903_837487302" name="Init_game_controller" order-index="3" overview-order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-37,0" zoom="0.8">
+      <diagram type="uml-statechart" id="p3e1e240760ba4f80977df689f3f36903_837487302" name="Init_game_controller" order-index="3" overview-order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-48,0" zoom="0.8">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -3624,7 +3714,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </authors>
           <description />
           <creation-date>10/26/2016 23:18:51</creation-date>
-          <change-date>11/01/2016 21:00:54</change-date>
+          <change-date>11/01/2016 21:42:44</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -3676,11 +3766,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <style class="default" />
             <transition guard="" behaviourExpression="" />
           </item>
-          <item id="di868731793780614298" cid="ELEM078" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:29:31" from="di410610452751006957" to="di371159059676704147">
-            <style class="default" />
-            <transition guard="" behaviourExpression="" />
-          </item>
-          <item id="di445103848892478705" cid="ST033" type="state" name="Writing number to pool" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:24:53">
+          <item id="di445103848892478705" cid="ST033" type="state" name="report number to pool" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:24:53">
             <style class="default" />
             <state-invariant />
             <actions>
@@ -3697,16 +3783,9 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <style class="default" />
             <transition guard="" behaviourExpression="" />
           </item>
-          <item id="di410610452751006957" cid="ST034" type="state" name="Set command in channel" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:28:28">
+          <item id="di510067380254239998" cid="ELEM077" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:28:53" from="di103536633143401931" to="di371159059676704147">
             <style class="default" />
-            <state-invariant />
-            <actions>
-              <action name="entry" behavior="command_to_send_channel.write()" />
-            </actions>
-          </item>
-          <item id="di510067380254239998" cid="ELEM077" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 23:28:53" from="di103536633143401931" to="di410610452751006957">
-            <style class="default" />
-            <transition guard="input == #" behaviourExpression="">
+            <transition guard="input == #" behaviourExpression=" command_to_send_channel.write(); ">
               <trigger />
             </transition>
           </item>
@@ -3749,15 +3828,15 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
           <item id="di125712069606074814" iid="987e58275d1f4c54a30cb8cd9372772a" creation-date="10/26/2016 23:19:18" order-index="0" type="entity">
-            <layout ax="65" ay="260" awidth="25" aheight="25" x="65" y="260" width="25" height="25" name-position="0,10" name-anchor="bottom" />
+            <layout ax="52.5" ay="260" awidth="25" aheight="25" x="52.5" y="260" width="25" height="25" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di371159059676704147" iid="c24bd1adc9d34b25aa90bc572867fda5" creation-date="10/26/2016 23:19:22" order-index="1" type="entity">
             <layout ax="167" ay="247.5" awidth="136" aheight="50" x="167" y="247.5" width="136" height="50" />
           </item>
           <item id="di921475901104343112" iid="b8fed28f5e6747119b31bab7ef013400" creation-date="10/26/2016 23:20:14" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="90" y1="272" x2="167" y2="272" start-border-pos="0.37" end-border-pos="0.8775" name-position="1,-11" name-width="48">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="77" y1="272" x2="167" y2="272" start-border-pos="0.37" end-border-pos="0.8775" name-position="-9,-19" name-width="48">
               <points>
-                <point x="90" y="272" />
+                <point x="77" y="272" />
                 <point x="167" y="272" />
               </points>
             </layout>
@@ -3831,28 +3910,17 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             </layout>
             <relation from="di445103848892478705" from-iid="6644b31e963c4a9e94417956ae76bdca" to="di556465055721141083" to-iid="d0e1e9f3a7cc40658038ac47f70fa7e1" />
           </item>
-          <item id="di410610452751006957" iid="53e2b5ec796a4cf494ddeb6991f53833" creation-date="10/26/2016 23:28:28" order-index="14" type="entity">
-            <layout ax="1135.53" ay="241.25" awidth="310.8402" aheight="50" x="1135.53" y="241.25" width="310.8402" height="50" />
-          </item>
           <item id="di510067380254239998" iid="9e1b8dc641f04224b262b2a6cd956fa8" creation-date="10/26/2016 23:28:53" order-index="15" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1009" y1="266" x2="1136" y2="266" start-border-pos="0.373566665858746" end-border-pos="0.87625" name-position="-2,-20">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1009" y1="266" x2="236" y2="298" start-border-pos="0.373566664755344" end-border-pos="0.623161762952805" name-position="-40,24">
               <points>
                 <point x="1009" y="266" />
-                <point x="1136" y="266" />
+                <point x="1168" y="260" />
+                <point x="1176" y="509" />
+                <point x="239" y="518" />
+                <point x="236" y="298" />
               </points>
             </layout>
-            <relation from="di103536633143401931" from-iid="a81cc70762204b5384d2b0416eb27ba1" to="di410610452751006957" to-iid="53e2b5ec796a4cf494ddeb6991f53833" />
-          </item>
-          <item id="di868731793780614298" iid="b4d55b0591824126ab3a155cadb1c260" creation-date="10/26/2016 23:29:31" order-index="16" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1302" y1="291" x2="235" y2="298" start-border-pos="0.61611261061191" end-border-pos="0.625" name-position="0,0">
-              <points>
-                <point x="1302" y="291" />
-                <point x="1303" y="473" />
-                <point x="239" y="471" />
-                <point x="235" y="298" />
-              </points>
-            </layout>
-            <relation from="di410610452751006957" from-iid="53e2b5ec796a4cf494ddeb6991f53833" to="di371159059676704147" to-iid="c24bd1adc9d34b25aa90bc572867fda5" />
+            <relation from="di103536633143401931" from-iid="a81cc70762204b5384d2b0416eb27ba1" to="di371159059676704147" to-iid="c24bd1adc9d34b25aa90bc572867fda5" />
           </item>
         </layer>
       </diagram>
