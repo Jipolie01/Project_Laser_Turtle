@@ -137,7 +137,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="concurrency" id="p3c76f239462644999bf77fb391501b4f_886191517" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-428,-147" zoom="0.8">
+      <diagram type="concurrency" id="p3c76f239462644999bf77fb391501b4f_886191517" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-428,213" zoom="0.8">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -296,9 +296,9 @@
               <messages />
             </communication-message>
           </item>
-          <item id="di499778527430266041" cid="CMSG022" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 13:36:25" from="di673447387189083378" to="di930371731833403703">
+          <item id="di499778527430266041" cid="CMSG022" type="communication-message" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 13:36:25" to="di930371731833403703">
             <style class="default" />
-            <communication-message from="di673447387189083378" to="di930371731833403703">
+            <communication-message to="di930371731833403703">
               <messages>
                 <message id="" seq-number="" text="wait()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
@@ -854,13 +854,13 @@
             <layout ax="588" ay="210" awidth="30" aheight="50" x="588" y="210" width="30" height="50" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di499778527430266041" iid="47f65d488840471d9b6e604ac274f214" creation-date="10/27/2016 13:36:25" order-index="91" type="relation">
-            <layout normal-message-position="-34,34" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="190" y1="345" x2="588" y2="235" start-border-pos="0.291812286376953" end-border-pos="0.875" name-position="0,0">
+            <layout normal-message-position="-34,34" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="470" y1="265" x2="588" y2="235" start-border-pos="0.291812286376953" end-border-pos="0.875" name-position="0,0">
               <points>
-                <point x="190" y="345" />
+                <point x="470" y="265" />
                 <point x="588" y="235" />
               </points>
             </layout>
-            <relation from="di673447387189083378" from-iid="806cf418311a4b1d9a2b50a8f84d1fd6" to="di930371731833403703" to-iid="d7cc66e1b0504c278cab9351af7f1fd0" />
+            <relation to="di930371731833403703" to-iid="d7cc66e1b0504c278cab9351af7f1fd0" />
             <communication-message />
           </item>
           <item id="di894881983296012494" iid="2ef6715baa2646309e44e2444ecceda7" creation-date="10/27/2016 13:43:53" order-index="92" type="entity">

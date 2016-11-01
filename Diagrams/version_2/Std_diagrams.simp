@@ -83,7 +83,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>194</value>
+        <value>160</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -164,7 +164,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
     <item id="di212408407596348288" cid="IS013" type="initial-state" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:11">
       <style class="default" />
     </item>
-    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di468026404611728398">
+    <item id="di245872948617476502" cid="ELEM108" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 12:13:21" from="di212408407596348288" to="di679621385982252333">
       <style class="default" />
       <transition guard="" behaviourExpression=" ">
         <trigger>main()</trigger>
@@ -385,45 +385,66 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di554487584635742926" cid="ELEM035" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:22">
             <style class="default" />
           </item>
+          <item id="di201838557733138554" cid="ELEM036" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:41">
+            <style class="default" />
+          </item>
+          <item id="di923200514238706943" cid="ELEM037" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di237811893645524494" cid="ELEM038" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di964670601469165783" cid="ELEM039" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di716154466196744564" cid="ELEM040" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di844715829675542560" cid="ELEM041" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di270430953147738658" cid="ELEM042" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di263468900218539107" iid="be900456a0d048068a1e5cab7b68f4c3" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di201838557733138554" iid="be900456a0d048068a1e5cab7b68f4c3" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-10.33415" ay="-180" awidth="1221.153" aheight="807.9999" x="-10.33415" y="-180" width="1221.153" height="807.9999" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di407755383349335589" iid="daa79a99e5b649f783b9f04139b443d1" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di923200514238706943" iid="daa79a99e5b649f783b9f04139b443d1" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-7.972153" ay="-177.6947" awidth="1218.791" aheight="28.81598" x="-7.972153" y="-177.6947" width="1218.791" height="28.81598" />
             <drawing-text>
               <text>ir_message_send_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di260497125710486926" iid="48a6289bbfba4e22944d2130486dad7e" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di237811893645524494" iid="48a6289bbfba4e22944d2130486dad7e" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="351.0516" ay="-73.95721" awidth="473.5807" aheight="150.9957" x="351.0516" y="-73.95721" width="473.5807" height="150.9957" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di120653625936361459" iid="3403f91dda9b465aaff7c41a846276b1" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di964670601469165783" iid="3403f91dda9b465aaff7c41a846276b1" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="352.2326" ay="-77.41512" awidth="472.3997" aheight="28.81598" x="352.2326" y="-77.41512" width="472.3997" height="28.81598" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di454860285856917022" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di716154466196744564" iid="01a18a212f164e6eb22c183f50f22217" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="352.2326" ay="-49.75179" awidth="473.5807" aheight="2.305278" x="352.2326" y="-49.75179" width="473.5807" height="2.305278" />
             <drawing-line start-point="352.2326,-49.75179" end-point="824.6323,-48.59914" />
             <style class="default" />
           </item>
-          <item id="di126355454791614165" iid="5db3f57a267849b58d563efa5f8c1f2a" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di844715829675542560" iid="5db3f57a267849b58d563efa5f8c1f2a" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="349.8706" ay="-47.44652" awidth="474.7617" aheight="124.485" x="349.8706" y="-47.44652" width="474.7617" height="124.485" />
             <drawing-text>
               <text>button pressed/ button_pressed_flag.set()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di554487584635742926" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di270430953147738658" iid="3f489adcaf6b42b0b619b7dbb206b53d" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.972153" ay="134.6704" awidth="1219.972" aheight="1.728959" x="-7.972153" y="134.6704" width="1219.972" height="1.728959" />
             <drawing-line start-point="-7.972153,134.6704" end-point="1210.819,135.2468" />
             <style class="default" />
@@ -438,7 +459,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="350" y="-19" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="0271291ba0e64f5eb3705b2eeab67e24" to="di126355454791614165" to-iid="5db3f57a267849b58d563efa5f8c1f2a" />
+            <relation from="di921381949174703792" from-iid="0271291ba0e64f5eb3705b2eeab67e24" to="di844715829675542560" to-iid="5db3f57a267849b58d563efa5f8c1f2a" />
           </item>
           <item id="di212408407596348288" iid="59b6992316604eedbd09c4d2c27dcc45" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-172" ay="203.2525" awidth="41.49501" aheight="41.49501" x="-172" y="203.2525" width="41.49501" height="41.49501" name-position="0,10" name-anchor="bottom" />
@@ -450,7 +471,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="-10" y="223" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="59b6992316604eedbd09c4d2c27dcc45" to="di263468900218539107" to-iid="be900456a0d048068a1e5cab7b68f4c3" />
+            <relation from="di212408407596348288" from-iid="59b6992316604eedbd09c4d2c27dcc45" to="di201838557733138554" to-iid="be900456a0d048068a1e5cab7b68f4c3" />
           </item>
           <item id="di910826799522976345" iid="ef8e961f9440484391f7244f0e927f73" creation-date="10/26/2016 13:26:13" order-index="2" type="entity">
             <layout ax="18.02785" ay="294.3842" awidth="28" aheight="28" x="18.02785" y="294.3842" width="28" height="28" name-position="0,10" name-anchor="bottom" />
@@ -796,45 +817,66 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di866431663196921388" cid="ELEM042" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:23">
             <style class="default" />
           </item>
+          <item id="di473771879788704312" cid="ELEM043" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di153904562798551896" cid="ELEM044" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di878057659888262656" cid="ELEM045" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di190326249871954241" cid="ELEM046" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di891222450896879010" cid="ELEM047" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di668309368987969794" cid="ELEM048" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di884017490993037015" cid="ELEM049" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di630526551943296453" iid="19b16945a9fc4f81b8d80ce22fd5a15d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di473771879788704312" iid="19b16945a9fc4f81b8d80ce22fd5a15d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="121.7521" ay="-271.5" awidth="1679.995" aheight="780" x="121.7521" y="-271.5" width="1679.995" height="780" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di191186548705963078" iid="f1195c3f1ba944bbab66027a9863ca85" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di153904562798551896" iid="f1195c3f1ba944bbab66027a9863ca85" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="122.4996" ay="-267.7832" awidth="1287.253" aheight="27.71041" x="122.4996" y="-267.7832" width="1287.253" height="27.71041" />
             <drawing-text>
               <text>ir_receive_message_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di914194761236871862" iid="ec52f8da37fd49fba8abd76cbb0b9984" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di878057659888262656" iid="ec52f8da37fd49fba8abd76cbb0b9984" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="501.6904" ay="-168.0257" awidth="500.1826" aheight="145.2026" x="501.6904" y="-168.0257" width="500.1826" height="145.2026" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di666462678517738721" iid="c1ef16966d1948d69ee53aebf65ad470" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di190326249871954241" iid="c1ef16966d1948d69ee53aebf65ad470" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="502.9378" ay="-171.3509" awidth="498.9353" aheight="27.71041" x="502.9378" y="-171.3509" width="498.9353" height="27.71041" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di160338650643020830" iid="60596b2327f44eed9cf3836ee757f388" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di891222450896879010" iid="60596b2327f44eed9cf3836ee757f388" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="502.9378" ay="-144.7489" awidth="500.1826" aheight="2.216833" x="502.9378" y="-144.7489" width="500.1826" height="2.216833" />
             <drawing-line start-point="502.9378,-144.7489" end-point="1001.873,-143.6405" />
             <style class="default" />
           </item>
-          <item id="di709730868731577685" iid="d7632764ac94465780dd557be0febb7d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di668309368987969794" iid="d7632764ac94465780dd557be0febb7d" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="500.4431" ay="-142.5321" awidth="501.43" aheight="119.709" x="500.4431" y="-142.5321" width="501.43" height="119.709" />
             <drawing-text>
               <text>signal received/ received_information_channel.read()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di866431663196921388" iid="099ca644ff09461293cfc12f66cf3db8" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di884017490993037015" iid="099ca644ff09461293cfc12f66cf3db8" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="122.4996" ay="32.59772" awidth="1678.5" aheight="8.402279" x="122.4996" y="32.59772" width="1288.5" height="1.662625" />
             <drawing-line start-point="122.4996,32.59772" end-point="1800,40" />
             <style class="default" />
@@ -849,7 +891,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="500" y="-115" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c2856a5f5df240e6be0a9a4a51ba39c7" to="di709730868731577685" to-iid="d7632764ac94465780dd557be0febb7d" />
+            <relation from="di921381949174703792" from-iid="c2856a5f5df240e6be0a9a4a51ba39c7" to="di668309368987969794" to-iid="d7632764ac94465780dd557be0febb7d" />
           </item>
           <item id="di212408407596348288" iid="74a750ad9b144c06a66654cf94aed79e" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-54" ay="98.5485" awidth="39.90299" aheight="39.90299" x="-54" y="98.5485" width="39.903" height="39.90299" name-position="0,10" name-anchor="bottom" />
@@ -861,7 +903,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="122" y="118" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="74a750ad9b144c06a66654cf94aed79e" to="di630526551943296453" to-iid="19b16945a9fc4f81b8d80ce22fd5a15d" />
+            <relation from="di212408407596348288" from-iid="74a750ad9b144c06a66654cf94aed79e" to="di473771879788704312" to-iid="19b16945a9fc4f81b8d80ce22fd5a15d" />
           </item>
           <item id="di740041487367468323" iid="f32ebb0e51d54d688c30eb674f3330cc" creation-date="10/26/2016 14:20:50" order-index="0" type="entity">
             <layout ax="143.6632" ay="305.75" awidth="25" aheight="25" x="143.6632" y="305.75" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -1223,21 +1265,30 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
               <trigger />
             </transition>
           </item>
+          <item id="di568896207557895901" cid="ELEM050" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di910109750970183875" cid="ELEM051" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di848962048896172286" cid="ELEM052" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di953451075668524547" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di568896207557895901" iid="5540334909f44f8db431da6d376cbb31" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-21.40991" ay="-140" awidth="1590.91" aheight="611" x="-21.40991" y="-140" width="1590.91" height="611" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di356613610179541279" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di910109750970183875" iid="e77c206f5b454756b8b0ee0fb1b64c3c" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="143.8927" ay="-114" awidth="828.3047" aheight="21.7903" x="143.8927" y="-114" width="828.3047" height="21.7903" />
             <drawing-text>
               <text>speaker_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di215589414221000279" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di848962048896172286" iid="4163e7aabe374f74bd23052ec50fcd76" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-21.40991" ay="80.3859" awidth="1591.91" aheight="6.564201" x="-21.10728" y="118.3859" width="1590.305" height="6.564201" />
             <drawing-line start-point="-21.40991,85.9501" end-point="1569.5,80.3859" />
             <style class="default" />
@@ -1264,7 +1315,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
                 <point x="-21" y="165" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di953451075668524547" to-iid="5540334909f44f8db431da6d376cbb31" />
+            <relation from="di212408407596348288" from-iid="0ced3015f80349559f98d05296bdd371" to="di568896207557895901" to-iid="5540334909f44f8db431da6d376cbb31" />
           </item>
           <item id="di197436568168410497" iid="2e24b80b9c75451892c00244de6c7aae" creation-date="10/26/2016 14:57:54" order-index="0" type="entity">
             <layout ax="-2.785829" ay="259" awidth="25" aheight="25" x="-2.785829" y="259" width="25" height="25" name-position="0,10" name-anchor="bottom" />
@@ -1352,7 +1403,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-statechart" id="p64f996de30af461fba3d4dc7e015d79a_175288693" name="register_game_parameters" order-index="4" overview-order-index="2" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="232,0">
+      <diagram type="uml-statechart" id="p64f996de30af461fba3d4dc7e015d79a_175288693" name="register_game_parameters" order-index="4" overview-order-index="2" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-283,0">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1492,75 +1543,73 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
           <item id="di964862638694590867" iid="3e17f171052b44a0a54f4f8d98bd3688" creation-date="10/26/2016 15:32:06" order-index="0" type="entity">
-            <layout ax="-0.6776733" ay="267.6489" awidth="22" aheight="22" x="-0.6776733" y="267.6489" width="135" height="22" name-position="0,10" name-anchor="bottom" />
+            <layout ax="-169.6777" ay="268.5415" awidth="22" aheight="22" x="-169.6777" y="268.5415" width="22" height="22" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di577866946663188682" iid="951cffb7cb0047e2a464a341423fd457" creation-date="10/26/2016 15:39:24" order-index="2" type="entity">
-            <layout ax="95.80997" ay="253.42" awidth="249.2212" aheight="57" x="95.80997" y="253.42" width="249.2212" height="57" />
+            <layout ax="-72.19003" ay="251.0416" awidth="249.2212" aheight="57" x="-72.19003" y="251.0416" width="249.2212" height="57" />
           </item>
           <item id="di409151383401479235" iid="3fb9e046ffb64312911cc3b3f65ad994" creation-date="10/26/2016 15:39:28" order-index="3" type="entity">
-            <layout ax="518.9293" ay="255.7563" awidth="158" aheight="47.57056" x="518.9293" y="255.7563" width="158" height="47.57056" />
+            <layout ax="397.9293" ay="255.7563" awidth="158" aheight="47.57056" x="397.9293" y="255.7563" width="158" height="47.57056" />
           </item>
           <item id="di430781995959106543" iid="18b392cecb3a481280c268f9195ae19f" creation-date="10/26/2016 15:58:37" order-index="4" type="entity">
-            <layout ax="415.4207" ay="250.9992" awidth="33.1191" aheight="57.08464" x="415.4207" y="250.9992" width="33.1191" height="57.08464" name-position="0,10" name-anchor="bottom" />
+            <layout ax="205.4207" ay="250.9992" awidth="33.11909" aheight="57.08466" x="205.4207" y="250.9992" width="33.11909" height="57.08466" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di526259996145721782" iid="761e7ec2354b4bb8b4ee4dd466c2a17d" creation-date="10/26/2016 15:58:56" order-index="5" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="345" y1="281" x2="415" y2="280" start-border-pos="0.370178490354304" end-border-pos="0.872289867228854" name-position="-2,-28">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="177" y1="280" x2="205" y2="280" start-border-pos="0.377010546232525" end-border-pos="0.872992168078907" name-position="-2,-28">
               <points>
-                <point x="345" y="281" />
-                <point x="415" y="280" />
+                <point x="177" y="280" />
+                <point x="205" y="280" />
               </points>
             </layout>
             <relation from="di577866946663188682" from-iid="951cffb7cb0047e2a464a341423fd457" to="di430781995959106543" to-iid="18b392cecb3a481280c268f9195ae19f" />
           </item>
           <item id="di772088164745296570" iid="7259b22386394f09a24af09a2fdbb59e" creation-date="10/26/2016 15:59:34" order-index="6" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="21" y1="279" x2="96" y2="280" start-border-pos="0.380775451660156" end-border-pos="0.882481357507538" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="-148" y1="280" x2="-72" y2="280" start-border-pos="0.380209836092862" end-border-pos="0.872989453767475" name-position="0,0">
               <points>
-                <point x="21" y="279" />
-                <point x="96" y="280" />
+                <point x="-148" y="280" />
+                <point x="-72" y="280" />
               </points>
             </layout>
             <relation from="di964862638694590867" from-iid="3e17f171052b44a0a54f4f8d98bd3688" to="di577866946663188682" to-iid="951cffb7cb0047e2a464a341423fd457" />
           </item>
           <item id="di417174136197077397" iid="9ad2cdbcca254240b57b57d86fff8165" creation-date="10/26/2016 16:01:19" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="448" y1="279" x2="519" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="39,95" name-width="164">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="238" y1="279" x2="398" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="-4,59" name-width="164">
               <points>
-                <point x="448" y="279" />
-                <point x="519" y="279" />
+                <point x="238" y="279" />
+                <point x="398" y="279" />
               </points>
             </layout>
             <relation from="di430781995959106543" from-iid="18b392cecb3a481280c268f9195ae19f" to="di409151383401479235" to-iid="3fb9e046ffb64312911cc3b3f65ad994" />
           </item>
           <item id="di370259823403968691" iid="1d63406677ed417687533495aa6c4077" creation-date="10/26/2016 16:01:36" order-index="8" type="relation">
-            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="432" y1="308" x2="220" y2="310" start-border-pos="0.625" end-border-pos="0.625" name-position="-7,19">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="222" y1="308" x2="52" y2="308" start-border-pos="0.625" end-border-pos="0.625" name-position="-7,19">
               <points>
-                <point x="432" y="308" />
-                <point x="220" y="310" />
+                <point x="222" y="308" />
+                <point x="52" y="308" />
               </points>
             </layout>
             <relation from="di430781995959106543" from-iid="18b392cecb3a481280c268f9195ae19f" to="di577866946663188682" to-iid="951cffb7cb0047e2a464a341423fd457" />
           </item>
           <item id="di710765681408277859" iid="07a64335a91844a3b6a22b2f67f14278" creation-date="10/26/2016 16:04:03" order-index="9" type="entity">
-            <layout ax="777.9293" ay="250.9992" awidth="33.26459" aheight="57.08466" x="777.9293" y="250.9992" width="33.26459" height="57.08466" name-position="0,10" name-anchor="bottom" />
+            <layout ax="601.9293" ay="250.1066" awidth="33.26459" aheight="57.08466" x="601.9293" y="250.1066" width="33.26459" height="57.08466" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di772779140473764883" iid="0c27e3b1295f4f709d0aa2f7fe18e2fe" creation-date="10/26/2016 16:04:16" order-index="11" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="795" y1="250" x2="598" y2="256" start-border-pos="0.125" end-border-pos="0.125" name-position="6,-19">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="619" y1="249" x2="477" y2="256" start-border-pos="0.125" end-border-pos="0.125" name-position="6,-19">
               <points>
-                <point x="795" y="250" />
-                <point x="795.4623" y="203.9044" />
-                <point x="595.9198" y="202.0016" />
-                <point x="598" y="256" />
+                <point x="619" y="249" />
+                <point x="477" y="256" />
               </points>
             </layout>
             <relation from="di710765681408277859" from-iid="07a64335a91844a3b6a22b2f67f14278" to="di409151383401479235" to-iid="3fb9e046ffb64312911cc3b3f65ad994" />
           </item>
           <item id="di383910982403068071" iid="dca94e6f9afa448182c95bc5aec51165" creation-date="10/26/2016 16:07:50" order-index="12" type="entity">
-            <layout ax="863.5947" ay="253.6744" awidth="243" aheight="49.94905" x="863.5947" y="253.6744" width="243" height="49.94905" />
+            <layout ax="771.5947" ay="253.6744" awidth="243" aheight="49.94908" x="771.5947" y="253.6744" width="243" height="49.94908" />
           </item>
           <item id="di999387399706506931" iid="dc86cb99f53e4555b1a21e35cbd7ef43" creation-date="10/26/2016 16:07:53" order-index="13" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="810" y1="280" x2="864" y2="280" start-border-pos="0.376639081644498" end-border-pos="0.870028770771975" name-position="3,92" name-width="168">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="634" y1="279" x2="772" y2="279" start-border-pos="0.376537515703937" end-border-pos="0.873242877649755" name-position="-7,70" name-width="168">
               <points>
-                <point x="810" y="280" />
-                <point x="864" y="280" />
+                <point x="634" y="279" />
+                <point x="772" y="279" />
               </points>
             </layout>
             <relation from="di710765681408277859" from-iid="07a64335a91844a3b6a22b2f67f14278" to="di383910982403068071" to-iid="dca94e6f9afa448182c95bc5aec51165" />
@@ -1569,31 +1618,31 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <layout ax="1250.537" ay="255.7563" awidth="243" aheight="47.57054" x="1250.537" y="255.7563" width="243" height="47.57054" />
           </item>
           <item id="di179172783865547757" iid="1ef81fbca42e4ef18dba3d7623c2c784" creation-date="10/26/2016 16:10:50" order-index="15" type="entity">
-            <layout ax="1150.665" ay="250.9992" awidth="33.1191" aheight="57.08464" x="1150.665" y="250.9992" width="33.1191" height="57.08464" name-position="3,10" name-anchor="bottom" />
+            <layout ax="1050.665" ay="250.9992" awidth="33.11914" aheight="57.08466" x="1050.665" y="250.9992" width="33.11914" height="57.08466" name-position="3,10" name-anchor="bottom" />
           </item>
           <item id="di874141036640716622" iid="b51a3c10a84a45e7a10f8ba2875704c8" creation-date="10/26/2016 16:10:58" order-index="16" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1107" y1="280" x2="1150" y2="280" start-border-pos="0.380084870416968" end-border-pos="0.873401305338351" name-position="-2,-25">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1015" y1="280" x2="1050" y2="280" start-border-pos="0.38023768712217" end-border-pos="0.873419983427334" name-position="-2,-25">
               <points>
-                <point x="1107" y="280" />
-                <point x="1150" y="280" />
+                <point x="1015" y="280" />
+                <point x="1050" y="280" />
               </points>
             </layout>
             <relation from="di383910982403068071" from-iid="dca94e6f9afa448182c95bc5aec51165" to="di179172783865547757" to-iid="1ef81fbca42e4ef18dba3d7623c2c784" />
           </item>
           <item id="di119886305557438202" iid="f137384d33a7438b8c5ccb4fe0a88f26" creation-date="10/26/2016 16:11:36" order-index="17" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1183" y1="279" x2="1251" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="2,87" name-width="180">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1083" y1="279" x2="1251" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="1,60" name-width="180">
               <points>
-                <point x="1183" y="279" />
+                <point x="1083" y="279" />
                 <point x="1251" y="279" />
               </points>
             </layout>
             <relation from="di179172783865547757" from-iid="1ef81fbca42e4ef18dba3d7623c2c784" to="di855933729982015380" to-iid="45da0413149a4dd0a1335f841367b988" />
           </item>
           <item id="di549207556711437570" iid="cf4911e4abda489d8aa2427d9cfab587" creation-date="10/26/2016 16:22:20" order-index="21" type="relation">
-            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1167" y1="251" x2="985" y2="254" start-border-pos="0.125" end-border-pos="0.125" name-position="5,-25">
+            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1067" y1="251" x2="893" y2="254" start-border-pos="0.125" end-border-pos="0.125" name-position="5,-25">
               <points>
-                <point x="1167" y="251" />
-                <point x="985" y="254" />
+                <point x="1067" y="251" />
+                <point x="893" y="254" />
               </points>
             </layout>
             <relation from="di179172783865547757" from-iid="1ef81fbca42e4ef18dba3d7623c2c784" to="di383910982403068071" to-iid="dca94e6f9afa448182c95bc5aec51165" />
@@ -1608,7 +1657,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <relation from="di825811238298753052" from-iid="2acbe9e1fb464c549eb877387a355fab" to="di855933729982015380" to-iid="45da0413149a4dd0a1335f841367b988" />
           </item>
           <item id="di816024218663293053" iid="b7d96ab4594b401ba8190bb9ed93d44a" creation-date="10/26/2016 16:24:39" order-index="22" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1494" y1="282" x2="1515" y2="282" start-border-pos="0.385357823673019" end-border-pos="0.875580435862418" name-position="-9,-23">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1494" y1="282" x2="1515" y2="282" start-border-pos="0.385357984053672" end-border-pos="0.875580435862418" name-position="-9,-23">
               <points>
                 <point x="1494" y="282" />
                 <point x="1515" y="282" />
@@ -1620,25 +1669,25 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <layout ax="1515.459" ay="253.3777" awidth="33.11914" aheight="57.08466" x="1515.459" y="253.3777" width="33.11914" height="57.08466" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di507126686953029509" iid="efa7279f4672474f93e2c36d46a482d2" creation-date="10/26/2016 16:19:56" order-index="20" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1548" y1="282" x2="1712" y2="278" start-border-pos="0.375" end-border-pos="0.899906858801842" name-position="-3,81" name-width="265">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1548" y1="282" x2="1826" y2="280" start-border-pos="0.375" end-border-pos="0.899906858801842" name-position="-3,56" name-width="265">
               <points>
                 <point x="1548" y="282" />
-                <point x="1712" y="278" />
+                <point x="1826" y="280" />
               </points>
             </layout>
             <relation from="di825811238298753052" from-iid="2acbe9e1fb464c549eb877387a355fab" to="di874146666817399531" to-iid="2e3bf7207ffc4c9da6ff031f3420511d" />
           </item>
           <item id="di870821119859278792" iid="95da2dfe438a43e2a6185a7145a4c925" creation-date="10/28/2016 14:20:19" order-index="25" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="677" y1="280" x2="778" y2="280" start-border-pos="0.377409237409481" end-border-pos="0.872992165386677" name-position="0,0">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="556" y1="280" x2="602" y2="279" start-border-pos="0.377409237409481" end-border-pos="0.872992165386677" name-position="0,0">
               <points>
-                <point x="677" y="280" />
-                <point x="778" y="280" />
+                <point x="556" y="280" />
+                <point x="602" y="279" />
               </points>
             </layout>
             <relation from="di409151383401479235" from-iid="3fb9e046ffb64312911cc3b3f65ad994" to="di710765681408277859" to-iid="07a64335a91844a3b6a22b2f67f14278" />
           </item>
           <item id="di874146666817399531" iid="2e3bf7207ffc4c9da6ff031f3420511d" creation-date="10/27/2016 00:10:52" order-index="24" type="entity">
-            <layout ax="1711.421" ay="269.1918" awidth="22" aheight="22" x="1711.421" y="269.1918" width="363.3005" height="22" name-position="0,10" name-anchor="bottom" />
+            <layout ax="1825.421" ay="270.92" awidth="22" aheight="22" x="1825.421" y="270.92" width="22" height="22" name-position="0,10" name-anchor="bottom" />
           </item>
         </layer>
       </diagram>
@@ -1786,38 +1835,59 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           <item id="di967492054285311359" cid="ELEM098" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:23">
             <style class="default" />
           </item>
+          <item id="di626823077461002094" cid="ELEM099" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di960501703450094060" cid="ELEM100" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di714171495727614804" cid="ELEM101" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di264606786816483150" cid="ELEM102" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di891820731283123994" cid="ELEM103" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di440842637327911111" cid="ELEM104" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di426537865934229627" cid="ELEM105" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di818479123541994122" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di626823077461002094" iid="5392b698a83e458c9b66a8b5f574f04b" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-9.804672" ay="-117" awidth="1032.306" aheight="632" x="-9.804672" y="-117" width="1032.306" height="632" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di691251354641593491" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di960501703450094060" iid="1c60fdf4ee4e4082947eeb59f94b5a36" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-7.807938" ay="-115.1969" awidth="1030.31" aheight="22.53923" x="-7.807938" y="-115.1969" width="1030.31" height="22.53923" />
             <drawing-text>
               <text>led_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di675351265639209398" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di714171495727614804" iid="bf9d8423d8ce4e908f082400780a4a6c" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="295.6941" ay="-34.05563" awidth="400.3432" aheight="118.1056" x="295.6941" y="-34.05563" width="400.3432" height="118.1056" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di159633897934696707" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di264606786816483150" iid="4c735df5842f4c628a4a79ec6d7fa247" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="296.6925" ay="-36.76035" awidth="399.3448" aheight="22.53923" x="296.6925" y="-36.76035" width="399.3448" height="22.53923" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di806192817129675885" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di891820731283123994" iid="099a7fb3675d45e88ff3469dc621b2e0" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="296.6925" ay="-15.12268" awidth="400.3432" aheight="1.803138" x="296.6925" y="-15.12268" width="400.3432" height="1.803138" />
             <drawing-line start-point="296.6925,-15.12268" end-point="696.0373,-14.22111" />
             <style class="default" />
           </item>
-          <item id="di789241385266202457" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di440842637327911111" iid="64023965acba46e89afde9416ba9af23" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="294.6957" ay="-13.31954" awidth="401.3415" aheight="97.36947" x="294.6957" y="-13.31954" width="401.3415" height="97.36947" />
             <drawing-text>
               <text>100ms/????
@@ -1825,7 +1895,7 @@ color information available/ led_color_channel.write()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di967492054285311359" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di426537865934229627" iid="cff6f0284b6042ce8c601958285ff096" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-7.807938" ay="129.1284" awidth="1031.308" aheight="1.352354" x="-7.807938" y="129.1284" width="1031.308" height="1.352354" />
             <drawing-line start-point="-7.807938,129.1284" end-point="1022.502,129.5792" />
             <style class="default" />
@@ -1840,7 +1910,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="295" y="9" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di789241385266202457" to-iid="64023965acba46e89afde9416ba9af23" />
+            <relation from="di921381949174703792" from-iid="23e1960ddc10410cb1d9307f33094d81" to="di440842637327911111" to-iid="64023965acba46e89afde9416ba9af23" />
           </item>
           <item id="di212408407596348288" iid="ee38d5525fc14eb2997782fe31a0344a" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-195.5" ay="184.1241" awidth="32.45649" aheight="32.45649" x="-195.5" y="184.1241" width="32.45649" height="32.45649" name-position="0,10" name-anchor="bottom" />
@@ -1852,7 +1922,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="-10" y="199" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di818479123541994122" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
+            <relation from="di212408407596348288" from-iid="ee38d5525fc14eb2997782fe31a0344a" to="di626823077461002094" to-iid="5392b698a83e458c9b66a8b5f574f04b" />
           </item>
           <item id="di410899400829129035" iid="684e519f3e0a440ea0d13bde4106826b" creation-date="10/26/2016 15:11:14" order-index="0" type="entity">
             <layout ax="62.84374" ay="295.5" awidth="25" aheight="25" x="62.84374" y="295.5" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -2052,45 +2122,66 @@ color information available/ led_color_channel.write()</text>
           <item id="di440223192758142843" cid="ELEM106" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:23">
             <style class="default" />
           </item>
+          <item id="di175536814443762076" cid="ELEM115" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di150356702880300702" cid="ELEM116" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di778839522485257495" cid="ELEM117" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di942022189360109866" cid="ELEM118" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di620437504321012018" cid="ELEM119" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di523091098269902815" cid="ELEM120" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di263902033208159028" cid="ELEM121" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di792951481361020842" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di175536814443762076" iid="55c7593b504b441ba7d864096eaa8d07" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="0.513504" ay="-69" awidth="1175.64" aheight="602" x="0.513504" y="-69" width="1175.64" height="602" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di910646900318620669" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di150356702880300702" iid="91ecccc68dbd4da0a96db5b38e66fcc3" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="179.6756" ay="-69" awidth="873.946" aheight="21.46933" x="179.6756" y="-69" width="873.946" height="21.46933" />
             <drawing-text>
               <text>lcd_display_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di567244541114733560" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di778839522485257495" iid="3b6868877c20460ab615baa22a52ec55" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="185.6486" ay="10.00713" awidth="862" aheight="137" x="185.6486" y="10.00713" width="862" height="137" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di561426809219733309" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di942022189360109866" iid="4d929ef31a7f4077abecc42e7ac58fca" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="269.2792" ay="11.92088" awidth="695.7388" aheight="21.75748" x="269.2792" y="11.92088" width="695.7388" height="21.75748" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di338861573597234556" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di620437504321012018" iid="91ea580c9f704bcb8075cf4c59fec611" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="185.6486" ay="33.67836" awidth="863" aheight="1" x="185.6486" y="29.75891" width="655" height="4.919451" />
             <drawing-line start-point="185.6486,33.67836" end-point="1047.649,33.67836" />
             <style class="default" />
           </item>
-          <item id="di721213392378854408" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di523091098269902815" iid="d99ea8b5eb8948298c2f5341c127b5e1" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="185.6486" ay="33.67836" awidth="831" aheight="108" x="185.6486" y="33.67836" width="831" height="108" />
             <drawing-text>
               <text>information has changed/ lcd_mutex.wait(); lcd_pool.write(); lcd_mutex.signal(); lcd_information_changed_flag.set()</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di440223192758142843" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di263902033208159028" iid="1ec347476bec422f95aaf3274d6e800e" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="2.207199" ay="164.8745" awidth="1174.946" aheight="1.570602" x="2.207199" y="165.4451" width="874.7928" height="1.28816" />
             <drawing-line start-point="2.207199,165.4451" end-point="1176.153,164.8745" />
             <style class="default" />
@@ -2105,7 +2196,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="186" y="79" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di567244541114733560" to-iid="3b6868877c20460ab615baa22a52ec55" />
+            <relation from="di921381949174703792" from-iid="c6fde7b4c711422ca8e654184bc510e8" to="di778839522485257495" to-iid="3b6868877c20460ab615baa22a52ec55" />
           </item>
           <item id="di212408407596348288" iid="12ea1c53345943a2a997b56abaec5cbc" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-157" ay="217.8302" awidth="26.18097" aheight="26.18097" x="-157" y="217.8302" width="26.18097" height="26.18097" name-position="0,10" name-anchor="bottom" />
@@ -2117,7 +2208,7 @@ color information available/ led_color_channel.write()</text>
                 <point x="1" y="232" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di792951481361020842" to-iid="55c7593b504b441ba7d864096eaa8d07" />
+            <relation from="di212408407596348288" from-iid="12ea1c53345943a2a997b56abaec5cbc" to="di175536814443762076" to-iid="55c7593b504b441ba7d864096eaa8d07" />
           </item>
           <item id="di626022405602891561" iid="e98095359bcd4e0dbcf709696d0f1ff7" creation-date="10/26/2016 15:31:50" order-index="0" type="entity">
             <layout ax="37.18018" ay="286" awidth="25" aheight="25" x="37.18018" y="286" width="25" height="25" name-position="0,9.999992" name-anchor="bottom" />
@@ -2358,38 +2449,59 @@ color information available/ led_color_channel.write()</text>
           <item id="di737130784740460961" cid="ELEM133" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:23">
             <style class="default" />
           </item>
+          <item id="di179708475862219936" cid="ELEM134" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di819109448427285447" cid="ELEM135" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di619562568153468911" cid="ELEM136" type="shape" name="Element7" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di645902293285286831" cid="ELEM137" type="text" name="Element8" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di121552406315051638" cid="ELEM138" type="shape" name="Element9" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di552827466588031013" cid="ELEM139" type="text" name="Element10" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di582684991705678884" cid="ELEM140" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di342339502555302274" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di179708475862219936" iid="2c0e4b15944b4b78b0c94c10fae9bcd1" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="124" ay="60.38583" awidth="1607" aheight="735" x="124" y="60.38583" width="1607" height="735" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di929251588579890726" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di819109448427285447" iid="316c0fd841ef4cf098862c40c69c2d81" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="126" ay="62.38583" awidth="1032" aheight="25" x="126" y="62.38583" width="1032" height="25" />
             <drawing-text>
               <text>run_game</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di990833289676232493" iid="e03c627f58e240da9b2bbc15f427b1c4" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
+          <item id="di619562568153468911" iid="e03c627f58e240da9b2bbc15f427b1c4" name="Element7" creation-date="10/27/2016 12:10:58" order-index="2" type="drawing-rounded-rect">
             <layout ax="312.1982" ay="107.3858" awidth="715.6912" aheight="208" x="312.1982" y="107.3858" width="715.6912" height="208" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
           </item>
-          <item id="di728050442660264646" iid="8068cfbcaaa0485a96fedbc6c526bf7d" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
+          <item id="di645902293285286831" iid="8068cfbcaaa0485a96fedbc6c526bf7d" name="Element8" creation-date="10/27/2016 12:11:03" order-index="3" type="drawing-text">
             <layout ax="324" ay="110.3858" awidth="691" aheight="21" x="324" y="110.3858" width="691" height="21" />
             <drawing-text>
               <text>Interface</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di846125788243137076" iid="d3378f9ff32440e087246790c04e8530" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
+          <item id="di121552406315051638" iid="d3378f9ff32440e087246790c04e8530" name="Element9" creation-date="10/27/2016 12:11:20" order-index="4" type="drawing-line">
             <layout ax="312.1982" ay="131.3858" awidth="716.6912" aheight="2" x="312.1982" y="131.3858" width="584.6912" height="1" />
             <drawing-line start-point="312.1982,131.3858" end-point="1027.889,132.3858" />
             <style class="default" />
           </item>
-          <item id="di872185251256154192" iid="b8854f50ac994dbd94ff26a1bc219633" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
+          <item id="di552827466588031013" iid="b8854f50ac994dbd94ff26a1bc219633" name="Element10" creation-date="10/27/2016 12:11:37" order-index="5" type="drawing-text">
             <layout ax="287.1544" ay="132.3858" awidth="764.6912" aheight="183" x="287.1544" y="132.3858" width="764.6912" height="183" />
             <drawing-text>
               <text>information received/received_information_channel.write()
@@ -2402,7 +2514,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di737130784740460961" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di582684991705678884" iid="69540d66c04e499d9827a4c6b83439a5" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="126" ay="333.3858" awidth="1606" aheight="2.999969" x="126" y="333.3858" width="1033" height="1.5" />
             <drawing-line start-point="126,333.3858" end-point="1731,335.3858" />
             <style class="default" />
@@ -2417,7 +2529,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
                 <point x="312" y="212" />
               </points>
             </layout>
-            <relation from="di921381949174703792" from-iid="269472afefcb4dd0b4cdee133d035145" to="di990833289676232493" to-iid="e03c627f58e240da9b2bbc15f427b1c4" />
+            <relation from="di921381949174703792" from-iid="269472afefcb4dd0b4cdee133d035145" to="di619562568153468911" to-iid="e03c627f58e240da9b2bbc15f427b1c4" />
           </item>
           <item id="di212408407596348288" iid="7c76752569d2477882d999eb78e3f635" creation-date="10/27/2016 12:13:11" order-index="9" type="entity">
             <layout ax="-19" ay="392.8858" awidth="36" aheight="36" x="-19" y="392.8858" width="36" height="36" name-position="0,10" name-anchor="bottom" />
@@ -2429,7 +2541,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
                 <point x="124" y="427" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di342339502555302274" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
+            <relation from="di212408407596348288" from-iid="7c76752569d2477882d999eb78e3f635" to="di179708475862219936" to-iid="2c0e4b15944b4b78b0c94c10fae9bcd1" />
           </item>
           <item id="di626712423754497151" iid="c3a3cfb03c584ec1b6f716cdc3c2d68f" creation-date="10/27/2016 00:18:19" order-index="0" type="entity">
             <layout ax="198.9911" ay="531.6652" awidth="16.58124" aheight="16.58124" x="198.9911" y="531.6652" width="16.58124" height="16.58124" name-position="0,10" name-anchor="bottom" />
@@ -2694,9 +2806,18 @@ fire button pressed/ button_pressed_flag.wait();</text>
           <item id="di212041554302749085" cid="ELEM136" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:23">
             <style class="default" />
           </item>
+          <item id="di314745256908352087" cid="ELEM141" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di340963876817340276" cid="ELEM142" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di351751354864429118" cid="ELEM147" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di229117342754903977" iid="ad7be5c53b9d44749860eafe4f442429" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di314745256908352087" iid="ad7be5c53b9d44749860eafe4f442429" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-121.9722" ay="-200.5" awidth="1219.972" aheight="807" x="-121.9722" y="-200.5" width="1219.972" height="807" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
@@ -2773,14 +2894,14 @@ fire button pressed/ button_pressed_flag.wait();</text>
             </layout>
             <relation from="di128020023497002470" from-iid="95264e42af234a54b2723c44caf9665b" to="di259183814835047520" to-iid="073d102e09534602882245d683f89b8c" />
           </item>
-          <item id="di958378544734599042" iid="f3572eea09ec4f2488e997657ab2b06d" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di340963876817340276" iid="f3572eea09ec4f2488e997657ab2b06d" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="-121.9722" ay="-198.6947" awidth="1218.791" aheight="28.81598" x="-121.9722" y="-198.6947" width="1218.791" height="28.81598" />
             <drawing-text>
               <text>IR_send_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di212041554302749085" iid="f6843e441d0f40d380100e354cce3b00" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di351751354864429118" iid="f6843e441d0f40d380100e354cce3b00" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-121.9722" ay="113.6704" awidth="1219.972" aheight="1.728959" x="-121.9722" y="113.6704" width="1219.972" height="1.728959" />
             <drawing-line start-point="-121.9722,113.6704" end-point="1096.819,114.2468" />
             <style class="default" />
@@ -2807,7 +2928,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
                 <point x="-122" y="202" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="2c897414a69044d783ae293dac4068d0" to="di229117342754903977" to-iid="ad7be5c53b9d44749860eafe4f442429" />
+            <relation from="di212408407596348288" from-iid="2c897414a69044d783ae293dac4068d0" to="di314745256908352087" to-iid="ad7be5c53b9d44749860eafe4f442429" />
           </item>
           <item id="di895674089232017367" iid="e109e9392e7c433788e9de546f5c08da" creation-date="10/28/2016 10:49:27" order-index="16" type="entity">
             <layout ax="144" ay="-85.20685" awidth="742" aheight="90" x="144" y="-85.20685" width="742" height="90" />
@@ -2964,9 +3085,18 @@ fire button pressed/ button_pressed_flag.wait();</text>
           <item id="di907099040400369475" cid="ELEM139" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:23">
             <style class="default" />
           </item>
+          <item id="di167486998369503425" cid="ELEM148" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di777301747998819839" cid="ELEM149" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di146808841962049508" cid="ELEM150" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di981859082216055315" iid="f4ab8589996d46cd87e9979fac84762d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di167486998369503425" iid="f4ab8589996d46cd87e9979fac84762d" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="46.02792" ay="-307.6946" awidth="1451.153" aheight="834.9999" x="46.02792" y="-307.6946" width="1451.153" height="834.9999" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
@@ -3037,14 +3167,14 @@ fire button pressed/ button_pressed_flag.wait();</text>
           <item id="di699456292155626997" iid="0747fdd212be4dcd9ce67b92f5fe0755" creation-date="10/26/2016 23:14:56" order-index="13" type="entity">
             <layout ax="993" ay="330" awidth="93" aheight="50" x="993" y="330" width="93" height="50" />
           </item>
-          <item id="di494716416916078605" iid="0897834201284f128b3d96aedd5ec482" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di777301747998819839" iid="0897834201284f128b3d96aedd5ec482" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="46.02792" ay="-307.6946" awidth="1218.791" aheight="28.81598" x="46.02792" y="-307.6946" width="1218.791" height="28.81598" />
             <drawing-text>
               <text>LCD_display_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di907099040400369475" iid="0f275c24992e4bea8f9c31b62694d086" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di146808841962049508" iid="0f275c24992e4bea8f9c31b62694d086" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="46.02792" ay="4.670471" awidth="1452.153" aheight="13.5764" x="46.02792" y="4.670471" width="1219.972" height="1.728959" />
             <drawing-line start-point="46.02792,4.670471" end-point="1497.181,17.24687" />
             <style class="default" />
@@ -3083,7 +3213,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
                 <point x="46" y="109" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="5f6f55c3bc4540a5bcdf45fb09a7d3b6" to="di981859082216055315" to-iid="f4ab8589996d46cd87e9979fac84762d" />
+            <relation from="di212408407596348288" from-iid="5f6f55c3bc4540a5bcdf45fb09a7d3b6" to="di167486998369503425" to-iid="f4ab8589996d46cd87e9979fac84762d" />
           </item>
           <item id="di621771918374343473" iid="40d71fb5217a4649863b29c517f30369" creation-date="10/26/2016 23:13:24" order-index="10" type="relation">
             <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1282" y1="328" x2="1279" y2="180" start-border-pos="0.120730993882665" end-border-pos="0.623991935483871" name-position="52,-25">
@@ -3215,9 +3345,18 @@ fire button pressed/ button_pressed_flag.wait();</text>
           <item id="di660143479389656806" cid="ELEM142" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 08:34:23">
             <style class="default" />
           </item>
+          <item id="di679621385982252333" cid="ELEM151" type="shape" name="Element5" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di490411522994731518" cid="ELEM152" type="text" name="Element6" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
+          <item id="di942728810472398040" cid="ELEM153" type="shape" name="Element11" style-class="" visibility="package" creation-date="11/01/2016 10:36:42">
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
-          <item id="di468026404611728398" iid="3340a0981523492b954d7c8cb93fd33f" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
+          <item id="di679621385982252333" iid="3340a0981523492b954d7c8cb93fd33f" name="Element5" creation-date="10/27/2016 12:10:33" order-index="0" type="drawing-rounded-rect">
             <layout ax="-13.65308" ay="-133.2971" awidth="1556.153" aheight="831" x="-13.65308" y="-133.2971" width="1556.153" height="831" />
             <drawing-rounded-rect radius="10" />
             <style class="default" />
@@ -3331,14 +3470,14 @@ fire button pressed/ button_pressed_flag.wait();</text>
             </layout>
             <relation from="di410610452751006957" from-iid="53e2b5ec796a4cf494ddeb6991f53833" to="di371159059676704147" to-iid="c24bd1adc9d34b25aa90bc572867fda5" />
           </item>
-          <item id="di404783607841283408" iid="820b594703bf42d8aab4aa4cd5ac3014" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
+          <item id="di490411522994731518" iid="820b594703bf42d8aab4aa4cd5ac3014" name="Element6" creation-date="10/27/2016 12:10:40" order-index="1" type="drawing-text">
             <layout ax="129.0278" ay="-133.2971" awidth="1218.791" aheight="28.81598" x="129.0278" y="-133.2971" width="1218.791" height="28.81598" />
             <drawing-text>
               <text>init_game_controller</text>
             </drawing-text>
             <style class="default" />
           </item>
-          <item id="di660143479389656806" iid="cf2d897d3acc4c6c908ac499edac0109" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
+          <item id="di942728810472398040" iid="cf2d897d3acc4c6c908ac499edac0109" name="Element11" creation-date="10/27/2016 12:11:45" order-index="6" type="drawing-line">
             <layout ax="-12.97215" ay="150.6704" awidth="1554.791" aheight="12.70459" x="-12.97215" y="150.6704" width="1554.791" height="12.70459" />
             <drawing-line start-point="-12.97215,150.6704" end-point="1540.819,162.375" />
             <style class="default" />
@@ -3365,7 +3504,7 @@ fire button pressed/ button_pressed_flag.wait();</text>
                 <point x="-14" y="282" />
               </points>
             </layout>
-            <relation from="di212408407596348288" from-iid="d958bc7ad31d4b5cb1abae0851e5a30a" to="di468026404611728398" to-iid="3340a0981523492b954d7c8cb93fd33f" />
+            <relation from="di212408407596348288" from-iid="d958bc7ad31d4b5cb1abae0851e5a30a" to="di679621385982252333" to-iid="3340a0981523492b954d7c8cb93fd33f" />
           </item>
         </layer>
       </diagram>
