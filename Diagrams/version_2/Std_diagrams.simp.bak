@@ -83,7 +83,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>194</value>
+        <value>176</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -1397,7 +1397,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </item>
           <item id="di417174136197077397" cid="ELEM038" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creator="P6cff9aea0a2048fd9b26966daee2d2cf" creation-date="10/26/2016 16:01:19" from="di430781995959106543" to="di409151383401479235">
             <style class="default" />
-            <transition guard="key is A" behaviourExpression=" lcd_mutex.wait(); lcd_pool.write(key); lcd_mutex.signal(); lcd_information_changed_flag.set()">
+            <transition guard="key is A" behaviourExpression=" ">
               <trigger />
             </transition>
           </item>
@@ -1427,7 +1427,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </item>
           <item id="di999387399706506931" cid="ELEM043" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creator="P6cff9aea0a2048fd9b26966daee2d2cf" creation-date="10/26/2016 16:07:53" from="di710765681408277859" to="di383910982403068071">
             <style class="default" />
-            <transition guard="key is 1..9" behaviourExpression=" lcd_mutex.wait(); lcd_pool.write(key); lcd_mutex.signal(); lcd_information_changed_flag.set()">
+            <transition guard="key is 1..9" behaviourExpression="  ">
               <trigger />
             </transition>
           </item>
@@ -1447,13 +1447,13 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
           </item>
           <item id="di119886305557438202" cid="ELEM046" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creator="P6cff9aea0a2048fd9b26966daee2d2cf" creation-date="10/26/2016 16:11:36" from="di179172783865547757" to="di855933729982015380">
             <style class="default" />
-            <transition guard="key is B" behaviourExpression=" lcd_mutex.wait(); lcd_pool.write(key); lcd_mutex.signal(); lcd_information_changed_flag.set()">
+            <transition guard="key is B" behaviourExpression=" ">
               <trigger />
             </transition>
           </item>
           <item id="di507126686953029509" cid="ELEM048" type="general-transition" name="" style-class="" visibility="package" change-tracking-state="added" creator="P6cff9aea0a2048fd9b26966daee2d2cf" creation-date="10/26/2016 16:19:56" from="di825811238298753052" to="di874146666817399531">
             <style class="default" />
-            <transition guard="key is 1..9" behaviourExpression="save player information; lcd_mutex.wait(); lcd_pool.write(key); lcd_mutex.signal(); lcd_information_changed_flag.set()">
+            <transition guard="key is 1..9" behaviourExpression="save player information">
               <trigger />
             </transition>
           </item>
@@ -1522,7 +1522,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <relation from="di964862638694590867" from-iid="3e17f171052b44a0a54f4f8d98bd3688" to="di577866946663188682" to-iid="951cffb7cb0047e2a464a341423fd457" />
           </item>
           <item id="di417174136197077397" iid="9ad2cdbcca254240b57b57d86fff8165" creation-date="10/26/2016 16:01:19" order-index="7" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="448" y1="279" x2="519" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="39,95" name-width="164">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="448" y1="279" x2="519" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="-5,-17">
               <points>
                 <point x="448" y="279" />
                 <point x="519" y="279" />
@@ -1557,7 +1557,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <layout ax="863.5947" ay="253.6744" awidth="243" aheight="49.94905" x="863.5947" y="253.6744" width="243" height="49.94905" />
           </item>
           <item id="di999387399706506931" iid="dc86cb99f53e4555b1a21e35cbd7ef43" creation-date="10/26/2016 16:07:53" order-index="13" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="810" y1="280" x2="864" y2="280" start-border-pos="0.376639081644498" end-border-pos="0.870028770771975" name-position="3,92" name-width="168">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="810" y1="280" x2="864" y2="280" start-border-pos="0.376639081644498" end-border-pos="0.870028770771975" name-position="0,33">
               <points>
                 <point x="810" y="280" />
                 <point x="864" y="280" />
@@ -1581,7 +1581,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <relation from="di383910982403068071" from-iid="dca94e6f9afa448182c95bc5aec51165" to="di179172783865547757" to-iid="1ef81fbca42e4ef18dba3d7623c2c784" />
           </item>
           <item id="di119886305557438202" iid="f137384d33a7438b8c5ccb4fe0a88f26" creation-date="10/26/2016 16:11:36" order-index="17" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1183" y1="279" x2="1251" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="2,87" name-width="180">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1183" y1="279" x2="1251" y2="279" start-border-pos="0.372916668653488" end-border-pos="0.877499997615814" name-position="-5,-13">
               <points>
                 <point x="1183" y="279" />
                 <point x="1251" y="279" />
@@ -1620,7 +1620,7 @@ Our idea is to give the cpu back after every letter is printed, so the send_cont
             <layout ax="1515.459" ay="253.3777" awidth="33.11914" aheight="57.08466" x="1515.459" y="253.3777" width="33.11914" height="57.08466" name-position="0,10" name-anchor="bottom" />
           </item>
           <item id="di507126686953029509" iid="efa7279f4672474f93e2c36d46a482d2" creation-date="10/26/2016 16:19:56" order-index="20" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1548" y1="282" x2="1712" y2="278" start-border-pos="0.375" end-border-pos="0.899906858801842" name-position="-3,81" name-width="265">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1548" y1="282" x2="1712" y2="278" start-border-pos="0.375" end-border-pos="0.899906858801842" name-position="-8,-22">
               <points>
                 <point x="1548" y="282" />
                 <point x="1712" y="278" />
