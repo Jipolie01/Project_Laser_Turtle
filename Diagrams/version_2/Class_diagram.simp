@@ -79,7 +79,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>8</value>
+        <value>3</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -99,7 +99,7 @@
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.AttributeField</type>
-        <value>152</value>
+        <value>155</value>
       </counter>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.EnumerationItemField</type>
@@ -193,6 +193,8 @@
       <type id="rtos::pool &lt;lcd_passthrough &amp;&gt;" tid="" name="rtos::pool &lt;lcd_passthrough &amp;&gt;" description="" nullable="false" />
       <type id="Class:di772702362137669230" tid="" name="button" description="" nullable="false" class-ref="di772702362137669230" />
       <type id="Class:di320766778107424679" tid="" name="button_listener" description="" nullable="false" class-ref="di320766778107424679" />
+      <type id="hwlib::window_part" tid="" name="hwlib::window_part" description="" nullable="false" />
+      <type id="hwlib::font &amp;" tid="" name="hwlib::font &amp;" description="" nullable="false" />
     </custom-types>
   </types>
   <filters />
@@ -212,7 +214,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="249,-466" zoom="0.7828572">
+      <diagram type="uml-class" id="pa4321f5e4d5948bdae6b211738f62999_423370683" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-157,-286" zoom="0.8914286">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -1539,6 +1541,9 @@
               <attribute id="ae91203fcd53842cb8494be951be33cfb45" cid="ELEM037" name="oled" type="hwlib::glcd_oled_buffered" type-id="hwlib::glcd_oled_buffered" visibility="private">
                 <style class="default" />
               </attribute>
+              <attribute id="ad450a9715c1447f58dc6a58b052d6d87252" cid="ELEM154" name="window" type="hwlib::window_part" type-id="hwlib::window_part" visibility="private">
+                <style class="default" />
+              </attribute>
             </attributes>
             <operations>
               <operation id="o37f8cad4a8a245a4870c7a9f3641bcc2227" cid="ELEM038" name="LCD_display" type="" type-id="" visibility="public">
@@ -1554,7 +1559,8 @@
               <operation id="o1afd7b9f1b95444bb10247b74e21a33d522" cid="ELEM039" name="put_char" type="void" type-id="void" visibility="public">
                 <style class="default" />
                 <parameters>
-                  <parameter id="p39c9686ba9904703a35c0bb87503f0b1" name="c" type="const char" type-id="const char" />
+                  <parameter id="p39c9686ba9904703a35c0bb87503f0b1" name="string" type="const char *" type-id="const char *" />
+                  <parameter id="p98d2ee01e950448ca6afdd0f48979172" name="f" type="hwlib::font &amp;" type-id="hwlib::font &amp;" />
                 </parameters>
                 <source-codes>
                   <source-code language="ActionScript" />
@@ -1831,7 +1837,7 @@
           <item id="di340891093982956126" cid="REA001" type="realization" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/31/2016 15:30:51" from="di648963538794440127" to="di320766778107424679">
             <style class="default" />
           </item>
-          <item id="di311596068192918443" cid="REL113" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/31/2016 15:31:02" from="di698967487853700207" to="di772702362137669230">
+          <item id="di311596068192918443" cid="REL113" type="relationship" name="" style-class="" visibility="package" change-tracking-state="added" creation-date="10/31/2016 15:31:02" to="di772702362137669230">
             <style class="default" />
             <relation from="di698967487853700207" to="di772702362137669230">
               <start-role id="" name="" navigability="" association-type="aggregation" visibility="private" />
@@ -2169,7 +2175,7 @@
             <relation from="di648963538794440127" from-iid="2d6327f6f88f4ef88ce6d452fd318442" to="di579460109285289010" to-iid="b00bbb5a55a84a16bdf3aa174b5ea327" />
           </item>
           <item id="di566812691632815982" iid="a052134b2bd94f11800c4d3e03be7d64" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
-            <layout ax="1398" ay="-123" awidth="329" aheight="163" x="1398" y="-123" width="329" height="163" />
+            <layout ax="1398" ay="-123" awidth="337" aheight="194" x="1398" y="-123" width="337" height="194" />
             <class />
           </item>
           <item id="di403883518378170819" iid="a4fdbe952ae441878f216b5f9c47673d" creation-date="10/24/2016 03:23:43" order-index="0" type="entity">
@@ -2216,10 +2222,10 @@
             <relation from="di648963538794440127" from-iid="2d6327f6f88f4ef88ce6d452fd318442" to="di510989183924646991" to-iid="b982abf50ba54bd5a87292d490b4ff71" />
           </item>
           <item id="di939241914357288328" iid="37e38fd3148e495386dd40d79045b85c" creation-date="10/26/2016 14:06:49" order-index="64" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1572" y1="160" x2="1563" y2="40" start-border-pos="0.154320985078812" end-border-pos="0.624620060790274" name-position="0,0">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1572" y1="160" x2="1567" y2="71" start-border-pos="0.154320985078812" end-border-pos="0.624620060790274" name-position="0,0">
               <points>
                 <point x="1572" y="160" />
-                <point x="1563" y="40" />
+                <point x="1567" y="71" />
               </points>
             </layout>
             <relation from="di510989183924646991" from-iid="b982abf50ba54bd5a87292d490b4ff71" to="di566812691632815982" to-iid="a052134b2bd94f11800c4d3e03be7d64" />
