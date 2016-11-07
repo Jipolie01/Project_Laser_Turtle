@@ -1,25 +1,47 @@
 #include "hwlib.hpp"
 #include "rtos.hpp"
+#include "application_logic_classes.hpp"
+#include "entity_classes.hpp"
 
 #ifndef TEST_CLASS_HPP
 #define TEST_CLASS_HPP
 
-template < typename T>
 class test_class : public rtos::task<>{
 private:
-    T & controller;
+    rtos::channel<char16_t, 5> received_information_channel;
+    ir_message_logic message_logic;
+    byte player_id;
+    byte weapon_id;
+    int hits_array_pos = 0;
+    hit * hits[100];
+    
+    void add_hit(hit * h){
+        
+    }
     
     void main(void){
         hwlib::cout << "Starting program .. \n";
         while(1){
-            
+            wait(received_information_channel);
+            auto information = received_information_channel.read();
+            if(message_logic.decode(information, player_id, weapon_id)){
+                hit h(player_id, weapon_id);
+                hits[hits_array_pos] = &h;
+                hwlib::cout << "player_id" << hits[hits_array_pos] << '\n';
+                hwlib::cout << "weapon id: " << hits[hits_array_pos] << '\n';
+                hits_array_pos++;
+            }
         }
     }
 public:
-    test_class(T & controller):
+    test_class():
         task("test_class"),
-        controller(controller)
+        received_information_channel(this, "received_information_channel")
     {}
+    
+    void write(char16_t value){
+        received_information_channel.write(value);
+    }
 };
 
 #endif // TEST_CLASS_HPP

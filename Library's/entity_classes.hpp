@@ -81,4 +81,23 @@ public:
 
 };
 
+class hit{
+private:
+    byte player_id;
+    byte weapon_id;
+public:
+    hit(byte player_id, byte weapon_id):
+        player_id(player_id),
+        weapon_id(weapon_id)
+    {}
+    
+    byte get_player_id(){
+        return player_id;
+    }
+    
+    byte get_weapon_id(){
+        return weapon_id;
+    }
+};
+
 #endif // ENTITY_CLASSES_HPP
