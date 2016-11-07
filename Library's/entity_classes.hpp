@@ -5,19 +5,18 @@
 
 class my_player_information {
 private:
-    byte player_id;
-    byte weapon_id;
-    byte exor_check_bits;
+    //byte player_id;
+    //byte weapon_id;
+    //byte exor_check_bits;
     char16_t compiled_bits;
 public:
     my_player_information():
-    player_id(0),
-    weapon_id(0),
-    exor_check_bits(0),
-    compiled_bits(0)
+    //player_id(0),
+    //weapon_id(0),
+    //exor_check_bits(0),
+        compiled_bits(0)
     {}
-    
-    byte get_player_id(){
+    /*byte get_player_id(){
         return player_id;
     }
     
@@ -28,11 +27,13 @@ public:
     byte get_exor_bits(){
         return exor_check_bits;
     }
+    */
     
     char16_t get_compiled_bits(){
         return compiled_bits;
     }
     
+    /*
     void set_player_id(byte value){
         player_id = value;
     }
@@ -43,7 +44,7 @@ public:
     
     void set_exor_bits(byte value){
         exor_check_bits = value;
-    }
+    }*/
     
     void set_compiled_bits(char16_t value){
         compiled_bits = value;
