@@ -1,29 +1,24 @@
 #include "hwlib.hpp"
 #include "rtos.hpp"
-#include "send_ir_classes.hpp"
-#include "entity_classes.hpp"
 
 #ifndef TEST_CLASS_HPP
 #define TEST_CLASS_HPP
 
+template < typename T>
 class test_class : public rtos::task<>{
 private:
-    ir_message_controller & controller;
-    my_player_information & player_information;
-    ir_message_logic message_logic;
+    T & controller;
     
     void main(void){
-        player_information.set_compiled_bits(message_logic.encoder(5,6));
+        hwlib::cout << "Starting program .. \n";
         while(1){
-            controller.enable_flag();
-            sleep(5000*rtos::ms);
+            
         }
     }
 public:
-    test_class(ir_message_controller & controller, my_player_information & player_information):
+    test_class(T & controller):
         task("test_class"),
-        controller(controller),
-        player_information(player_information)
+        controller(controller)
     {}
 };
 
