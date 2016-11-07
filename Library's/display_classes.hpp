@@ -5,15 +5,16 @@
 #define DISPLAY_CLASSES_HPP
 
 struct lcd_passthrough{ //better name
-    char line1[16] = "Lives: ";
-    char line2[16] = "Time left: ";
-    char line3[16] = "something else";
-    char line4[16] = "more";
-    char line5[16] = "commands: ";
-    char line6[16] = "more";
-    char line7[16] = "more";
-    char line8[16] = "more";
+    char line1[16] = "";//lives
+    char line2[16] = "";//time left
+    char line3[16] = "";//hit line
+    char line4[16] = "";//some information
+    char line5[16] = "";//commands
+    char line6[16] = "";//some information
+    char line7[16] = "";//some information
+    char line8[16] = "";//some information
     bool player_hit = false;
+    bool game_end = false;
     
     void assignment(char * array, const char * other){
         int i = 0;
@@ -55,7 +56,7 @@ class lcd_display_controller : public rtos::task<> {//if error check if this is 
 private:
     rtos::flag lcd_information_changed_flag;
     hwlib::font_default_8x8 default_font;
-    hwlib::font_default_16x16 hit_font;
+    hwlib::font_default_16x16 alternative_font;
     lcd_display oled;
     rtos::mutex & lcd_mutex;
     rtos::pool<lcd_passthrough> lcd_pool;
@@ -81,8 +82,12 @@ private:
             auto lcd_struct = lcd_pool.read();
             lcd_mutex.signal();
             
+            if(lcd_struct.game_end){
+                oled.print_text("Game\nover!!", alternative_font);
+            }
+            
             if(lcd_struct.player_hit){
-                oled.print_text("\n\nHit!!", hit_font);
+                oled.print_text("\n\nHit!!", alternative_font);
                 lcd_struct.player_hit = false;
                 lcd_mutex.wait();
                 write(lcd_struct);
