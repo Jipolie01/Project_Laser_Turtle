@@ -89,8 +89,6 @@ public:
         //run_game(run_game)
     {}
     
-    ~game_time_controller();
-    
     void enable_start_flag(){
         game_start_flag.set();
     }
