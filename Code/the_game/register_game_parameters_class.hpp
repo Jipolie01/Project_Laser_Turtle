@@ -22,7 +22,7 @@ private:
 
 public:
 
-register_game_parameters_controller(ir_message_logic & compile, my_player_information & information, Keypad & keypad):
+    register_game_parameters_controller(ir_message_logic & compile, my_player_information & information, Keypad & keypad):
         compile(compile),
         information(information),
         keypad(keypad),
@@ -34,39 +34,39 @@ register_game_parameters_controller(ir_message_logic & compile, my_player_inform
         weapon_id_char(0)
     {}
 
-void send(char & c){
-      hwlib::cout << " [" << c << "]\n";
-}
+    void send(char & c){
+          hwlib::cout << " [" << c << "]\n";
+    }
 
-bool setup(char key){
-    if((key == 'A') && a_is_pressed == 0){
-        send(key);
-        a_is_pressed = 1;
+    bool setup(char key){
+        if((key == 'A') && a_is_pressed == 0){
+            send(key);
+            a_is_pressed = 1;
+            return 0;
+        }
+        if((((key >= '1') && (key <= '9')) && a_is_pressed == 1) && player_id_pressed == 0){
+            player_id_char = key;
+            send(key);
+            player_id_pressed = 1;
+            return 0;
+        }
+        if(((key == 'B') && player_id_pressed == 1) && b_is_pressed == 0){
+            send(key);
+            b_is_pressed = 1;
+            return 0;
+        }
+        if((((key >= '1') && (key <= '9')) && b_is_pressed == 1) && weapon_id_pressed == 0){
+            weapon_id_char = key;
+            send(key);
+            weapon_id_pressed = 1;
+            uint_fast8_t player_id = player_id_char - '0';
+            uint_fast8_t weapon_id = weapon_id_char - '0';
+            char16_t compiled = compile.encode(player_id, weapon_id);
+            information.set_compiled_bits(compiled);
+            return 1;
+        }
         return 0;
     }
-    if((((key >= '1') && (key <= '9')) && a_is_pressed == 1) && player_id_pressed == 0){
-        player_id_char = key;
-        send(key);
-        player_id_pressed = 1;
-        return 0;
-    }
-    if(((key == 'B') && player_id_pressed == 1) && b_is_pressed == 0){
-        send(key);
-        b_is_pressed = 1;
-        return 0;
-    }
-    if((((key >= '1') && (key <= '9')) && b_is_pressed == 1) && weapon_id_pressed == 0){
-        weapon_id_char = key;
-        send(key);
-        weapon_id_pressed = 1;
-        uint_fast8_t player_id = player_id_char - '0';
-        uint_fast8_t weapon_id = weapon_id_char - '0';
-        char16_t compiled = compile.encode(player_id, weapon_id);
-        information.set_compiled_bits(compiled);
-    return 1;
-    }
-    return 0;
-}
 };
 
 #endif //REGISTER_GAME_PARAMETERS_CLASS_HPP

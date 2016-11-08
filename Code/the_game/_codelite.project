@@ -38,6 +38,9 @@
     <File Name="register_game_parameters_class.hpp"/>
     <File Name="run_game.hpp"/>
     <File Name="game_time_classes.hpp"/>
+    <File Name="listenerpattern.cpp"/>
+    <File Name="listenerpattern.hpp"/>
+    <File Name="speaker_classes.hpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

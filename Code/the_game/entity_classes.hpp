@@ -3,6 +3,7 @@
 #ifndef ENTITY_CLASSES_HPP
 #define ENTITY_CLASSES_HPP
 
+
 class my_player_information {
 private:
     char16_t compiled_bits;
@@ -24,12 +25,14 @@ public:
 
 class game_information_data {
 private:
+    int cooldown_time;
     int game_time_remaining;
     bool game_has_started;
 public:
     game_information_data():
-        game_time_remaining(0),
-        game_has_started(0)
+    cooldown_time(0),
+    game_time_remaining(0),
+    game_has_started(0)
     {}
     
     int get_game_time(){
@@ -40,6 +43,10 @@ public:
         return game_has_started;
     }
     
+    int get_cooldown_time(){
+        return cooldown_time;
+    }
+    
     void set_game_time(int time){
         game_time_remaining = time;
     }
@@ -47,7 +54,10 @@ public:
     void set_game_has_start(bool yes_no){
         game_has_started = yes_no;
     }
-
+    
+    void set_cooldown_time(int time){
+        cooldown_time = time;
+    }
 };
 
 class hit{

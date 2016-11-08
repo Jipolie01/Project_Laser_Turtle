@@ -4,17 +4,19 @@
 #ifndef DISPLAY_CLASSES_HPP
 #define DISPLAY_CLASSES_HPP
 
+
 struct lcd_passthrough{ //better name
     char line1[16] = "";//lives
     char line2[16] = "";//time left
     char line3[16] = "";//hit line
-    char line4[16] = "";//commands
-    char line5[16] = "";//some information
+    char line4[16] = "";//some information
+    char line5[16] = "";//commands
     char line6[16] = "";//some information
     char line7[16] = "";//some information
     char line8[16] = "";//some information
     bool player_hit = false;
     bool game_end = false;
+    bool game_begin = false;
     
     void assignment(char * array, const char * other){
         int i = 0;
@@ -39,6 +41,9 @@ public:
     {
         oled.clear();
     }
+    
+    
+    ~lcd_display();
     
     void print_text(const char * string, hwlib::font & f){
         oled.clear();
@@ -82,8 +87,11 @@ private:
             if(lcd_struct.game_end){
                 oled.print_text("Game\nover!!", alternative_font);
             }
+            else if(lcd_struct.game_begin){
+                oled.print_text("Game\nstart", alternative_font);
+            }
             
-            if(lcd_struct.player_hit){
+            else if(lcd_struct.player_hit){
                 oled.print_text("\n\nHit!!", alternative_font);
                 lcd_struct.player_hit = false;
                 lcd_mutex.wait();

@@ -27,8 +27,8 @@ private:
     int game_time_remaining;
     bool game_has_started;
 public:
-    game_information_data():
-    game_time_remaining(0),
+    game_information_data(int game_time_remaining):
+    game_time_remaining(game_time_remaining),
     game_has_started(0)
     {}
     

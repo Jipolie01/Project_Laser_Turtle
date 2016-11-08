@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\__codelite.workspace">
-  <int Value="5" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\__codelite.workspace" Name="m_workspaceName"/>
+<Session Name="D:\programmeren\Projecten\Project_Laser_Turtle\Code\__codelite.workspace">
+  <int Value="6" Name="m_selectedTab"/>
+  <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\__codelite.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="5" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\register_game_parameters_class.hpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="71" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\keypad_class.hpp" Name="FileName"/>
+      <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\the_game\register_game_parameters_class.hpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="2" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\run_game.hpp" Name="FileName"/>
-      <int Value="71" Name="FirstVisibleLine"/>
-      <int Value="87" Name="CurrentLine"/>
+      <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\the_game\keypad_class.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="25" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\display_classes.hpp" Name="FileName"/>
-      <int Value="102" Name="FirstVisibleLine"/>
-      <int Value="40" Name="CurrentLine"/>
+      <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\the_game\entity_classes.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\game_time_classes.hpp" Name="FileName"/>
-      <int Value="80" Name="FirstVisibleLine"/>
-      <int Value="87" Name="CurrentLine"/>
+      <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\the_game\display_classes.hpp" Name="FileName"/>
+      <int Value="132" Name="FirstVisibleLine"/>
+      <int Value="141" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\entity_classes.hpp" Name="FileName"/>
-      <int Value="43" Name="FirstVisibleLine"/>
-      <int Value="55" Name="CurrentLine"/>
+      <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\the_game\main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="24" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\the_game\speaker_classes.hpp" Name="FileName"/>
+      <int Value="72" Name="FirstVisibleLine"/>
+      <int Value="79" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\programmeren\Projecten\Project_Laser_Turtle\Code\the_game\run_game.hpp" Name="FileName"/>
+      <int Value="7" Name="FirstVisibleLine"/>
+      <int Value="125" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

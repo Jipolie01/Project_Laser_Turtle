@@ -1,5 +1,8 @@
 #include "hwlib.hpp"
 
+#ifndef KEYPAD_CLASS_HPP
+#define KEYPAD_CLASS_HPP
+
 //class keypad
 ///make a class named keypad and define the pins you are going to use.
 class Keypad{
@@ -19,3 +22,5 @@ public:
         return keypad.getc();
     }
 };
+
+#endif //KEYPAD_CLASS_HPP
