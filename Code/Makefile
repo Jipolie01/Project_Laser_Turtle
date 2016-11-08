@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ receive_signal - Debug ]----------"
-	@cd "receive_signal" && "$(MAKE)" -f  "receive_signal.mk"
+	@echo "----------Building project:[ the_game -  ]----------"
+	@cd "the_game" && "$(MAKE)" -f  "the_game.mk"
 clean:
-	@echo "----------Cleaning project:[ receive_signal - Debug ]----------"
-	@cd "receive_signal" && "$(MAKE)" -f  "receive_signal.mk" clean
+	@echo "----------Cleaning project:[ the_game -  ]----------"
+	@cd "the_game" && "$(MAKE)" -f  "the_game.mk" clean

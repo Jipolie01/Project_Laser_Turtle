@@ -1,103 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\__codelite.workspace">
-  <int Value="6" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\__codelite.workspace" Name="m_workspaceName"/>
+<Session Name="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\__codelite.workspace">
+  <int Value="5" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\__codelite.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\send_signal\send_ir_message.cpp" Name="FileName"/>
+      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="6" Name="CurrentLine"/>
+      <int Value="5" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\send_signal\send_ir_message.hpp" Name="FileName"/>
+      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\register_game_parameters_class.hpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="71" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\receive_signal\main.cpp" Name="FileName"/>
-      <int Value="1" Name="FirstVisibleLine"/>
-      <int Value="13" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\send_signal\Makefile" Name="FileName"/>
+      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\keypad_class.hpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="14" Name="CurrentLine"/>
+      <int Value="2" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\receive_signal\receive_ir_message.cpp" Name="FileName"/>
-      <int Value="72" Name="FirstVisibleLine"/>
-      <int Value="92" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\run_game.hpp" Name="FileName"/>
+      <int Value="71" Name="FirstVisibleLine"/>
+      <int Value="87" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\receive_signal\Makefile" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="10" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\display_classes.hpp" Name="FileName"/>
+      <int Value="102" Name="FirstVisibleLine"/>
+      <int Value="40" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\send_signal\main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="20" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\game_time_classes.hpp" Name="FileName"/>
+      <int Value="80" Name="FirstVisibleLine"/>
+      <int Value="87" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\receive_signal\commented_original_code.txt" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\receive_signal_no_class\main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="36" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\send_signal\commented_original_code.txt" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\send_signal_no_class\main.cpp" Name="FileName"/>
-      <int Value="84" Name="FirstVisibleLine"/>
-      <int Value="100" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\send_signal_no_class\Makefile" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="11" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\receive_signal_no_class\Makefile" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="14" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jip\Desktop\Project_Laser_Turtle\Code\receive_signal\receive_ir_message.hpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Tim IJntema\Documents\GitHub\Project_Laser_Turtle\Code\the_game\entity_classes.hpp" Name="FileName"/>
+      <int Value="43" Name="FirstVisibleLine"/>
+      <int Value="55" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
