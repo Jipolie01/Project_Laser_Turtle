@@ -39,7 +39,7 @@ public:
             a_is_pressed = 1;
             return 0;
         }
-        if((((key >= '1') && (key <= '9')) && a_is_pressed == 1) && player_id_pressed == 0){
+        if((((key >= '0') && (key <= '9')) && a_is_pressed == 1) && player_id_pressed == 0){
             player_id_char = key;
             player_id_pressed = 1;
             return 0;
@@ -48,7 +48,7 @@ public:
             b_is_pressed = 1;
             return 0;
         }
-        if((((key >= '1') && (key <= '9')) && b_is_pressed == 1) && weapon_id_pressed == 0){
+        if((((key >= '0') && (key <= '9')) && b_is_pressed == 1) && weapon_id_pressed == 0){
             weapon_id_char = key;
             weapon_id_pressed = 1;
             uint_fast8_t player_id = player_id_char - '0';
