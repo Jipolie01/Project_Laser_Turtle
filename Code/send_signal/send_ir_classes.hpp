@@ -1,5 +1,4 @@
 #include "hwlib.hpp"
-#include "entity_classes.hpp"
 #include "rtos.hpp"
 
 #ifndef SEND_IR_CLASSES_HPP
@@ -41,60 +40,36 @@ public:
             hwlib::wait_ms(3);
         }
         
-}
+    }
 };
 
 
 class send_controller : public rtos::task<>{
 private:
     ir_sender ir_send;
-    my_player_information &message_to_send;
+    my_player_information & message_to_send;
+    rtos::channel<char16_t, 6> messages_channel;
     
     void main(){
         while(1){
+            wait(messages_channel);
             send_full_message();
-            sleep(2000*rtos::ms);
         }
+    }
+    void send_full_message(){
+        auto message = messages_channel.read();
+        ir_send.send_message(message);
     }
 public:
     send_controller(my_player_information & player_information):
-    task("send_task"),
+    task(2, "send_task"),
     ir_send(),
-    message_to_send(player_information)
+    message_to_send(player_information),
+    messages_channel(this, "messages_channel")
     {}
 
-    void send_full_message(){
-        char16_t message = message_to_send.get_compiled_bits();
-        ir_send.send_message(message);
+    void write(char16_t value){
+        message_channel.write(value);
     }
 };
-/*
-void send_one(auto sender_pin){
-        sender_pin.set(1);
-        hwlib::wait_us(1600);
-        sender_pin.set(0);
-        hwlib::wait_us(800);
-    }
-    
-    void send_zero(auto sender_pin){
-        sender_pin.set(1);
-        hwlib::wait_us(800);
-        sender_pin.set(0);
-        hwlib::wait_us(1600);
-    }
-
-int main(void){
-    //kill the watchdog
-    WDT->WDT_MR=WDT_MR_WDDIS;
-    hwlib::wait_ms(1000);
-    
-    hwlib::cout << "Starting program .. \n";
-    auto player = my_player_information();
-    player.set_compiled_bits(46774);
-    auto sender = send_controller(player);
-    
-    rtos::run();
-    
-}*/
-
 #endif //SEND_IR_CLASSES_HPP

@@ -7,6 +7,7 @@
 #include "listenerpattern.hpp"
 #include "speaker_classes.hpp"
 #include "rgb_led_classes.hpp"
+#include "send_ir_classes.hpp"
 
 #ifndef RUN_GAME_HPP
 #define RUN_GAME_HPP
@@ -47,6 +48,8 @@ private:
     hwlib::target::pin_out pin_g = hwlib::target::pin_out(hwlib::target::pins::d5);
     hwlib::target::pin_out pin_b = hwlib::target::pin_out(hwlib::target::pins::d4);
     led_controller led_ctrl;
+    
+    send_controller sender;
     
     void main(void){
         //initilization
@@ -116,7 +119,6 @@ private:
         rgb_led_struct.green = true;
         rgb_led_struct.blue = false;
         led_ctrl.write(rgb_led_struct);
-        hwlib::cout << "na rgb led\n";
         sleep(700*rtos::ms);
         
         //update health
@@ -135,9 +137,9 @@ private:
             rgb_led_struct.green = true;
             rgb_led_struct.blue = false;
             led_ctrl.write(rgb_led_struct);
-            hwlib::cout << "na rgb led\n";
+            
             auto event = wait(button_pressed_flag + game_time_flag);
-            hwlib::cout << "uit";
+            
             if(event == game_time_flag){
                 rgb_led_struct.red = true;
                 rgb_led_struct.green = false;
@@ -154,22 +156,19 @@ private:
             else if(event == button_pressed_flag){
                 button_ctrl.suspend();
                 
-                //send thing
-                hwlib::cout << "shoot\n";
+                sender.enable_flag();
                 rgb_led_struct.green = false;
                 rgb_led_struct.red = false;
                 rgb_led_struct.blue = true;
                 led_ctrl.write(rgb_led_struct);
-                hwlib::cout << "na led\n";
                 
                 sound_mutex.wait();
                 speaker_ctrl.write(speaker_ctrl.shoot);
                 sound_mutex.signal();
                 speaker_ctrl.enable_flag();
-                hwlib::cout << "na speaker\n";
                 sleep(100 * rtos::ms);
                 button_ctrl.resume();
-            }/* //add * instead of & to button
+            }
             else if(event == received_information_channel){
                 rgb_led_struct.green = false;
                 rgb_led_struct.red = true;
@@ -182,13 +181,13 @@ private:
                 sound_ctrl.write(sound_ctrl.hit);
                 sound_mutex.signal();
                 sound_ctrl.enable_flag();
-                // sleep();
-            }*/
+                sleep(100*rtos::ms);
+            }
         }
     }
 public:
     run_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex, ir_message_logic & message_logic, my_player_information & player_information, rtos::mutex & sound_mutex):
-        task(5, "run_game"),
+        task(6, "run_game"),
         lcd_controller(lcd_controller),
         lcd_mutex(lcd_mutex),
         message_logic(message_logic),
@@ -201,7 +200,8 @@ public:
         button_ctrl(button_pin, this),
         sound_mutex(sound_mutex),
         speaker_ctrl("speaker_ctrl", speaker_pin, sound_mutex),
-        led_ctrl("led_controller", pin_r, pin_g, pin_b)
+        led_ctrl("led_controller", pin_r, pin_g, pin_b),
+        sender(player_information)
     {}
     
     void enable_flag(){

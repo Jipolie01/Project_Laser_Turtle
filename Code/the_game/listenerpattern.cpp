@@ -22,7 +22,7 @@ void button::update_button_state( void )
 }
 
 button_controller::button_controller(hwlib::pin_in & button_pin, run_game_controller * run_game):
-    task(1, "button_task"),
+    task(2, "button_task"),
     button_pin(button_pin),
     check_clock(this,200 * rtos::ms,"check_clock"),
     b(button_pin),

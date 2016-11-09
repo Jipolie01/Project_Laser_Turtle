@@ -42,6 +42,7 @@
     <File Name="listenerpattern.hpp"/>
     <File Name="speaker_classes.hpp"/>
     <File Name="rgb_led_classes.hpp"/>
+    <File Name="send_ir_classes.hpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

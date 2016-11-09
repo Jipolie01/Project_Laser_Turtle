@@ -78,16 +78,10 @@ private:
     }
 public:
     led_controller(const char * task_name, hwlib::pin_out & r, hwlib::pin_out & g, hwlib::pin_out & b):
-        task(3, task_name),
+        task(4, task_name),
         led_color_channel(this, "led_color_channel"),
         led(r, g, b)
     {}
-    
-
-    //functions for synchronization mechanism
-    /*led_color_behaviour read(){
-        return led_color_channel.read();
-    }*/
     
     void write(led_color_behaviour color){
         led_color_channel.write(color);
