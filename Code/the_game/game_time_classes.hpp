@@ -62,7 +62,6 @@ private:
                 lcd_controller.write(new_struct);
                 lcd_mutex.signal();
                 lcd_controller.enable_flag();
-                sleep(6000*rtos::ms);
                 break;
             }
             else{
@@ -82,14 +81,16 @@ private:
             }
         }
         
-        lcd_passthrough new_struct;
+        /*lcd_passthrough new_struct;
         lcd_mutex.wait();
         lcd_controller.write(new_struct);
         lcd_mutex.signal();
-        lcd_controller.enable_flag();
-        game_time_flag.set();
+        lcd_controller.enable_flag();*/
+        //game_time_flag.set();
         //run_game.enable_flag()
-        
+        hwlib::cout << "start_flag\n";
+        wait(game_start_flag);
+        hwlib::cout << "start_flag set\n";
         while(1){
             wait(game_time_clock);
             time_data.set_game_time((time_data.get_game_time()-1));
@@ -102,6 +103,8 @@ private:
                 lcd_controller.write(new_struct);
                 lcd_mutex.signal();
                 lcd_controller.enable_flag();
+                sleep(1000*rtos::ms);
+                game_time_flag.set();
                 //suspend this task (might need to be done in run game)
             }
             else{
@@ -117,6 +120,7 @@ private:
                 lcd_controller.write(lcd_struct);
                 lcd_mutex.signal();
                 lcd_controller.enable_flag();
+                sleep(1*rtos::ms);
             }
         }
     }

@@ -22,6 +22,6 @@ int main(void){
     auto lcd_controller = lcd_display_controller("lcd_display_controller", scl, sda, lcd_mutex);
     
     auto sound_mutex = rtos::mutex("sound_mutex");
-    auto run_game = run_game_controller(lcd_controller, lcd_mutex, message_logic, player_information, sound_mutex);
+    auto run_game = run_game_controller(lcd_controller, lcd_mutex, message_logic, player_information);//, sound_mutex);
     rtos::run();
 }

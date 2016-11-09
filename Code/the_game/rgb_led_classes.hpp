@@ -10,8 +10,8 @@ struct led_color_behaviour{
     bool red = false;
     bool green = false;
     bool blue = false;
-    unsigned int delay_ms = 0;
-    unsigned int times_to_blink = 0;
+   // unsigned int delay_ms = 0;
+   // unsigned int times_to_blink = 0;
 };
 
 class rgb_led {
@@ -85,10 +85,10 @@ private:
         if(color_struct.red){
                 led.set_red();
         }
-        if(color_struct.green){
+        else if(color_struct.green){
                 led.set_green();
         }
-        if(color_struct.blue){
+        else if(color_struct.blue){
                 led.set_blue();
         }
     }
@@ -97,7 +97,7 @@ private:
         while(1){
             wait(led_color_channel);
             auto color_struct = led_color_channel.read();
-            if(color_struct.times_to_blink != 0){
+            /*if(color_struct.times_to_blink != 0){
                 for(unsigned int i = 0; i < color_struct.times_to_blink; i++){
                     set_color(color_struct);
                     sleep(color_struct.delay_ms * rtos::ms);
@@ -106,9 +106,9 @@ private:
                     hwlib::cout << i << '\n';
                 }
             }
-            else{
-                set_color(color_struct);
-            }
+            else{*/
+            set_color(color_struct);
+            //}
         }
     }
 public:
@@ -117,8 +117,6 @@ public:
         led_color_channel(this, "led_color_channel"),
         led(r, g, b)
     {}
-    
-    ~led_controller();
     
 
     //functions for synchronization mechanism

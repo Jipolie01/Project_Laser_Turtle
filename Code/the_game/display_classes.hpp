@@ -121,9 +121,6 @@ public:
         lcd_pool("lcd_pool")
     {}
     
-    ~lcd_display_controller();
-    
-    
     
     //functions for synchronization mechanisms
     void write(const lcd_passthrough lcd_struct){

@@ -21,7 +21,7 @@ void button::update_button_state( void )
 }
 
 button_controller::button_controller(hwlib::pin_in & button_pin, rtos::flag & button_pressed_flag):
-    task("button_task"),
+    task(0, "button_task"),
     button_pin(button_pin),
     check_clock(this,200 * rtos::ms,"check_clock"),
     b(button_pin),
@@ -30,7 +30,6 @@ button_controller::button_controller(hwlib::pin_in & button_pin, rtos::flag & bu
 
 void button_controller::button_pressed()
 {
-        hwlib::cout << "button pressed \n";
-        //set flag
         button_pressed_flag.set();
+        hwlib::cout << "button pressed flag\n";
 }

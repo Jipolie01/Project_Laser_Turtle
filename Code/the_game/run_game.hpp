@@ -6,11 +6,11 @@
 #include "game_time_classes.hpp"
 #include "listenerpattern.hpp"
 #include "speaker_classes.hpp"
+#include "rgb_led_classes.hpp"
 
 #ifndef RUN_GAME_HPP
 #define RUN_GAME_HPP
 //wouter vragen
-//events hoe
 //waarom de fuck als ik een volledig andere class toevoeg gaat hij zeggen dat hij lcd niet meer kent
 class run_game_controller : public rtos::task<>{
 private:
@@ -43,17 +43,23 @@ private:
     rtos::mutex & sound_mutex;
     speaker_controller speaker_ctrl;
     
+    hwlib::target::pin_out pin_r = hwlib::target::pin_out(hwlib::target::pins::d6);
+    hwlib::target::pin_out pin_g = hwlib::target::pin_out(hwlib::target::pins::d5);
+    hwlib::target::pin_out pin_b = hwlib::target::pin_out(hwlib::target::pins::d4);
+    led_controller led_ctrl;
     
     void main(void){
         //initilization
         bool register_game_parameters_done = 0;
         char key = 0;
         
-        lcd_passthrough lcd_clear;
+        lcd_passthrough lcd_commands;
+        lcd_commands.assignment(lcd_commands.line3, "Type command");
         lcd_mutex.wait();
-        lcd_controller.write(lcd_clear);
+        lcd_controller.write(lcd_commands);
         lcd_mutex.signal();
         lcd_controller.enable_flag();
+        sleep(100*rtos::ms);
         while(1){
             key = keypad.check_for_input();
             //put game parameters key in lcd struct
@@ -66,16 +72,18 @@ private:
             lcd_controller.enable_flag();
             
             register_game_parameters_done = get_game_parameters.setup(key);
-            hwlib::wait_ms(200);
+            sleep(200 *rtos::ms);
             if(register_game_parameters_done == 1){
                 break;
             }
         }
+        lcd_passthrough lcd_clear;
         lcd_mutex.wait();
         lcd_controller.write(lcd_clear);
         lcd_mutex.signal();
         lcd_controller.enable_flag();
         sleep(100*rtos::ms);
+        
         //suspend all tasks
         /*game_time.suspend();
         button_ctrl.suspend();
@@ -87,14 +95,29 @@ private:
         /*game_time.suspend();
         button_ctrl.resume();//might need to be only done for periodic tasks
         lcd_controller.resume();*/
+        int cooldown_time = 10;
+        int play_time = 40;
+        game_time.set_time(cooldown_time, play_time); //change to some received time
+        led_color_behaviour rgb_led_struct;
         
-        game_time.set_time(30, 40); //change to some received time
+        rgb_led_struct.red = true;
+        rgb_led_struct.green = false;
+        rgb_led_struct.blue = false;
+        led_ctrl.write(rgb_led_struct);
+        sleep(100 * rtos::ms);
         
         //wait fire button
         wait(button_pressed_flag);
-        
+        sleep(1000*rtos::ms);
         game_time.enable_start_flag();
-        wait(game_time_flag);
+        sleep( (cooldown_time+(cooldown_time/2)) * 1000 * rtos::ms);
+        
+        rgb_led_struct.red = false;
+        rgb_led_struct.green = true;
+        rgb_led_struct.blue = false;
+        led_ctrl.write(rgb_led_struct);
+        hwlib::cout << "na rgb led\n";
+        sleep(700*rtos::ms);
         
         //update health
         lcd_passthrough new_struct;
@@ -103,31 +126,54 @@ private:
         lcd_controller.write(new_struct);
         lcd_mutex.signal();
         lcd_controller.enable_flag();
-        
+        sleep(900 * rtos::ms);
         game_time.enable_start_flag();
+        sleep(1000*rtos::ms);
         
-        //rtos::event evt;
         while(1){
-            wait(game_time_flag);
-            game_time.suspend();
-            button_ctrl.suspend();
-            lcd_controller.suspend();
-            //evt = wait(game_time_flag + button_pressed_flag);
-            /*if(evt == game_time_flag){
+            auto event = wait(button_pressed_flag + game_time_flag);
+            hwlib::cout << "uit";
+            if(event == game_time_flag){
                 game_time.suspend();
                 button_ctrl.suspend();
                 lcd_controller.suspend();
+                speaker_ctrl.suspend();
+                led_ctrl.suspend();
+                hwlib::cout << "suspended\n";
             }
-            else if(evt == button_pressed_flag){
-                //send flag set
-                hwlib::cout << "send flag set";
-            }
-            else if(evt == received_information_channel){
+            else if(event == button_pressed_flag){
+                hwlib::cout << "shoot\n";
+                rgb_led_struct.green = false;
+                rgb_led_struct.red = false;
+                rgb_led_struct.blue = true;
+                led_ctrl.write(rgb_led_struct);
+                hwlib::cout << "na led\n";
+                sleep(1000*rtos::ms);
+                sound_mutex.wait();
+                speaker_ctrl.write(speaker_ctrl.shoot);
+                sound_mutex.signal();
+                speaker_ctrl.enable_flag();
+                hwlib::cout << "na speaker\n";
+                sleep(700 * rtos::ms);
+            }/* //add * instead of & to button
+            else if(event == received_information_channel){
+                rgb_led_struct.green = false;
+                rgb_led_struct.red = true;
+                rgb_led_struct.blue = false;
+                rgb_led_struct.times_to_blink = 0;
+                rgb_led_struct.delay_ms = 0;
+                led_ctrl.write(newstruct);
+                
+                sound_mutex.wait();
+                sound_ctrl.write(sound_ctrl.hit);
+                sound_mutex.signal();
+                sound_ctrl.enable_flag();
+                // sleep();
             }*/
         }
     }
 public:
-    run_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex, ir_message_logic & message_logic, my_player_information & player_information, rtos::mutex & sound_mutex):
+    run_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex, ir_message_logic & message_logic, my_player_information & player_information)://, rtos::mutex & sound_mutex):
         lcd_controller(lcd_controller),
         lcd_mutex(lcd_mutex),
         message_logic(message_logic),
@@ -139,7 +185,8 @@ public:
         button_pressed_flag(this, "button_pressed_flag"),
         button_ctrl(button_pin, button_pressed_flag),
         sound_mutex(sound_mutex),
-        speaker_ctrl("speaker_ctrl", speaker_pin, sound_mutex)
+        speaker_ctrl("speaker_ctrl", speaker_pin, sound_mutex),
+        led_ctrl("led_controller", pin_r, pin_g, pin_b)
     {}
 };
 
