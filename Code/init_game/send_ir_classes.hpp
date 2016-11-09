@@ -47,7 +47,6 @@ public:
 class send_controller : public rtos::task<>{
 private:
     ir_sender ir_send;
-    my_player_information & message_to_send;
     rtos::channel<char16_t, 6> messages_channel;
     
     void main(){
@@ -61,15 +60,14 @@ private:
         ir_send.send_message(message);
     }
 public:
-    send_controller(my_player_information & player_information):
+    send_controller():
     task(2, "send_task"),
     ir_send(),
-    message_to_send(player_information),
     messages_channel(this, "messages_channel")
     {}
 
     void write(char16_t value){
-        message_channel.write(value);
+        messages_channel.write(value);
     }
 };
 #endif //SEND_IR_CLASSES_HPP

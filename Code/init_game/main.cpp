@@ -13,9 +13,11 @@ int main(void){
     auto scl = target::pin_oc{ target::pins::d21};
     auto sda = target::pin_oc{ target::pins::d20};
     
+    ir_message_logic message;
+    
     auto lcd_mutex = rtos::mutex("lcd_mutex");
     auto lcd_controller = lcd_display_controller("lcd_display_controller", scl, sda, lcd_mutex);
     
-    auto init_game = init_game_controller(lcd_controller, lcd_mutex);
+    auto init_game = init_game_controller(lcd_controller, lcd_mutex, message);
     rtos::run();
 }
