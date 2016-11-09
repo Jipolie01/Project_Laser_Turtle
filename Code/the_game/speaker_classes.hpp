@@ -100,7 +100,7 @@ sound_lookup shoot{4000,40000, 3, 50};
 sound_lookup hit{500,50000, 3,200};
 /// speaker_controller constructor
 speaker_controller(const char * task_name, hwlib::pin_out & speaker_pin, rtos::mutex & sound_mutex):
-        task(task_name),
+        task(4, task_name),
         sound_device(speaker_pin),
         play_sound_flag(this,"play_sound_flag"),
         sound_pool("speaker_pool"),

@@ -1,7 +1,11 @@
 #include "hwlib.hpp"
 #include "rtos.hpp"
 
+#ifndef LISTENERPATTERN_HPP
+#define LISTENERPATTERN_HPP
+
 class listener;
+class run_game_controller;
 
 class button{
 protected:
@@ -24,7 +28,7 @@ private:
     hwlib::pin_in & button_pin;
     rtos::clock check_clock;
     button b;
-    rtos::flag & button_pressed_flag;
+    run_game_controller * run_game;
     
     void main(void){
         b.add_listener(this);
@@ -36,8 +40,10 @@ private:
     
     
 public:
-    button_controller(hwlib::pin_in & button_pin, rtos::flag & button_pressed_flag);
+    button_controller(hwlib::pin_in & button_pin, run_game_controller * run_game);
     void button_pressed() override;
     
     
 };
+
+#endif //LISTENERPATTERN_HPP

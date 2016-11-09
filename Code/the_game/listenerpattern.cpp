@@ -1,4 +1,5 @@
 #include "listenerpattern.hpp"
+#include "run_game.hpp"
 
 button::button(hwlib::pin_in & button_pin):
     button_pin(button_pin)
@@ -20,16 +21,16 @@ void button::update_button_state( void )
     }
 }
 
-button_controller::button_controller(hwlib::pin_in & button_pin, rtos::flag & button_pressed_flag):
-    task(0, "button_task"),
+button_controller::button_controller(hwlib::pin_in & button_pin, run_game_controller * run_game):
+    task(1, "button_task"),
     button_pin(button_pin),
     check_clock(this,200 * rtos::ms,"check_clock"),
     b(button_pin),
-    button_pressed_flag(button_pressed_flag)
+    run_game(run_game)
 {}
 
 void button_controller::button_pressed()
 {
-        button_pressed_flag.set();
+        run_game->enable_flag();
         hwlib::cout << "button pressed flag\n";
 }

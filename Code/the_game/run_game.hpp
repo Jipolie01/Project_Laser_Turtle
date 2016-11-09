@@ -131,9 +131,19 @@ private:
         sleep(1000*rtos::ms);
         
         while(1){
+            rgb_led_struct.red = false;
+            rgb_led_struct.green = true;
+            rgb_led_struct.blue = false;
+            led_ctrl.write(rgb_led_struct);
+            hwlib::cout << "na rgb led\n";
             auto event = wait(button_pressed_flag + game_time_flag);
             hwlib::cout << "uit";
             if(event == game_time_flag){
+                rgb_led_struct.red = true;
+                rgb_led_struct.green = false;
+                rgb_led_struct.blue = false;
+                led_ctrl.write(rgb_led_struct);
+                sleep(1500*rtos::ms);
                 game_time.suspend();
                 button_ctrl.suspend();
                 lcd_controller.suspend();
@@ -142,19 +152,23 @@ private:
                 hwlib::cout << "suspended\n";
             }
             else if(event == button_pressed_flag){
+                button_ctrl.suspend();
+                
+                //send thing
                 hwlib::cout << "shoot\n";
                 rgb_led_struct.green = false;
                 rgb_led_struct.red = false;
                 rgb_led_struct.blue = true;
                 led_ctrl.write(rgb_led_struct);
                 hwlib::cout << "na led\n";
-                sleep(1000*rtos::ms);
+                
                 sound_mutex.wait();
                 speaker_ctrl.write(speaker_ctrl.shoot);
                 sound_mutex.signal();
                 speaker_ctrl.enable_flag();
                 hwlib::cout << "na speaker\n";
-                sleep(700 * rtos::ms);
+                sleep(100 * rtos::ms);
+                button_ctrl.resume();
             }/* //add * instead of & to button
             else if(event == received_information_channel){
                 rgb_led_struct.green = false;
@@ -173,7 +187,8 @@ private:
         }
     }
 public:
-    run_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex, ir_message_logic & message_logic, my_player_information & player_information)://, rtos::mutex & sound_mutex):
+    run_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex, ir_message_logic & message_logic, my_player_information & player_information, rtos::mutex & sound_mutex):
+        task(5, "run_game"),
         lcd_controller(lcd_controller),
         lcd_mutex(lcd_mutex),
         message_logic(message_logic),
@@ -183,11 +198,15 @@ public:
         game_time_flag(this, "game_time_flag"),
         game_time("game_time", lcd_mutex, lcd_controller, game_time_flag),
         button_pressed_flag(this, "button_pressed_flag"),
-        button_ctrl(button_pin, button_pressed_flag),
+        button_ctrl(button_pin, this),
         sound_mutex(sound_mutex),
         speaker_ctrl("speaker_ctrl", speaker_pin, sound_mutex),
         led_ctrl("led_controller", pin_r, pin_g, pin_b)
     {}
+    
+    void enable_flag(){
+        button_pressed_flag.set();
+    }
 };
 
 #endif //RUN_GAME_HPP

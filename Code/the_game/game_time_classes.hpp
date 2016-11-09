@@ -126,7 +126,7 @@ private:
     }
 public:
     game_time_controller(const char * task_name, rtos::mutex & lcd_mutex, lcd_display_controller & lcd_controller, rtos::flag & game_time_flag)://, run_game_controller & run_game):
-        task(task_name),
+        task(0, task_name),
         game_time_clock(this, 1000*rtos::ms, "game_time_clock"),
         game_start_flag(this, "game_ended_flag"),
         lcd_mutex(lcd_mutex),
