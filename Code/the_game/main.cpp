@@ -23,5 +23,7 @@ int main(void){
     
     auto sound_mutex = rtos::mutex("sound_mutex");
     auto run_game = run_game_controller(lcd_controller, lcd_mutex, message_logic, player_information, sound_mutex);
+    
+    //auto receiver = receiverding(run_game);
     rtos::run();
 }

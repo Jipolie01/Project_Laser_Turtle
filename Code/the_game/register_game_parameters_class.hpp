@@ -1,3 +1,4 @@
+/// @file
 #include "entity_classes.hpp"
 #include "application_logic_classes.hpp"
 #include "keypad_class.hpp"

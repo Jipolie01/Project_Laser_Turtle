@@ -1,3 +1,4 @@
+/// @file
 #include "hwlib.hpp"
 #include "rtos.hpp"
 
@@ -5,13 +6,19 @@
 #define RGB_LED_CLASSES_HPP
 
 
-
+///Provide led color information
+//
+///This struct is used to provide information about what color
+/// needs to be visable on the led.
 struct led_color_behaviour{
     bool red = false;
     bool green = false;
     bool blue = false;
 };
 
+///
+//
+///
 class rgb_led {
 private:
     hwlib::pin_out & r;
