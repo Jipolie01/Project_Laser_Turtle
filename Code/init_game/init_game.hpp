@@ -24,7 +24,7 @@ class init_game_controller : public rtos::task<>{
     hwlib::target::pin_in in3 = hwlib::target::pin_in( hwlib::target::pins::a7 );
     hwlib::port_in_from_pins in_port = hwlib::port_in_from_pins( in0, in1, in2, in3 );
     
-    Keypad & keypad;
+    Keypad keypad;
     //send_controller sender;
     
     void main(void){
