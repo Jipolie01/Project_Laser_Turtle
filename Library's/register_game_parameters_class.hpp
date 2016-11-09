@@ -34,30 +34,22 @@ public:
         weapon_id_char(0)
     {}
 
-    void send(char & c){
-          hwlib::cout << " [" << c << "]\n";
-    }
-
     bool setup(char key){
         if((key == 'A') && a_is_pressed == 0){
-            send(key);
             a_is_pressed = 1;
             return 0;
         }
         if((((key >= '1') && (key <= '9')) && a_is_pressed == 1) && player_id_pressed == 0){
             player_id_char = key;
-            send(key);
             player_id_pressed = 1;
             return 0;
         }
         if(((key == 'B') && player_id_pressed == 1) && b_is_pressed == 0){
-            send(key);
             b_is_pressed = 1;
             return 0;
         }
         if((((key >= '1') && (key <= '9')) && b_is_pressed == 1) && weapon_id_pressed == 0){
             weapon_id_char = key;
-            send(key);
             weapon_id_pressed = 1;
             uint_fast8_t player_id = player_id_char - '0';
             uint_fast8_t weapon_id = weapon_id_char - '0';

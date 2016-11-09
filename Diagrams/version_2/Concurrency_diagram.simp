@@ -79,7 +79,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>54</value>
+        <value>21</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -128,7 +128,7 @@
     </item>
   </items>
   <models>
-    <model id="pc2eba36ad3fb4167bd9fe7d29d50aaae_235147953" name="Model 1" namespace="" order-index="1">
+    <model id="pc2eba36ad3fb4167bd9fe7d29d50aaae_235147953" name="Model 1" namespace="" order-index="1" expanded="true">
       <meta>
         <authors>
           <author> </author>
@@ -603,7 +603,7 @@
             <style class="default" />
             <communication-message from="di673447387189083378" to="di244165734347796880">
               <messages>
-                <message id="" seq-number="" text="set()" reverse="false" return-value="" assign-to-variable="">
+                <message id="" seq-number="" text="wait()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
                 </message>
               </messages>
@@ -613,7 +613,7 @@
             <style class="default" />
             <communication-message from="di602432717933013689" to="di244165734347796880">
               <messages>
-                <message id="" seq-number="" text="wait()" reverse="false" return-value="" assign-to-variable="">
+                <message id="" seq-number="" text="set()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
                 </message>
               </messages>
@@ -639,7 +639,7 @@
             <style class="default" />
             <communication-message from="di673447387189083378" to="di432634096614758724">
               <messages>
-                <message id="" seq-number="" text="set()" reverse="false" return-value="" assign-to-variable="">
+                <message id="" seq-number="" text="wait()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
                 </message>
               </messages>
@@ -655,7 +655,7 @@
             <style class="default" />
             <communication-message from="di389114393306994966" to="di432634096614758724">
               <messages>
-                <message id="" seq-number="" text="wait()" reverse="false" return-value="" assign-to-variable="">
+                <message id="" seq-number="" text="set()" reverse="false" return-value="" assign-to-variable="">
                   <parameters />
                 </message>
               </messages>
@@ -1077,7 +1077,7 @@
             <communication-message />
           </item>
           <item id="di274771894696304674" iid="329afb6f85a644a5a40a673c5043b543" creation-date="11/01/2016 15:56:14" order-index="117" type="relation">
-            <layout normal-message-position="-13,31" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="190" y1="362" x2="397" y2="325" start-border-pos="0.375" end-border-pos="0.75" name-position="0,0">
+            <layout normal-message-position="-30,31" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="190" y1="362" x2="397" y2="325" start-border-pos="0.375" end-border-pos="0.75" name-position="0,0">
               <points>
                 <point x="190" y="362" />
                 <point x="397" y="325" />
@@ -1087,7 +1087,7 @@
             <communication-message />
           </item>
           <item id="di108550777763162879" iid="f39288c50ef742eca799561dc4da75d7" creation-date="11/01/2016 15:58:25" order-index="119" type="relation">
-            <layout normal-message-position="22,7" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="529" y1="214" x2="437" y2="285" start-border-pos="0.735507246376812" end-border-pos="0.25" name-position="0,0">
+            <layout normal-message-position="39,1" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="529" y1="214" x2="437" y2="285" start-border-pos="0.735507246376812" end-border-pos="0.25" name-position="0,0">
               <points>
                 <point x="529" y="214" />
                 <point x="437" y="285" />
@@ -1120,7 +1120,7 @@
             <communication-message />
           </item>
           <item id="di518015280966391106" iid="d455290ff7d243ae9b34edb49e5078d4" creation-date="11/01/2016 16:00:32" order-index="123" type="relation">
-            <layout normal-message-position="35,-10" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="140" y1="387" x2="176" y2="483" start-border-pos="0.605199718475342" end-border-pos="0" name-position="0,0">
+            <layout normal-message-position="32,-11" reverse-message-position="0,30" line-style="oblique" lock-start-point="false" lock-end-point="true" lock-to-fields="false" auto-path="" x1="140" y1="387" x2="176" y2="483" start-border-pos="0.605199718475342" end-border-pos="0" name-position="0,0">
               <points>
                 <point x="140" y="387" />
                 <point x="176" y="483" />
@@ -1140,7 +1140,7 @@
             <communication-message />
           </item>
           <item id="di715370892945321425" iid="f5ced8b133eb413eb68f5cebbc9353ae" creation-date="11/01/2016 16:00:51" order-index="125" type="relation">
-            <layout normal-message-position="38,-22" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="292" y1="553" x2="216" y2="503" start-border-pos="0.0770833333333333" end-border-pos="0.375" name-position="0,0">
+            <layout normal-message-position="37,-25" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="292" y1="553" x2="216" y2="503" start-border-pos="0.0770833333333333" end-border-pos="0.375" name-position="0,0">
               <points>
                 <point x="292" y="553" />
                 <point x="216" y="503" />
