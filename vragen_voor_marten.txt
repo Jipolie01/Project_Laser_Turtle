@@ -1,2 +1,0 @@
-1. mogen wij via run game de game time ontvangen van de game leider en dan doorgeven aan register game parameters
-2. moeten de klokken in de interfaces in stds

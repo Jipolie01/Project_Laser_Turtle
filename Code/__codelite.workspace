@@ -1,45 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="example code" Database="">
   <Project Name="create_protocol" Path="create_protocol/_codelite.project" Active="No"/>
-  <Project Name="receive_signal" Path="receive_signal/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="receive_signal" ConfigName="Release"/>
+      <Project Name="create_protocol" ConfigName="Release"/>
     </WorkspaceConfiguration>
-  </BuildMatrix>
-  <Project Name="receive_signal_no_class" Path="receive_signal_no_class/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="receive_signal_no_class" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
-  <Project Name="send_signal" Path="send_signal/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="send_signal" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
-  <Project Name="send_signal_no_class" Path="send_signal_no_class/_codelite.project" Active="No"/>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="send_signal_no_class" ConfigName="Release"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
-  <Project Name="the_game" Path="the_game/_codelite.project" Active="Yes"/>
+  </BuildMatrix> 
+  <Project Name="the_game" Path="the_game/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="the_game" ConfigName="Release"/>
     </WorkspaceConfiguration>
-  </BuildMatrix>
-  <BuildMatrix>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Environment/>
-      <Project Name="create_protocol" ConfigName="Release"/>
-      <Project Name="receive_signal" ConfigName="Debug"/>
-      <Project Name="receive_signal_no_class" ConfigName="Debug"/>
-      <Project Name="send_signal" ConfigName="Debug"/>
-      <Project Name="send_signal_no_class" ConfigName="Debug"/>
-      <Project Name="the_game" ConfigName="Debug"/>
-    </WorkspaceConfiguration>
-  </BuildMatrix>
+  </BuildMatrix> 
 </CodeLite_Workspace>
