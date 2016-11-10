@@ -1,3 +1,4 @@
+/// @file
 #include "rtos.hpp"
 #include "hwlib.hpp"
 #include "keypad_class.hpp"
@@ -8,8 +9,16 @@
 #ifndef INIT_GAME_HPP
 #define INIT_GAME_HPP
 
+///Inialize the game
+//
+///This class is used for the game leader to setup the game.
+///So far the only command the receiver expects is the game
+/// time at the beginning of the game. New commands can be
+/// added later and would need a change in the run game class.
+///Right now during the game the receiver only exprects player
+/// ids and weapon ids but no commands.
 class init_game_controller : public rtos::task<>{
-    private:
+private:
     lcd_display_controller & lcd_controller;
     rtos::mutex & lcd_mutex;
     
@@ -28,13 +37,21 @@ class init_game_controller : public rtos::task<>{
     Keypad keypad;
     send_controller sender;
     
+    ///Main function
+    //
+    ///Function automatically called by the rtos. All actions
+    /// are done in this function. It takes no arguments and
+    /// returns nothing. The function waits for commands and
+    /// sends them using the # button. # can be pressed multiple
+    /// times to send the command multiple times. * can be pressed
+    /// to indicate that you are done with sending commands.
     void main(void){
         char key = 0;
         int to_send;
         int returned = 1;
+        lcd_passthrough lcd_commands;
         while(1){
             if(returned){
-                lcd_passthrough lcd_commands;
                 lcd_commands.assignment(lcd_commands.line3, "Type C to");
                 lcd_commands.assignment(lcd_commands.line4, "initialize");
                 lcd_mutex.wait();
@@ -57,7 +74,7 @@ class init_game_controller : public rtos::task<>{
                 sleep(100*rtos::ms);
                 int i = 0;
                 while(1){
-                    key = keypad.check_for_input();
+                    key = keypad.get_char();
                     
                     if((key >= '0') && (key <= '9')){
                         hwlib::cout << key;
@@ -92,10 +109,16 @@ class init_game_controller : public rtos::task<>{
                     }
                 }
             }
-            key = keypad.check_for_input();
+            key = keypad.get_char();
         }
     }
 public:
+    ///Default constructor
+    //
+    ///This constructor receives a reference to the lcd controller 
+    /// and the lcd mutex. These are used to communicate with the
+    /// lcds pool. The message object is there for encoding every
+    /// seperate command.
     init_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex, ir_message_logic & message):
         task(3, "init_game"),
         lcd_controller(lcd_controller),
