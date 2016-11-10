@@ -1,0 +1,123 @@
+\hypertarget{classir__sender}{}\section{ir\+\_\+sender Class Reference}
+\label{classir__sender}\index{ir\+\_\+sender@{ir\+\_\+sender}}
+
+
+Ir sender class.  
+
+
+
+
+{\ttfamily \#include $<$send\+\_\+ir\+\_\+classes.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classir__sender_a53efa5b083ddbbc9f8de912a44135e08}{send\+\_\+one} ()
+\begin{DoxyCompactList}\small\item\em Send one over pin. \end{DoxyCompactList}\item 
+void \hyperlink{classir__sender_a3868a2512035b0f6b5b6df093db22fbb}{send\+\_\+zero} ()
+\begin{DoxyCompactList}\small\item\em Send zero over pin. \end{DoxyCompactList}\item 
+void \hyperlink{classir__sender_aa38f450682d96d47347dceefb7167976}{set\+\_\+zero} ()
+\begin{DoxyCompactList}\small\item\em Turn sender pin off. \end{DoxyCompactList}\item 
+void \hyperlink{classir__sender_a6b23d2e93be4f000ca689395613ea487}{send\+\_\+message} (char16\+\_\+t compiled\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Send a full message. \end{DoxyCompactList}\item 
+void \hyperlink{classir__sender_a53efa5b083ddbbc9f8de912a44135e08}{send\+\_\+one} ()
+\begin{DoxyCompactList}\small\item\em Send one over pin. \end{DoxyCompactList}\item 
+void \hyperlink{classir__sender_a3868a2512035b0f6b5b6df093db22fbb}{send\+\_\+zero} ()
+\begin{DoxyCompactList}\small\item\em Send zero over pin. \end{DoxyCompactList}\item 
+void \hyperlink{classir__sender_aa38f450682d96d47347dceefb7167976}{set\+\_\+zero} ()
+\begin{DoxyCompactList}\small\item\em Turn sender pin off. \end{DoxyCompactList}\item 
+void \hyperlink{classir__sender_a6b23d2e93be4f000ca689395613ea487}{send\+\_\+message} (char16\+\_\+t compiled\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Send a full message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ir sender class. 
+
+This class is a boundary object and is used to send bits in the way specified in the protocal. It contains a 36khz pin wich is arduino pin digital 2. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classir__sender_a6b23d2e93be4f000ca689395613ea487}{}\label{classir__sender_a6b23d2e93be4f000ca689395613ea487} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!send\+\_\+message@{send\+\_\+message}}
+\index{send\+\_\+message@{send\+\_\+message}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{send\+\_\+message()}{send\_message()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::send\+\_\+message (\begin{DoxyParamCaption}\item[{char16\+\_\+t}]{compiled\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a full message. 
+
+This function sends the complete 16 bit message. It receives the message as paramter and returns nothing. \hypertarget{classir__sender_a6b23d2e93be4f000ca689395613ea487}{}\label{classir__sender_a6b23d2e93be4f000ca689395613ea487} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!send\+\_\+message@{send\+\_\+message}}
+\index{send\+\_\+message@{send\+\_\+message}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{send\+\_\+message()}{send\_message()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::send\+\_\+message (\begin{DoxyParamCaption}\item[{char16\+\_\+t}]{compiled\+\_\+message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send a full message. 
+
+This function sends the complete 16 bit message. It receives the message as paramter and returns nothing. \hypertarget{classir__sender_a53efa5b083ddbbc9f8de912a44135e08}{}\label{classir__sender_a53efa5b083ddbbc9f8de912a44135e08} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!send\+\_\+one@{send\+\_\+one}}
+\index{send\+\_\+one@{send\+\_\+one}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{send\+\_\+one()}{send\_one()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::send\+\_\+one (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send one over pin. 
+
+This function sends a one over the sender pin. It returns nothing and dus not requires any parameters. \hypertarget{classir__sender_a53efa5b083ddbbc9f8de912a44135e08}{}\label{classir__sender_a53efa5b083ddbbc9f8de912a44135e08} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!send\+\_\+one@{send\+\_\+one}}
+\index{send\+\_\+one@{send\+\_\+one}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{send\+\_\+one()}{send\_one()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::send\+\_\+one (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send one over pin. 
+
+This function sends a one over the sender pin. It returns nothing and dus not requires any parameters. \hypertarget{classir__sender_a3868a2512035b0f6b5b6df093db22fbb}{}\label{classir__sender_a3868a2512035b0f6b5b6df093db22fbb} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!send\+\_\+zero@{send\+\_\+zero}}
+\index{send\+\_\+zero@{send\+\_\+zero}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{send\+\_\+zero()}{send\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::send\+\_\+zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send zero over pin. 
+
+This function sends a zero over the sender pin. It returns nothing and dus not requires any parameters. \hypertarget{classir__sender_a3868a2512035b0f6b5b6df093db22fbb}{}\label{classir__sender_a3868a2512035b0f6b5b6df093db22fbb} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!send\+\_\+zero@{send\+\_\+zero}}
+\index{send\+\_\+zero@{send\+\_\+zero}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{send\+\_\+zero()}{send\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::send\+\_\+zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Send zero over pin. 
+
+This function sends a zero over the sender pin. It returns nothing and dus not requires any parameters. \hypertarget{classir__sender_aa38f450682d96d47347dceefb7167976}{}\label{classir__sender_aa38f450682d96d47347dceefb7167976} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!set\+\_\+zero@{set\+\_\+zero}}
+\index{set\+\_\+zero@{set\+\_\+zero}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{set\+\_\+zero()}{set\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::set\+\_\+zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Turn sender pin off. 
+
+This function sets the sender pin to zero. It dus not need any parameters nor dus it return anything. \hypertarget{classir__sender_aa38f450682d96d47347dceefb7167976}{}\label{classir__sender_aa38f450682d96d47347dceefb7167976} 
+\index{ir\+\_\+sender@{ir\+\_\+sender}!set\+\_\+zero@{set\+\_\+zero}}
+\index{set\+\_\+zero@{set\+\_\+zero}!ir\+\_\+sender@{ir\+\_\+sender}}
+\subsubsection{\texorpdfstring{set\+\_\+zero()}{set\_zero()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ir\+\_\+sender\+::set\+\_\+zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Turn sender pin off. 
+
+This function sets the sender pin to zero. It dus not need any parameters nor dus it return anything. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ir sender with channel/\hyperlink{ir_01sender_01with_01channel_2send__ir__classes_8hpp}{send\+\_\+ir\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

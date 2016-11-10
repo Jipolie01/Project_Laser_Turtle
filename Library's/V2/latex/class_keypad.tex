@@ -1,0 +1,54 @@
+\hypertarget{class_keypad}{}\section{Keypad Class Reference}
+\label{class_keypad}\index{Keypad@{Keypad}}
+
+
+\hyperlink{class_keypad}{Keypad} class.  
+
+
+
+
+{\ttfamily \#include $<$keypad\+\_\+class.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_keypad_a5d8b8cf0e33463dabefd8b30ec4c43e8}{Keypad} (hwlib\+::port\+\_\+oc\+\_\+from\+\_\+pins \&out\+\_\+port, hwlib\+::port\+\_\+in\+\_\+from\+\_\+pins \&in\+\_\+port)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+char \hyperlink{class_keypad_aef896a8cccb21f0b49579ed6d3c7e026}{get\+\_\+char} ()
+\begin{DoxyCompactList}\small\item\em Check for input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_keypad}{Keypad} class. 
+
+This class is an boundary object and creates a keypad from two sets of ports. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_keypad_a5d8b8cf0e33463dabefd8b30ec4c43e8}{}\label{class_keypad_a5d8b8cf0e33463dabefd8b30ec4c43e8} 
+\index{Keypad@{Keypad}!Keypad@{Keypad}}
+\index{Keypad@{Keypad}!Keypad@{Keypad}}
+\subsubsection{\texorpdfstring{Keypad()}{Keypad()}}
+{\footnotesize\ttfamily Keypad\+::\+Keypad (\begin{DoxyParamCaption}\item[{hwlib\+::port\+\_\+oc\+\_\+from\+\_\+pins \&}]{out\+\_\+port,  }\item[{hwlib\+::port\+\_\+in\+\_\+from\+\_\+pins \&}]{in\+\_\+port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+This constructor receives 2 parameters. Both of them are ports created from the keypad pins. The constructor uses these ports to create a keypad. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_keypad_aef896a8cccb21f0b49579ed6d3c7e026}{}\label{class_keypad_aef896a8cccb21f0b49579ed6d3c7e026} 
+\index{Keypad@{Keypad}!get\+\_\+char@{get\+\_\+char}}
+\index{get\+\_\+char@{get\+\_\+char}!Keypad@{Keypad}}
+\subsubsection{\texorpdfstring{get\+\_\+char()}{get\_char()}}
+{\footnotesize\ttfamily char Keypad\+::get\+\_\+char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check for input. 
+
+This function calls the getc() function from the keypad. It requires no parameters and returns the received character. The getc() function waits until a key has been pressed in a loop. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{keypad__class_8hpp}{keypad\+\_\+class.\+hpp}\end{DoxyCompactItemize}

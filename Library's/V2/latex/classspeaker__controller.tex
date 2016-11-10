@@ -1,0 +1,93 @@
+\hypertarget{classspeaker__controller}{}\section{speaker\+\_\+controller Class Reference}
+\label{classspeaker__controller}\index{speaker\+\_\+controller@{speaker\+\_\+controller}}
+
+
+Speaker controller class.  
+
+
+
+
+{\ttfamily \#include $<$speaker\+\_\+classes.\+hpp$>$}
+
+Inheritance diagram for speaker\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classspeaker__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspeaker__controller_aff5f11eb09fef5a599181d36a6b2a2a9}{speaker\+\_\+controller} (const char $\ast$task\+\_\+name, hwlib\+::pin\+\_\+out \&speaker\+\_\+pin, rtos\+::mutex \&sound\+\_\+mutex)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classspeaker__controller_a13df562814c54591d83e4dd05e6930ca}{play\+\_\+sound} (const \hyperlink{structsound__lookup}{sound\+\_\+lookup} \&play)
+\begin{DoxyCompactList}\small\item\em play sound \end{DoxyCompactList}\item 
+void \hyperlink{classspeaker__controller_a7596b187aa529529886992fd6545bcab}{write} (const \hyperlink{structsound__lookup}{sound\+\_\+lookup} sound\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em write to sound pool \end{DoxyCompactList}\item 
+void \hyperlink{classspeaker__controller_ac960be64207122d099dab24de3928d98}{enable\+\_\+flag} ()
+\begin{DoxyCompactList}\small\item\em Set the play sound flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classspeaker__controller_a35a3ec318694a96a19fa242fa061205b}{}\label{classspeaker__controller_a35a3ec318694a96a19fa242fa061205b} 
+\hyperlink{structsound__lookup}{sound\+\_\+lookup} \hyperlink{classspeaker__controller_a35a3ec318694a96a19fa242fa061205b}{shoot} \{4000,40000, 3, 50\}
+\begin{DoxyCompactList}\small\item\em shoot sound \hyperlink{structsound__lookup}{sound\+\_\+lookup} \end{DoxyCompactList}\item 
+\hypertarget{classspeaker__controller_a188de8c71de428765cd73f0f66d6d44e}{}\label{classspeaker__controller_a188de8c71de428765cd73f0f66d6d44e} 
+\hyperlink{structsound__lookup}{sound\+\_\+lookup} \hyperlink{classspeaker__controller_a188de8c71de428765cd73f0f66d6d44e}{hit} \{500,50000, 3,200\}
+\begin{DoxyCompactList}\small\item\em hit sound \hyperlink{structsound__lookup}{sound\+\_\+lookup} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Speaker controller class. 
+
+This class is used for controlling the speaker and converting the \hyperlink{structsound__lookup}{sound\+\_\+lookup} struct received from the sound pool to useable variables. Speaker\+\_\+controller uses the concurrency mechanism pool with mutex for receiving which sound is needed to be played. It also uses a flag to know when a new sond is ready to be read from the pool and played. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classspeaker__controller_aff5f11eb09fef5a599181d36a6b2a2a9}{}\label{classspeaker__controller_aff5f11eb09fef5a599181d36a6b2a2a9} 
+\index{speaker\+\_\+controller@{speaker\+\_\+controller}!speaker\+\_\+controller@{speaker\+\_\+controller}}
+\index{speaker\+\_\+controller@{speaker\+\_\+controller}!speaker\+\_\+controller@{speaker\+\_\+controller}}
+\subsubsection{\texorpdfstring{speaker\+\_\+controller()}{speaker\_controller()}}
+{\footnotesize\ttfamily speaker\+\_\+controller\+::speaker\+\_\+controller (\begin{DoxyParamCaption}\item[{const char $\ast$}]{task\+\_\+name,  }\item[{hwlib\+::pin\+\_\+out \&}]{speaker\+\_\+pin,  }\item[{rtos\+::mutex \&}]{sound\+\_\+mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+This constructor receives a task name, speaker pin and sound mutex as parameters. It initializes these together with the flag and pool. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classspeaker__controller_ac960be64207122d099dab24de3928d98}{}\label{classspeaker__controller_ac960be64207122d099dab24de3928d98} 
+\index{speaker\+\_\+controller@{speaker\+\_\+controller}!enable\+\_\+flag@{enable\+\_\+flag}}
+\index{enable\+\_\+flag@{enable\+\_\+flag}!speaker\+\_\+controller@{speaker\+\_\+controller}}
+\subsubsection{\texorpdfstring{enable\+\_\+flag()}{enable\_flag()}}
+{\footnotesize\ttfamily void speaker\+\_\+controller\+::enable\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the play sound flag. 
+
+This function is used to make other objects able to set the play sound flag. It returns nothing and requires no parameters. \hypertarget{classspeaker__controller_a13df562814c54591d83e4dd05e6930ca}{}\label{classspeaker__controller_a13df562814c54591d83e4dd05e6930ca} 
+\index{speaker\+\_\+controller@{speaker\+\_\+controller}!play\+\_\+sound@{play\+\_\+sound}}
+\index{play\+\_\+sound@{play\+\_\+sound}!speaker\+\_\+controller@{speaker\+\_\+controller}}
+\subsubsection{\texorpdfstring{play\+\_\+sound()}{play\_sound()}}
+{\footnotesize\ttfamily void speaker\+\_\+controller\+::play\+\_\+sound (\begin{DoxyParamCaption}\item[{const \hyperlink{structsound__lookup}{sound\+\_\+lookup} \&}]{play }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+play sound 
+
+This function plays the sound from a received sound lookup. It calls the play function from the sound device. The function returns nothing. \hypertarget{classspeaker__controller_a7596b187aa529529886992fd6545bcab}{}\label{classspeaker__controller_a7596b187aa529529886992fd6545bcab} 
+\index{speaker\+\_\+controller@{speaker\+\_\+controller}!write@{write}}
+\index{write@{write}!speaker\+\_\+controller@{speaker\+\_\+controller}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void speaker\+\_\+controller\+::write (\begin{DoxyParamCaption}\item[{const \hyperlink{structsound__lookup}{sound\+\_\+lookup}}]{sound\+\_\+struct }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+write to sound pool 
+
+This function is used to make sure other classes can write to the sound pool. It returns nothing and requires a sound lookup type as parameter. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{speaker__classes_8hpp}{speaker\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

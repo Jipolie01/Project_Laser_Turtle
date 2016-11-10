@@ -1,0 +1,66 @@
+\hypertarget{classir__message__logic}{}\section{ir\+\_\+message\+\_\+logic Class Reference}
+\label{classir__message__logic}\index{ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}}
+
+
+Ir message logic class.  
+
+
+
+
+{\ttfamily \#include $<$application\+\_\+logic\+\_\+classes.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classir__message__logic_af65240d9b8999fd1b956fc2da17a6d3e}{ir\+\_\+message\+\_\+logic} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+char16\+\_\+t \hyperlink{classir__message__logic_a60cf2eae7b2ff8285440068b6419863c}{encode} (uint\+\_\+fast8\+\_\+t player\+\_\+id, uint\+\_\+fast8\+\_\+t weapon\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Encode ir messages. \end{DoxyCompactList}\item 
+bool \hyperlink{classir__message__logic_aab003c06594ef0dd7caf33d0c928b11b}{decode} (char16\+\_\+t receiving\+\_\+bits, byte \&received\+\_\+player\+\_\+id, byte \&received\+\_\+weapon\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Decode the bitstream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ir message logic class. 
+
+This class contains all the calculations needed for the ir messages. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classir__message__logic_af65240d9b8999fd1b956fc2da17a6d3e}{}\label{classir__message__logic_af65240d9b8999fd1b956fc2da17a6d3e} 
+\index{ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}!ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}}
+\index{ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}!ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}}
+\subsubsection{\texorpdfstring{ir\+\_\+message\+\_\+logic()}{ir\_message\_logic()}}
+{\footnotesize\ttfamily ir\+\_\+message\+\_\+logic\+::ir\+\_\+message\+\_\+logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+The constructor dus not need any parameters nor dus it initialize anything. It is just there to create an object from this class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classir__message__logic_aab003c06594ef0dd7caf33d0c928b11b}{}\label{classir__message__logic_aab003c06594ef0dd7caf33d0c928b11b} 
+\index{ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}!decode@{decode}}
+\index{decode@{decode}!ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}}
+\subsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily bool ir\+\_\+message\+\_\+logic\+::decode (\begin{DoxyParamCaption}\item[{char16\+\_\+t}]{receiving\+\_\+bits,  }\item[{byte \&}]{received\+\_\+player\+\_\+id,  }\item[{byte \&}]{received\+\_\+weapon\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Decode the bitstream. 
+
+This function decodes the bitstream in the way specified in the protocol part of the casus. It also checks the bitstream with an exor to make sure it is authentic. The function needs the bitstream as a parameter and returns zero or one depending on the result of the exor. One being exor correct and zero exor incorrect. \hypertarget{classir__message__logic_a60cf2eae7b2ff8285440068b6419863c}{}\label{classir__message__logic_a60cf2eae7b2ff8285440068b6419863c} 
+\index{ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}!encode@{encode}}
+\index{encode@{encode}!ir\+\_\+message\+\_\+logic@{ir\+\_\+message\+\_\+logic}}
+\subsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily char16\+\_\+t ir\+\_\+message\+\_\+logic\+::encode (\begin{DoxyParamCaption}\item[{uint\+\_\+fast8\+\_\+t}]{player\+\_\+id,  }\item[{uint\+\_\+fast8\+\_\+t}]{weapon\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Encode ir messages. 
+
+This function is used to compile a char16\+\_\+t code that is going to be send by the ir led. The function requires two eight bit integer values and returns the char16\+\_\+t code it compiled. The code consists of a start bit. then five bits for the player id. After that 5 bits for the weapon id or for commands. Lastly the last five bits are for the exor check bits. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{application__logic__classes_8hpp}{application\+\_\+logic\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

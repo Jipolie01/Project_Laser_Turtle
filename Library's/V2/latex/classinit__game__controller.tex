@@ -1,0 +1,45 @@
+\hypertarget{classinit__game__controller}{}\section{init\+\_\+game\+\_\+controller Class Reference}
+\label{classinit__game__controller}\index{init\+\_\+game\+\_\+controller@{init\+\_\+game\+\_\+controller}}
+
+
+Inialize the game.  
+
+
+
+
+{\ttfamily \#include $<$init\+\_\+game.\+hpp$>$}
+
+Inheritance diagram for init\+\_\+game\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classinit__game__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinit__game__controller_a8b506bc4f98428bbceca83027a41f184}{init\+\_\+game\+\_\+controller} (\hyperlink{classlcd__display__controller}{lcd\+\_\+display\+\_\+controller} \&lcd\+\_\+controller, rtos\+::mutex \&lcd\+\_\+mutex, \hyperlink{classir__message__logic}{ir\+\_\+message\+\_\+logic} \&message)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inialize the game. 
+
+This class is used for the game leader to setup the game. So far the only command the receiver expects is the game time at the beginning of the game. New commands can be added later and would need a change in the run game class. Right now during the game the receiver only exprects player ids and weapon ids but no commands. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classinit__game__controller_a8b506bc4f98428bbceca83027a41f184}{}\label{classinit__game__controller_a8b506bc4f98428bbceca83027a41f184} 
+\index{init\+\_\+game\+\_\+controller@{init\+\_\+game\+\_\+controller}!init\+\_\+game\+\_\+controller@{init\+\_\+game\+\_\+controller}}
+\index{init\+\_\+game\+\_\+controller@{init\+\_\+game\+\_\+controller}!init\+\_\+game\+\_\+controller@{init\+\_\+game\+\_\+controller}}
+\subsubsection{\texorpdfstring{init\+\_\+game\+\_\+controller()}{init\_game\_controller()}}
+{\footnotesize\ttfamily init\+\_\+game\+\_\+controller\+::init\+\_\+game\+\_\+controller (\begin{DoxyParamCaption}\item[{\hyperlink{classlcd__display__controller}{lcd\+\_\+display\+\_\+controller} \&}]{lcd\+\_\+controller,  }\item[{rtos\+::mutex \&}]{lcd\+\_\+mutex,  }\item[{\hyperlink{classir__message__logic}{ir\+\_\+message\+\_\+logic} \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+This constructor receives a reference to the lcd controller and the lcd mutex. These are used to communicate with the lcds pool. The message object is there for encoding every seperate command. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{init__game_8hpp}{init\+\_\+game.\+hpp}\end{DoxyCompactItemize}

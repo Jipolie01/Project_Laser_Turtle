@@ -34,6 +34,8 @@
     <File Name="init_game.hpp"/>
     <File Name="send_ir_classes.hpp"/>
     <File Name="application_logic_classes.hpp"/>
+    <File Name="display_classes.hpp"/>
+    <File Name="keypad_class.hpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>

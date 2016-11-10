@@ -1,0 +1,27 @@
+var annotated_dup =
+[
+    [ "button", "classbutton.html", "classbutton" ],
+    [ "button_controller", "classbutton__controller.html", "classbutton__controller" ],
+    [ "game_information_data", "classgame__information__data.html", "classgame__information__data" ],
+    [ "game_time_controller", "classgame__time__controller.html", "classgame__time__controller" ],
+    [ "hit", "classhit.html", "classhit" ],
+    [ "init_game_controller", "classinit__game__controller.html", "classinit__game__controller" ],
+    [ "ir_message_logic", "classir__message__logic.html", "classir__message__logic" ],
+    [ "ir_receiver_controller", "classir__receiver__controller.html", "classir__receiver__controller" ],
+    [ "ir_sender", "classir__sender.html", "classir__sender" ],
+    [ "Keypad", "class_keypad.html", "class_keypad" ],
+    [ "lcd_display", "classlcd__display.html", "classlcd__display" ],
+    [ "lcd_display_controller", "classlcd__display__controller.html", "classlcd__display__controller" ],
+    [ "lcd_passthrough", "structlcd__passthrough.html", "structlcd__passthrough" ],
+    [ "led_color_behaviour", "structled__color__behaviour.html", "structled__color__behaviour" ],
+    [ "led_controller", "classled__controller.html", "classled__controller" ],
+    [ "listener", "classlistener.html", "classlistener" ],
+    [ "my_player_information", "classmy__player__information.html", "classmy__player__information" ],
+    [ "register_game_parameters_controller", "classregister__game__parameters__controller.html", "classregister__game__parameters__controller" ],
+    [ "rgb_led", "classrgb__led.html", "classrgb__led" ],
+    [ "run_game_controller", "classrun__game__controller.html", "classrun__game__controller" ],
+    [ "send_controller", "classsend__controller.html", "classsend__controller" ],
+    [ "sound_lookup", "structsound__lookup.html", "structsound__lookup" ],
+    [ "speaker", "classspeaker.html", "classspeaker" ],
+    [ "speaker_controller", "classspeaker__controller.html", "classspeaker__controller" ]
+];
