@@ -109,14 +109,12 @@ private:
     }
 public:
     lcd_display_controller(const char * task_name, hwlib::pin_oc & scl, hwlib::pin_oc & sda, rtos::mutex & lcd_mutex):
-        task(task_name),
+        task(1, task_name),
         lcd_information_changed_flag(this, "lcd_information_changed_flag"),
         oled(scl, sda),
         lcd_mutex(lcd_mutex),
         lcd_pool("lcd_pool")
     {}
-    
-    ~lcd_display_controller();
     
     
     

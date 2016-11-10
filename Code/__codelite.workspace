@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="example code" Database="">
-  <Project Name="init_game" Path="init_game/_codelite.project" Active="No"/>
+  <Project Name="init_game" Path="init_game/_codelite.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="init_game" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="the_game" Path="the_game/_codelite.project" Active="Yes"/>
+  <Project Name="the_game" Path="the_game/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="the_game" ConfigName="Release"/>

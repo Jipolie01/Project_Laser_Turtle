@@ -86,7 +86,7 @@ private:
         lcd_controller.enable_flag();
         sleep(100*rtos::ms);
         while(1){
-            key = keypad.check_for_input();
+            key = keypad.get_char();
             //put game parameters key in lcd struct
             lcd_mutex.wait();
             auto lcd_struct = lcd_controller.read();

@@ -26,7 +26,7 @@ public:
     ///This function calls the getc() function from the keypad. It requires no
     /// parameters and returns the received character. The getc() function waits
     /// until a key has been pressed in a loop.
-    char check_for_input(){
+    char get_char(){
         return keypad.getc();
     }
 };
