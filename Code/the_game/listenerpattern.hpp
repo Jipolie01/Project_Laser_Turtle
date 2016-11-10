@@ -52,7 +52,7 @@ public:
 class button_controller: public listener,public rtos::task<>{
 private:
     hwlib::pin_in & button_pin;
-    rtos::clock check_clock;
+    rtos::clock update_button_state_clock;
     button b;
     run_game_controller * run_game;
     
@@ -63,7 +63,7 @@ private:
     void main(void){
         b.add_listener(this);
         while(1){
-            wait(check_clock);
+            wait(update_button_state_clock);
             b.update_button_state();
         }
     }

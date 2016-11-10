@@ -24,7 +24,7 @@ void button::update_button_state( void )
 button_controller::button_controller(hwlib::pin_in & button_pin, run_game_controller * run_game):
     task(2, "button_task"),
     button_pin(button_pin),
-    check_clock(this,200 * rtos::ms,"check_clock"),
+    update_button_state_clock(this,200 * rtos::ms,"update_button_state_clock"),
     b(button_pin),
     run_game(run_game)
 {}
@@ -32,5 +32,4 @@ button_controller::button_controller(hwlib::pin_in & button_pin, run_game_contro
 void button_controller::button_pressed()
 {
         run_game->enable_flag();
-        hwlib::cout << "button pressed flag\n";
 }

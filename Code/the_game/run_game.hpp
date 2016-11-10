@@ -38,7 +38,7 @@ private:
     my_player_information & player_information;
     Keypad keypad;
     register_game_parameters_controller get_game_parameters;
-    rtos::flag game_time_flag;
+    rtos::flag game_over_flag;
     game_time_controller game_time;
     
     rtos::flag button_pressed_flag;
@@ -161,9 +161,9 @@ private:
             rgb_led_struct.blue = false;
             led_ctrl.write(rgb_led_struct);
             
-            auto event = wait(button_pressed_flag + game_time_flag);// + received_information_channel);
+            auto event = wait(button_pressed_flag + game_over_flag);// + received_information_channel);
             
-            if(event == game_time_flag){
+            if(event == game_over_flag){
                 rgb_led_struct.red = true;
                 rgb_led_struct.green = false;
                 rgb_led_struct.blue = false;
@@ -305,8 +305,8 @@ public:
         player_information(player_information),
         keypad(out_port, in_port),
         get_game_parameters(message_logic, player_information, keypad),
-        game_time_flag(this, "game_time_flag"),
-        game_time("game_time", lcd_mutex, lcd_controller, game_time_flag),
+        game_over_flag(this, "game_over_flag"),
+        game_time("game_time", lcd_mutex, lcd_controller, game_over_flag),
         button_pressed_flag(this, "button_pressed_flag"),
         button_ctrl(button_pin, this),
         sound_mutex(sound_mutex),

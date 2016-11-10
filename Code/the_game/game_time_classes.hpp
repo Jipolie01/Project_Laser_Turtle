@@ -23,7 +23,7 @@ private:
     game_information_data time_data;
     rtos::mutex & lcd_mutex;
     lcd_display_controller & lcd_controller;
-    rtos::flag & game_time_flag;
+    rtos::flag & game_over_flag;
     
     ///convert int to char
     //
@@ -123,7 +123,7 @@ private:
                 lcd_mutex.signal();
                 lcd_controller.enable_flag();
                 sleep(1000*rtos::ms);
-                game_time_flag.set();
+                game_over_flag.set();
                 //suspend this task (might need to be done in run game)
             }
             else{
@@ -150,13 +150,13 @@ public:
     /// the lcd controller and the game time flag as parameters.
     ///It initializes these variables along with the flag and
     /// clock.
-    game_time_controller(const char * task_name, rtos::mutex & lcd_mutex, lcd_display_controller & lcd_controller, rtos::flag & game_time_flag):
+    game_time_controller(const char * task_name, rtos::mutex & lcd_mutex, lcd_display_controller & lcd_controller, rtos::flag & game_over_flag):
         task(1, task_name),
         game_time_clock(this, 1000*rtos::ms, "game_time_clock"),
         game_start_flag(this, "game_ended_flag"),
         lcd_mutex(lcd_mutex),
         lcd_controller(lcd_controller),
-        game_time_flag(game_time_flag)
+        game_over_flag(game_over_flag)
     {}
     
     ///Enable the start flag

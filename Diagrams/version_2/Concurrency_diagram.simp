@@ -79,7 +79,7 @@
       </counter>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>32</value>
+        <value>19</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -141,7 +141,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="concurrency" id="p3c76f239462644999bf77fb391501b4f_886191517" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-428,-85" zoom="0.8">
+      <diagram type="concurrency" id="p3c76f239462644999bf77fb391501b4f_886191517" name="Game_diagram" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-221,34" zoom="0.8">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -214,7 +214,7 @@
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
-          <item id="di318652460539428745" cid="TMR005" type="concurrency-timer" name="pool_receiver" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 21:14:08">
+          <item id="di318652460539428745" cid="TMR005" type="concurrency-timer" name="pool_receiver_clock" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 21:14:08">
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
@@ -332,7 +332,7 @@
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
-          <item id="di537967822510039469" cid="TMR004" type="concurrency-timer" name="update_time_clock" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 20:54:25">
+          <item id="di537967822510039469" cid="TMR004" type="concurrency-timer" name="game_time_clock" style-class="" visibility="package" change-tracking-state="added" creation-date="10/26/2016 20:54:25">
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
@@ -410,7 +410,7 @@
               </messages>
             </communication-message>
           </item>
-          <item id="di930371731833403703" cid="TMR001" type="concurrency-timer" name="update_button_state" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 13:33:59">
+          <item id="di930371731833403703" cid="TMR001" type="concurrency-timer" name="update_button_state_clock" style-class="" visibility="package" change-tracking-state="added" creation-date="10/27/2016 13:33:59">
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
@@ -589,7 +589,7 @@
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
-          <item id="di244165734347796880" cid="EVF008" type="concurrency-eventflag" name="button_flag" style-class="" visibility="package" change-tracking-state="added" creation-date="11/01/2016 15:55:21">
+          <item id="di244165734347796880" cid="EVF008" type="concurrency-eventflag" name="button_pressed_flag" style-class="" visibility="package" change-tracking-state="added" creation-date="11/01/2016 15:55:21">
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
@@ -619,7 +619,7 @@
               </messages>
             </communication-message>
           </item>
-          <item id="di432634096614758724" cid="EVF010" type="concurrency-eventflag" name="time_over_flag" style-class="" visibility="package" change-tracking-state="added" creation-date="11/01/2016 15:59:13">
+          <item id="di432634096614758724" cid="EVF010" type="concurrency-eventflag" name="game_over_flag" style-class="" visibility="package" change-tracking-state="added" creation-date="11/01/2016 15:59:13">
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
@@ -661,7 +661,7 @@
               </messages>
             </communication-message>
           </item>
-          <item id="di754035950961454705" cid="EVF011" type="concurrency-eventflag" name="start_time_flag" style-class="" visibility="package" change-tracking-state="added" creation-date="11/10/2016 00:19:46">
+          <item id="di754035950961454705" cid="EVF011" type="concurrency-eventflag" name="game_start_flag" style-class="" visibility="package" change-tracking-state="added" creation-date="11/10/2016 00:19:46">
             <style class="default" />
             <communication-lifeline classifier-name="" is-active="false" is-multi-object="false" />
           </item>
@@ -835,7 +835,7 @@
             <layout ax="-432" ay="325" awidth="168" aheight="50" x="-432" y="325" width="168" height="50" />
           </item>
           <item id="di318652460539428745" iid="294e3af6170e4916ae214e4f9b17f41f" creation-date="10/26/2016 21:14:08" order-index="17" type="entity">
-            <layout ax="-400" ay="173.5" awidth="30" aheight="50" x="-400" y="173.5" width="30" height="50" name-position="2,-8.661135" />
+            <layout ax="-400" ay="173.5" awidth="30" aheight="50" x="-400" y="173.5" width="30" height="50" name-position="5.063782,-11.69888" name-width="294" />
           </item>
           <item id="di991330491798946304" iid="3dd13679d37643d5930b9145db221ccb" creation-date="10/26/2016 21:29:52" order-index="36" type="relation">
             <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="145" y1="337" x2="144" y2="337" start-border-pos="0.15625" end-border-pos="0.154166668653488" name-position="0,0">
@@ -1007,7 +1007,7 @@
             <communication-message />
           </item>
           <item id="di930371731833403703" iid="d7cc66e1b0504c278cab9351af7f1fd0" creation-date="10/27/2016 13:33:59" order-index="89" type="entity">
-            <layout ax="759" ay="173.5" awidth="30" aheight="50" x="759" y="173.5" width="30" height="50" name-position="0,10" name-anchor="bottom" />
+            <layout ax="759" ay="173.5" awidth="30" aheight="50" x="759" y="173.5" width="30" height="50" name-position="26,25.00001" name-anchor="bottom" name-width="499" />
           </item>
           <item id="di499778527430266041" iid="47f65d488840471d9b6e604ac274f214" creation-date="10/27/2016 13:36:25" order-index="91" type="relation">
             <layout normal-message-position="-71,27" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="659" y1="180" x2="759" y2="198" start-border-pos="0.332500003278255" end-border-pos="0.875" name-position="0,0">
@@ -1161,7 +1161,7 @@
             <layout ax="521" ay="163.5" awidth="138" aheight="50" x="521" y="163.5" width="138" height="50" />
           </item>
           <item id="di244165734347796880" iid="387199fe4efd4efeb87f359d8acacf3b" creation-date="11/01/2016 15:55:21" order-index="115" type="entity">
-            <layout ax="397" ay="285" awidth="40" aheight="40" x="397" y="285" width="40" height="40" name-position="0,10" name-anchor="bottom" />
+            <layout ax="397" ay="285" awidth="40" aheight="40" x="397" y="285" width="40" height="40" name-position="0,10" name-anchor="bottom" name-width="305" />
           </item>
           <item id="di715927436863857441" iid="a2b7e62db0a14c5d9cf997bc582e0c66" creation-date="11/01/2016 15:56:14" order-index="116" type="relation">
             <layout normal-message-position="0,-30" reverse-message-position="0,30" line-style="oblique" lock-start-point="true" lock-end-point="false" lock-to-fields="false" auto-path="" x1="190" y1="362" x2="190" y2="362" start-border-pos="0.375" end-border-pos="-1" name-position="0,0">
