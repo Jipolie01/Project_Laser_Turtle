@@ -1,0 +1,54 @@
+\hypertarget{classregister__game__parameters__controller}{}\section{register\+\_\+game\+\_\+parameters\+\_\+controller Class Reference}
+\label{classregister__game__parameters__controller}\index{register\+\_\+game\+\_\+parameters\+\_\+controller@{register\+\_\+game\+\_\+parameters\+\_\+controller}}
+
+
+\hyperlink{classregister__game__parameters__controller}{register\+\_\+game\+\_\+parameters\+\_\+controller}  
+
+
+
+
+{\ttfamily \#include $<$register\+\_\+game\+\_\+parameters\+\_\+class.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classregister__game__parameters__controller_a291e306ca9e214208d0145058af13eeb}{register\+\_\+game\+\_\+parameters\+\_\+controller} (\hyperlink{classir__message__logic}{ir\+\_\+message\+\_\+logic} \&compile, \hyperlink{classmy__player__information}{my\+\_\+player\+\_\+information} \&information, \hyperlink{class_keypad}{Keypad} \&keypad)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classregister__game__parameters__controller_a9599db32b65bd0839ae4037acfdadd95}{setup} (char key)
+\begin{DoxyCompactList}\small\item\em Setup function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classregister__game__parameters__controller}{register\+\_\+game\+\_\+parameters\+\_\+controller} 
+
+This class registers a player and weapon id and it encodes the message that is to be send when the player shoots. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classregister__game__parameters__controller_a291e306ca9e214208d0145058af13eeb}{}\label{classregister__game__parameters__controller_a291e306ca9e214208d0145058af13eeb} 
+\index{register\+\_\+game\+\_\+parameters\+\_\+controller@{register\+\_\+game\+\_\+parameters\+\_\+controller}!register\+\_\+game\+\_\+parameters\+\_\+controller@{register\+\_\+game\+\_\+parameters\+\_\+controller}}
+\index{register\+\_\+game\+\_\+parameters\+\_\+controller@{register\+\_\+game\+\_\+parameters\+\_\+controller}!register\+\_\+game\+\_\+parameters\+\_\+controller@{register\+\_\+game\+\_\+parameters\+\_\+controller}}
+\subsubsection{\texorpdfstring{register\+\_\+game\+\_\+parameters\+\_\+controller()}{register\_game\_parameters\_controller()}}
+{\footnotesize\ttfamily register\+\_\+game\+\_\+parameters\+\_\+controller\+::register\+\_\+game\+\_\+parameters\+\_\+controller (\begin{DoxyParamCaption}\item[{\hyperlink{classir__message__logic}{ir\+\_\+message\+\_\+logic} \&}]{compile,  }\item[{\hyperlink{classmy__player__information}{my\+\_\+player\+\_\+information} \&}]{information,  }\item[{\hyperlink{class_keypad}{Keypad} \&}]{keypad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+This constructor receives the ir message logic, the player information and the keypad. It receives these all by reference so the can keep on existing after the class is destructed. All other variables are zero initialized 
+
+\subsection{Member Function Documentation}
+\hypertarget{classregister__game__parameters__controller_a9599db32b65bd0839ae4037acfdadd95}{}\label{classregister__game__parameters__controller_a9599db32b65bd0839ae4037acfdadd95} 
+\index{register\+\_\+game\+\_\+parameters\+\_\+controller@{register\+\_\+game\+\_\+parameters\+\_\+controller}!setup@{setup}}
+\index{setup@{setup}!register\+\_\+game\+\_\+parameters\+\_\+controller@{register\+\_\+game\+\_\+parameters\+\_\+controller}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily bool register\+\_\+game\+\_\+parameters\+\_\+controller\+::setup (\begin{DoxyParamCaption}\item[{char}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setup function. 
+
+This function is called from the run game class. It receives the pressed key as a parameter. After that it checks what the pressed key whas and returns a 0 if the loop in run game needs to continue and a 1 if it needs to stop. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{register__game__parameters__class_8hpp}{register\+\_\+game\+\_\+parameters\+\_\+class.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{classled__controller}{}\section{led\+\_\+controller Class Reference}
+\label{classled__controller}\index{led\+\_\+controller@{led\+\_\+controller}}
+
+
+Led controller class.  
+
+
+
+
+{\ttfamily \#include $<$rgb\+\_\+led\+\_\+classes.\+hpp$>$}
+
+Inheritance diagram for led\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classled__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classled__controller_a1ace48b14131910317e79e64df4306f5}{led\+\_\+controller} (const char $\ast$task\+\_\+name, hwlib\+::pin\+\_\+out \&r, hwlib\+::pin\+\_\+out \&g, hwlib\+::pin\+\_\+out \&b)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classled__controller_a346241076add950fe9c929d22039e171}{write} (\hyperlink{structled__color__behaviour}{led\+\_\+color\+\_\+behaviour} color)
+\begin{DoxyCompactList}\small\item\em Write to the led color channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Led controller class. 
+
+This class controls the behaviour of the led. It receives this behaviour through a rtos channel. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classled__controller_a1ace48b14131910317e79e64df4306f5}{}\label{classled__controller_a1ace48b14131910317e79e64df4306f5} 
+\index{led\+\_\+controller@{led\+\_\+controller}!led\+\_\+controller@{led\+\_\+controller}}
+\index{led\+\_\+controller@{led\+\_\+controller}!led\+\_\+controller@{led\+\_\+controller}}
+\subsubsection{\texorpdfstring{led\+\_\+controller()}{led\_controller()}}
+{\footnotesize\ttfamily led\+\_\+controller\+::led\+\_\+controller (\begin{DoxyParamCaption}\item[{const char $\ast$}]{task\+\_\+name,  }\item[{hwlib\+::pin\+\_\+out \&}]{r,  }\item[{hwlib\+::pin\+\_\+out \&}]{g,  }\item[{hwlib\+::pin\+\_\+out \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+This constructor receives a task name and three pins. The pins from the led. The led object gets initialized with the three pins. The channel is also initialized. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classled__controller_a346241076add950fe9c929d22039e171}{}\label{classled__controller_a346241076add950fe9c929d22039e171} 
+\index{led\+\_\+controller@{led\+\_\+controller}!write@{write}}
+\index{write@{write}!led\+\_\+controller@{led\+\_\+controller}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void led\+\_\+controller\+::write (\begin{DoxyParamCaption}\item[{\hyperlink{structled__color__behaviour}{led\+\_\+color\+\_\+behaviour}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Write to the led color channel. 
+
+This function makes sure other objects can write to the channel. It dus not return anything and needs a led color behaviour structure as parameter. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rgb__led__classes_8hpp}{rgb\+\_\+led\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

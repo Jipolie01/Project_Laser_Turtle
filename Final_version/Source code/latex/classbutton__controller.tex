@@ -1,0 +1,65 @@
+\hypertarget{classbutton__controller}{}\section{button\+\_\+controller Class Reference}
+\label{classbutton__controller}\index{button\+\_\+controller@{button\+\_\+controller}}
+
+
+\hyperlink{classbutton__controller}{button\+\_\+controller}  
+
+
+
+
+{\ttfamily \#include $<$listenerpattern.\+hpp$>$}
+
+Inheritance diagram for button\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbutton__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbutton__controller_a01cbbc0eed4933a6fe3fbf3ed565baf8}{button\+\_\+controller} (hwlib\+::pin\+\_\+in \&button\+\_\+pin, \hyperlink{classrun__game__controller}{run\+\_\+game\+\_\+controller} $\ast$run\+\_\+game)
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \hyperlink{classbutton__controller_ac89e1b4894ecf3762958c97e2558d31b}{button\+\_\+pressed} () override
+\begin{DoxyCompactList}\small\item\em button\+\_\+pressed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classbutton__controller}{button\+\_\+controller} 
+
+This class is also a task and can be used to listen to the button. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbutton__controller_a01cbbc0eed4933a6fe3fbf3ed565baf8}{}\label{classbutton__controller_a01cbbc0eed4933a6fe3fbf3ed565baf8} 
+\index{button\+\_\+controller@{button\+\_\+controller}!button\+\_\+controller@{button\+\_\+controller}}
+\index{button\+\_\+controller@{button\+\_\+controller}!button\+\_\+controller@{button\+\_\+controller}}
+\subsubsection{\texorpdfstring{button\+\_\+controller()}{button\_controller()}}
+{\footnotesize\ttfamily button\+\_\+controller\+::button\+\_\+controller (\begin{DoxyParamCaption}\item[{hwlib\+::pin\+\_\+in \&}]{button\+\_\+pin,  }\item[{\hyperlink{classrun__game__controller}{run\+\_\+game\+\_\+controller} $\ast$}]{run\+\_\+game }\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+this constructor is used to intialize the task and the pin used for the button 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbutton__controller_ac89e1b4894ecf3762958c97e2558d31b}{}\label{classbutton__controller_ac89e1b4894ecf3762958c97e2558d31b} 
+\index{button\+\_\+controller@{button\+\_\+controller}!button\+\_\+pressed@{button\+\_\+pressed}}
+\index{button\+\_\+pressed@{button\+\_\+pressed}!button\+\_\+controller@{button\+\_\+controller}}
+\subsubsection{\texorpdfstring{button\+\_\+pressed()}{button\_pressed()}}
+{\footnotesize\ttfamily void button\+\_\+controller\+::button\+\_\+pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+button\+\_\+pressed 
+
+this method gives functionality to the button. This method is called when the button is pressed. When the button is pressed the button sets the flag in run\+\_\+game 
+
+Implements \hyperlink{classlistener_a22d7490fe1dce838b165d912f8015f0a}{listener}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{listenerpattern_8hpp}{listenerpattern.\+hpp}\item 
+listenerpattern.\+cpp\end{DoxyCompactItemize}

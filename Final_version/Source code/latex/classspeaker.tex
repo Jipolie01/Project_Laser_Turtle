@@ -1,0 +1,54 @@
+\hypertarget{classspeaker}{}\section{speaker Class Reference}
+\label{classspeaker}\index{speaker@{speaker}}
+
+
+speaker class  
+
+
+
+
+{\ttfamily \#include $<$speaker\+\_\+classes.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classspeaker_a3c4dcbdc5d9cc99e1fa6c30dea0235c3}{speaker} (hwlib\+::pin\+\_\+out \&speaker\+\_\+pin)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classspeaker_a625c84e34f9ee40a7baeb2d6baa816a1}{play} (const uint\+\_\+fast16\+\_\+t frequency, const uint\+\_\+fast16\+\_\+t duration, const uint\+\_\+fast16\+\_\+t amount, const uint\+\_\+fast16\+\_\+t amount\+\_\+wait)
+\begin{DoxyCompactList}\small\item\em Play function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+speaker class 
+
+Simple player class for playing frequency\textquotesingle{}s on a speaker connected to a G\+P\+IO pin. Created by Wouter van Ooijen.(modified) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classspeaker_a3c4dcbdc5d9cc99e1fa6c30dea0235c3}{}\label{classspeaker_a3c4dcbdc5d9cc99e1fa6c30dea0235c3} 
+\index{speaker@{speaker}!speaker@{speaker}}
+\index{speaker@{speaker}!speaker@{speaker}}
+\subsubsection{\texorpdfstring{speaker()}{speaker()}}
+{\footnotesize\ttfamily speaker\+::speaker (\begin{DoxyParamCaption}\item[{hwlib\+::pin\+\_\+out \&}]{speaker\+\_\+pin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+This constructor receives the pin the speaker is connected to and initializes the variable. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classspeaker_a625c84e34f9ee40a7baeb2d6baa816a1}{}\label{classspeaker_a625c84e34f9ee40a7baeb2d6baa816a1} 
+\index{speaker@{speaker}!play@{play}}
+\index{play@{play}!speaker@{speaker}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void speaker\+::play (\begin{DoxyParamCaption}\item[{const uint\+\_\+fast16\+\_\+t}]{frequency,  }\item[{const uint\+\_\+fast16\+\_\+t}]{duration,  }\item[{const uint\+\_\+fast16\+\_\+t}]{amount,  }\item[{const uint\+\_\+fast16\+\_\+t}]{amount\+\_\+wait }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Play function. 
+
+Play sound by given parameters frequency, duration, amount, amount\+\_\+wait. Frequency is used in a formule to math half period(time between speaker on and speaker off). Duration is the amount of systemtime the sound is ale to play. Amount is how many times the sound will play. Amount\+\_\+wait is the time between everytime the sound is playing. This function dus not return anything. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{speaker__classes_8hpp}{speaker\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

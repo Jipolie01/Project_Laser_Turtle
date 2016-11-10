@@ -1,0 +1,84 @@
+\hypertarget{classlcd__display__controller}{}\section{lcd\+\_\+display\+\_\+controller Class Reference}
+\label{classlcd__display__controller}\index{lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}}
+
+
+Display controller.  
+
+
+
+
+{\ttfamily \#include $<$display\+\_\+classes.\+hpp$>$}
+
+Inheritance diagram for lcd\+\_\+display\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlcd__display__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlcd__display__controller_abf42bfd4d932278f5777df103c3fd27f}{lcd\+\_\+display\+\_\+controller} (const char $\ast$task\+\_\+name, hwlib\+::pin\+\_\+oc \&scl, hwlib\+::pin\+\_\+oc \&sda, rtos\+::mutex \&lcd\+\_\+mutex)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classlcd__display__controller_a66aacdfab1cbf14bd9cfe844fbb34b8a}{write} (const \hyperlink{structlcd__passthrough}{lcd\+\_\+passthrough} lcd\+\_\+struct)
+\begin{DoxyCompactList}\small\item\em Write to pool. \end{DoxyCompactList}\item 
+\hyperlink{structlcd__passthrough}{lcd\+\_\+passthrough} \hyperlink{classlcd__display__controller_a9eb5a62f4b813f0ea44b3c7efaa6ec0a}{read} ()
+\begin{DoxyCompactList}\small\item\em Read from pool. \end{DoxyCompactList}\item 
+void \hyperlink{classlcd__display__controller_af37be06c27c0eb1e67dbeb8e8e2df8c1}{enable\+\_\+flag} ()
+\begin{DoxyCompactList}\small\item\em Enable the lcd information changed flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Display controller. 
+
+The display controller is used to get information to be printed from a pool with mutex and then output it on the lcd. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classlcd__display__controller_abf42bfd4d932278f5777df103c3fd27f}{}\label{classlcd__display__controller_abf42bfd4d932278f5777df103c3fd27f} 
+\index{lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}!lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}}
+\index{lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}!lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}}
+\subsubsection{\texorpdfstring{lcd\+\_\+display\+\_\+controller()}{lcd\_display\_controller()}}
+{\footnotesize\ttfamily lcd\+\_\+display\+\_\+controller\+::lcd\+\_\+display\+\_\+controller (\begin{DoxyParamCaption}\item[{const char $\ast$}]{task\+\_\+name,  }\item[{hwlib\+::pin\+\_\+oc \&}]{scl,  }\item[{hwlib\+::pin\+\_\+oc \&}]{sda,  }\item[{rtos\+::mutex \&}]{lcd\+\_\+mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+This constructor receives a task name, scl pin, sda pin, and lcd mutex as parameters. It initializes these variables and creates the oled object from them. It also initializes the information changed flag. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlcd__display__controller_af37be06c27c0eb1e67dbeb8e8e2df8c1}{}\label{classlcd__display__controller_af37be06c27c0eb1e67dbeb8e8e2df8c1} 
+\index{lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}!enable\+\_\+flag@{enable\+\_\+flag}}
+\index{enable\+\_\+flag@{enable\+\_\+flag}!lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}}
+\subsubsection{\texorpdfstring{enable\+\_\+flag()}{enable\_flag()}}
+{\footnotesize\ttfamily void lcd\+\_\+display\+\_\+controller\+::enable\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable the lcd information changed flag. 
+
+This function is used to set the information changed flag so the main knows that new information has to be put on screen. The function dus not need any parameters nor dus it return anything. \hypertarget{classlcd__display__controller_a9eb5a62f4b813f0ea44b3c7efaa6ec0a}{}\label{classlcd__display__controller_a9eb5a62f4b813f0ea44b3c7efaa6ec0a} 
+\index{lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}!read@{read}}
+\index{read@{read}!lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \hyperlink{structlcd__passthrough}{lcd\+\_\+passthrough} lcd\+\_\+display\+\_\+controller\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Read from pool. 
+
+This function is used to read the current data from the pool. This makes other objects able to read the current data displayed on the lcd and change a single line while maintaining the rest of the data. It returns the information from the pool and dus not need any parameters. \hypertarget{classlcd__display__controller_a66aacdfab1cbf14bd9cfe844fbb34b8a}{}\label{classlcd__display__controller_a66aacdfab1cbf14bd9cfe844fbb34b8a} 
+\index{lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}!write@{write}}
+\index{write@{write}!lcd\+\_\+display\+\_\+controller@{lcd\+\_\+display\+\_\+controller}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void lcd\+\_\+display\+\_\+controller\+::write (\begin{DoxyParamCaption}\item[{const \hyperlink{structlcd__passthrough}{lcd\+\_\+passthrough}}]{lcd\+\_\+struct }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Write to pool. 
+
+This function makes other classes able to write lcd passthrough structures to the lcd pool. It returns nothing and receives the structure to write as an parameter. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{display__classes_8hpp}{display\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

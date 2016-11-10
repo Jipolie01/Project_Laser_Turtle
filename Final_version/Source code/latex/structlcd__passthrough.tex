@@ -1,0 +1,75 @@
+\hypertarget{structlcd__passthrough}{}\section{lcd\+\_\+passthrough Struct Reference}
+\label{structlcd__passthrough}\index{lcd\+\_\+passthrough@{lcd\+\_\+passthrough}}
+
+
+Lcd line structure.  
+
+
+
+
+{\ttfamily \#include $<$display\+\_\+classes.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structlcd__passthrough_a74c4254fef0e0e422ac0e078d7824c3a}{assignment} (char $\ast$array, const char $\ast$other)
+\begin{DoxyCompactList}\small\item\em Assign character array to line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structlcd__passthrough_a33de361ffdcc3a003b317df1c7f4e931}{}\label{structlcd__passthrough_a33de361ffdcc3a003b317df1c7f4e931} 
+char {\bfseries line1} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_a168d61fecb6e46fc814a004f28f7e64f}{}\label{structlcd__passthrough_a168d61fecb6e46fc814a004f28f7e64f} 
+char {\bfseries line2} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_afaab03e889a8417894e5e23268969276}{}\label{structlcd__passthrough_afaab03e889a8417894e5e23268969276} 
+char {\bfseries line3} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_a17db87a86d7232445024e336abefe4f9}{}\label{structlcd__passthrough_a17db87a86d7232445024e336abefe4f9} 
+char {\bfseries line4} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_a79943b73fa79c1ca25b39fa1538d6cf6}{}\label{structlcd__passthrough_a79943b73fa79c1ca25b39fa1538d6cf6} 
+char {\bfseries line5} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_a03b23e976dba9d2e5f83ed059e56b332}{}\label{structlcd__passthrough_a03b23e976dba9d2e5f83ed059e56b332} 
+char {\bfseries line6} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_ac7d27a96a3b6c25ebc2a2539ec631e81}{}\label{structlcd__passthrough_ac7d27a96a3b6c25ebc2a2539ec631e81} 
+char {\bfseries line7} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_a753b84809de13c39b85b2a569211eaa2}{}\label{structlcd__passthrough_a753b84809de13c39b85b2a569211eaa2} 
+char {\bfseries line8} \mbox{[}16\mbox{]} = \char`\"{}\char`\"{}
+\item 
+\hypertarget{structlcd__passthrough_aebb53028202d32c5b94643f7ca138609}{}\label{structlcd__passthrough_aebb53028202d32c5b94643f7ca138609} 
+bool {\bfseries player\+\_\+hit} = false
+\item 
+\hypertarget{structlcd__passthrough_a522dee420466fc4cf7c873e0db5dfccb}{}\label{structlcd__passthrough_a522dee420466fc4cf7c873e0db5dfccb} 
+bool {\bfseries game\+\_\+end} = false
+\item 
+\hypertarget{structlcd__passthrough_a423c70d93fcc677406a38a5e7b70e874}{}\label{structlcd__passthrough_a423c70d93fcc677406a38a5e7b70e874} 
+bool {\bfseries game\+\_\+begin} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lcd line structure. 
+
+This structure is used to make sure we can edit individual lines on the lcd. It contains 8 lines of 16 characters long. There are also some boolean values for making it easy to tell the controller you want one of three bigger texts on the lcd. These texts are \char`\"{}hit\char`\"{}, \char`\"{}game begin\char`\"{} and \char`\"{}game end\char`\"{} 
+
+\subsection{Member Function Documentation}
+\hypertarget{structlcd__passthrough_a74c4254fef0e0e422ac0e078d7824c3a}{}\label{structlcd__passthrough_a74c4254fef0e0e422ac0e078d7824c3a} 
+\index{lcd\+\_\+passthrough@{lcd\+\_\+passthrough}!assignment@{assignment}}
+\index{assignment@{assignment}!lcd\+\_\+passthrough@{lcd\+\_\+passthrough}}
+\subsubsection{\texorpdfstring{assignment()}{assignment()}}
+{\footnotesize\ttfamily void lcd\+\_\+passthrough\+::assignment (\begin{DoxyParamCaption}\item[{char $\ast$}]{array,  }\item[{const char $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assign character array to line. 
+
+This function is used to assign a character array to the specified line. It makes sure that two different sized character arrays can be used. The function dus not have a return value but requires two char arrays as parameters. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{display__classes_8hpp}{display\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classgame__time__controller}{}\section{game\+\_\+time\+\_\+controller Class Reference}
+\label{classgame__time__controller}\index{game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}}
+
+
+Game time controller.  
+
+
+
+
+{\ttfamily \#include $<$game\+\_\+time\+\_\+classes.\+hpp$>$}
+
+Inheritance diagram for game\+\_\+time\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgame__time__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgame__time__controller_ad2a906f75a90ca5c906aeb8093ac579b}{game\+\_\+time\+\_\+controller} (const char $\ast$task\+\_\+name, rtos\+::mutex \&lcd\+\_\+mutex, \hyperlink{classlcd__display__controller}{lcd\+\_\+display\+\_\+controller} \&lcd\+\_\+controller, rtos\+::flag \&game\+\_\+over\+\_\+flag)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classgame__time__controller_a33a1f1c002465109b1caacedbf1a820f}{enable\+\_\+start\+\_\+flag} ()
+\begin{DoxyCompactList}\small\item\em Enable the start flag. \end{DoxyCompactList}\item 
+void \hyperlink{classgame__time__controller_a01ace9e573244e15cd28c074792b52f6}{set\+\_\+time} (int cooldown\+\_\+time, int game\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Set the time parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Game time controller. 
+
+The game time controller is used to update the game time and display int on the lcd using the lcd\+\_\+controller. It uses a rtos clock to update the time and a flag to get it to know when to start counting. It writes the information to the game information data entity. It also receives a flag to tell when the time is over and it is the end of the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgame__time__controller_ad2a906f75a90ca5c906aeb8093ac579b}{}\label{classgame__time__controller_ad2a906f75a90ca5c906aeb8093ac579b} 
+\index{game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}!game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}}
+\index{game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}!game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}}
+\subsubsection{\texorpdfstring{game\+\_\+time\+\_\+controller()}{game\_time\_controller()}}
+{\footnotesize\ttfamily game\+\_\+time\+\_\+controller\+::game\+\_\+time\+\_\+controller (\begin{DoxyParamCaption}\item[{const char $\ast$}]{task\+\_\+name,  }\item[{rtos\+::mutex \&}]{lcd\+\_\+mutex,  }\item[{\hyperlink{classlcd__display__controller}{lcd\+\_\+display\+\_\+controller} \&}]{lcd\+\_\+controller,  }\item[{rtos\+::flag \&}]{game\+\_\+over\+\_\+flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+In the constructor it receives a task name, the lcd mutex, the lcd controller and the game time flag as parameters. It initializes these variables along with the flag and clock. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgame__time__controller_a33a1f1c002465109b1caacedbf1a820f}{}\label{classgame__time__controller_a33a1f1c002465109b1caacedbf1a820f} 
+\index{game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}!enable\+\_\+start\+\_\+flag@{enable\+\_\+start\+\_\+flag}}
+\index{enable\+\_\+start\+\_\+flag@{enable\+\_\+start\+\_\+flag}!game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}}
+\subsubsection{\texorpdfstring{enable\+\_\+start\+\_\+flag()}{enable\_start\_flag()}}
+{\footnotesize\ttfamily void game\+\_\+time\+\_\+controller\+::enable\+\_\+start\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable the start flag. 
+
+This function gives other objects the ability so set the start flag. \hypertarget{classgame__time__controller_a01ace9e573244e15cd28c074792b52f6}{}\label{classgame__time__controller_a01ace9e573244e15cd28c074792b52f6} 
+\index{game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}!set\+\_\+time@{set\+\_\+time}}
+\index{set\+\_\+time@{set\+\_\+time}!game\+\_\+time\+\_\+controller@{game\+\_\+time\+\_\+controller}}
+\subsubsection{\texorpdfstring{set\+\_\+time()}{set\_time()}}
+{\footnotesize\ttfamily void game\+\_\+time\+\_\+controller\+::set\+\_\+time (\begin{DoxyParamCaption}\item[{int}]{cooldown\+\_\+time,  }\item[{int}]{game\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the time parameters. 
+
+This function sets the time parameters for the game. These are created by another class. It puts these parameters into the time data entity object. The function returns nothing but dus require 2 parameters, the cooldown time and the game time. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{game__time__classes_8hpp}{game\+\_\+time\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

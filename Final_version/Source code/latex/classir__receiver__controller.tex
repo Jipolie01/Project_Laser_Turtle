@@ -1,0 +1,84 @@
+\hypertarget{classir__receiver__controller}{}\section{ir\+\_\+receiver\+\_\+controller Class Reference}
+\label{classir__receiver__controller}\index{ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}}
+
+
+\hyperlink{classir__receiver__controller}{ir\+\_\+receiver\+\_\+controller}  
+
+
+
+
+{\ttfamily \#include $<$ir\+\_\+receiver\+\_\+classes.\+hpp$>$}
+
+Inheritance diagram for ir\+\_\+receiver\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classir__receiver__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classir__receiver__controller_a8ef3a05bd1d4c8531e11d57af8519146}{ir\+\_\+receiver\+\_\+controller} (hwlib\+::pin\+\_\+in \&r\+\_\+pin, hwlib\+::pin\+\_\+out \&gnd, hwlib\+::pin\+\_\+out \&vcc, \hyperlink{classrun__game__controller}{run\+\_\+game\+\_\+controller} \&run\+\_\+game)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classir__receiver__controller}{ir\+\_\+receiver\+\_\+controller} \end{DoxyCompactList}\item 
+int \hyperlink{classir__receiver__controller_ad98b3cc0cb528a0b40e52d900638f3ec}{get\+\_\+start\+\_\+bit} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+start\+\_\+bit \end{DoxyCompactList}\item 
+int \hyperlink{classir__receiver__controller_a6cc44257482f6e2f463714f7b9c3784a}{get\+\_\+bit} ()
+\begin{DoxyCompactList}\small\item\em Get bit. \end{DoxyCompactList}\item 
+char16\+\_\+t \hyperlink{classir__receiver__controller_aaef8491c3e15d003898a4f2bfb2069d6}{get\+\_\+message} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+message \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classir__receiver__controller}{ir\+\_\+receiver\+\_\+controller} 
+
+This class is the ir receiver class. It is a boundary object and controller object in one because we needed rtos functionality. The class uses a timer to check the ir receiver periodically. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classir__receiver__controller_a8ef3a05bd1d4c8531e11d57af8519146}{}\label{classir__receiver__controller_a8ef3a05bd1d4c8531e11d57af8519146} 
+\index{ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}!ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}}
+\index{ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}!ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}}
+\subsubsection{\texorpdfstring{ir\+\_\+receiver\+\_\+controller()}{ir\_receiver\_controller()}}
+{\footnotesize\ttfamily ir\+\_\+receiver\+\_\+controller\+::ir\+\_\+receiver\+\_\+controller (\begin{DoxyParamCaption}\item[{hwlib\+::pin\+\_\+in \&}]{r\+\_\+pin,  }\item[{hwlib\+::pin\+\_\+out \&}]{gnd,  }\item[{hwlib\+::pin\+\_\+out \&}]{vcc,  }\item[{\hyperlink{classrun__game__controller}{run\+\_\+game\+\_\+controller} \&}]{run\+\_\+game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{classir__receiver__controller}{ir\+\_\+receiver\+\_\+controller} 
+
+Parameters\+: one input pin, two output pins to define the ir\+\_\+receiver object. The constructor initializes the timer and all the pins. The run game controller is also initialized for use with the channel. Inside the body the ground and vcc are set. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classir__receiver__controller_a6cc44257482f6e2f463714f7b9c3784a}{}\label{classir__receiver__controller_a6cc44257482f6e2f463714f7b9c3784a} 
+\index{ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}!get\+\_\+bit@{get\+\_\+bit}}
+\index{get\+\_\+bit@{get\+\_\+bit}!ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}}
+\subsubsection{\texorpdfstring{get\+\_\+bit()}{get\_bit()}}
+{\footnotesize\ttfamily int ir\+\_\+receiver\+\_\+controller\+::get\+\_\+bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get bit. 
+
+This function is used to get bits from the receiver. If receiving the one takes to long ($>$ 4000 us) the function will return -\/1 as an integer. The function dus not need any parameters. \hypertarget{classir__receiver__controller_aaef8491c3e15d003898a4f2bfb2069d6}{}\label{classir__receiver__controller_aaef8491c3e15d003898a4f2bfb2069d6} 
+\index{ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}!get\+\_\+message@{get\+\_\+message}}
+\index{get\+\_\+message@{get\+\_\+message}!ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}}
+\subsubsection{\texorpdfstring{get\+\_\+message()}{get\_message()}}
+{\footnotesize\ttfamily char16\+\_\+t ir\+\_\+receiver\+\_\+controller\+::get\+\_\+message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+message 
+
+This method is used to receive the whole message. This method can only be called after the start\+\_\+bit is received. Return value\+: char16\+\_\+t number that represent the message. The function dus not need any parameters. \hypertarget{classir__receiver__controller_ad98b3cc0cb528a0b40e52d900638f3ec}{}\label{classir__receiver__controller_ad98b3cc0cb528a0b40e52d900638f3ec} 
+\index{ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}!get\+\_\+start\+\_\+bit@{get\+\_\+start\+\_\+bit}}
+\index{get\+\_\+start\+\_\+bit@{get\+\_\+start\+\_\+bit}!ir\+\_\+receiver\+\_\+controller@{ir\+\_\+receiver\+\_\+controller}}
+\subsubsection{\texorpdfstring{get\+\_\+start\+\_\+bit()}{get\_start\_bit()}}
+{\footnotesize\ttfamily int ir\+\_\+receiver\+\_\+controller\+::get\+\_\+start\+\_\+bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+\_\+start\+\_\+bit 
+
+This method is used to receive the first bit of a message Return value\+: This function returns a 1 or 0 depending on the value of the bit send. If there is no bit send it returns -\/1. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ir__receiver__classes_8hpp}{ir\+\_\+receiver\+\_\+classes.\+hpp}\end{DoxyCompactItemize}

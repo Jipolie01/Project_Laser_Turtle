@@ -1,0 +1,63 @@
+\hypertarget{classrun__game__controller}{}\section{run\+\_\+game\+\_\+controller Class Reference}
+\label{classrun__game__controller}\index{run\+\_\+game\+\_\+controller@{run\+\_\+game\+\_\+controller}}
+
+
+run the game  
+
+
+
+
+{\ttfamily \#include $<$run\+\_\+game.\+hpp$>$}
+
+Inheritance diagram for run\+\_\+game\+\_\+controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrun__game__controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrun__game__controller_aa61968bc65e1ad20a5065ccfd7d598da}{run\+\_\+game\+\_\+controller} (\hyperlink{classlcd__display__controller}{lcd\+\_\+display\+\_\+controller} \&lcd\+\_\+controller, rtos\+::mutex \&lcd\+\_\+mutex, \hyperlink{classir__message__logic}{ir\+\_\+message\+\_\+logic} \&message\+\_\+logic, \hyperlink{classmy__player__information}{my\+\_\+player\+\_\+information} \&player\+\_\+information, rtos\+::mutex \&sound\+\_\+mutex)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classrun__game__controller_a45846159930efd40f9b20ecf72e36003}{enable\+\_\+flag} ()
+\begin{DoxyCompactList}\small\item\em Enable the button flag. \end{DoxyCompactList}\item 
+\hypertarget{classrun__game__controller_ae5329a8ebb79ad5021dd6eedd24f7e0e}{}\label{classrun__game__controller_ae5329a8ebb79ad5021dd6eedd24f7e0e} 
+void {\bfseries write} (char16\+\_\+t value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+run the game 
+
+This class is the total package of the game. Most of the classes used are created in this class. It coordinates almost all the information flows. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrun__game__controller_aa61968bc65e1ad20a5065ccfd7d598da}{}\label{classrun__game__controller_aa61968bc65e1ad20a5065ccfd7d598da} 
+\index{run\+\_\+game\+\_\+controller@{run\+\_\+game\+\_\+controller}!run\+\_\+game\+\_\+controller@{run\+\_\+game\+\_\+controller}}
+\index{run\+\_\+game\+\_\+controller@{run\+\_\+game\+\_\+controller}!run\+\_\+game\+\_\+controller@{run\+\_\+game\+\_\+controller}}
+\subsubsection{\texorpdfstring{run\+\_\+game\+\_\+controller()}{run\_game\_controller()}}
+{\footnotesize\ttfamily run\+\_\+game\+\_\+controller\+::run\+\_\+game\+\_\+controller (\begin{DoxyParamCaption}\item[{\hyperlink{classlcd__display__controller}{lcd\+\_\+display\+\_\+controller} \&}]{lcd\+\_\+controller,  }\item[{rtos\+::mutex \&}]{lcd\+\_\+mutex,  }\item[{\hyperlink{classir__message__logic}{ir\+\_\+message\+\_\+logic} \&}]{message\+\_\+logic,  }\item[{\hyperlink{classmy__player__information}{my\+\_\+player\+\_\+information} \&}]{player\+\_\+information,  }\item[{rtos\+::mutex \&}]{sound\+\_\+mutex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+The constructor of this class initializes a lot of objects needed for the object to work. The parameters are all the parts that are created outside the class. This consists of the lcd controller object, the lcd mutex, the message application logic object, the player information entity and the sound mutex. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classrun__game__controller_a45846159930efd40f9b20ecf72e36003}{}\label{classrun__game__controller_a45846159930efd40f9b20ecf72e36003} 
+\index{run\+\_\+game\+\_\+controller@{run\+\_\+game\+\_\+controller}!enable\+\_\+flag@{enable\+\_\+flag}}
+\index{enable\+\_\+flag@{enable\+\_\+flag}!run\+\_\+game\+\_\+controller@{run\+\_\+game\+\_\+controller}}
+\subsubsection{\texorpdfstring{enable\+\_\+flag()}{enable\_flag()}}
+{\footnotesize\ttfamily void run\+\_\+game\+\_\+controller\+::enable\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enable the button flag. 
+
+This function gives other objects the ability so set the button pressed flag. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{run__game_8hpp}{run\+\_\+game.\+hpp}\end{DoxyCompactItemize}

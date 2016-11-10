@@ -1,0 +1,79 @@
+\hypertarget{classbutton}{}\section{button Class Reference}
+\label{classbutton}\index{button@{button}}
+
+
+button  
+
+
+
+
+{\ttfamily \#include $<$listenerpattern.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbutton_aae05cb652f48e39acfe810e97ba4b2ea}{button} (hwlib\+::pin\+\_\+in \&button\+\_\+pin)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \hyperlink{classbutton_acd710d9021a2132c250c25938b992b11}{add\+\_\+listener} (\hyperlink{classlistener}{listener} $\ast$lst)
+\begin{DoxyCompactList}\small\item\em add\+\_\+listener \end{DoxyCompactList}\item 
+void \hyperlink{classbutton_a545f0e24d8317692621c2f503ceb2fea}{update\+\_\+button\+\_\+state} (void)
+\begin{DoxyCompactList}\small\item\em update\+\_\+button\+\_\+state \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classbutton_a0c1b69d4c7bc60f8d0fbcc061dfc2b73}{}\label{classbutton_a0c1b69d4c7bc60f8d0fbcc061dfc2b73} 
+\hyperlink{classlistener}{listener} $\ast$ {\bfseries the\+\_\+listener} = 0
+\item 
+\hypertarget{classbutton_adc9e520af7929f0a17198965ebc97559}{}\label{classbutton_adc9e520af7929f0a17198965ebc97559} 
+bool {\bfseries down\+\_\+seen} = 0
+\item 
+\hypertarget{classbutton_a86a63f18b973c6061b03937fca410069}{}\label{classbutton_a86a63f18b973c6061b03937fca410069} 
+hwlib\+::pin\+\_\+in \& {\bfseries button\+\_\+pin}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+button 
+
+This class is used for the functionality of the button 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classbutton_aae05cb652f48e39acfe810e97ba4b2ea}{}\label{classbutton_aae05cb652f48e39acfe810e97ba4b2ea} 
+\index{button@{button}!button@{button}}
+\index{button@{button}!button@{button}}
+\subsubsection{\texorpdfstring{button()}{button()}}
+{\footnotesize\ttfamily button\+::button (\begin{DoxyParamCaption}\item[{hwlib\+::pin\+\_\+in \&}]{button\+\_\+pin }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+Parameters\+: input pin This constructor is used to define the pin where it should be read 
+
+\subsection{Member Function Documentation}
+\hypertarget{classbutton_acd710d9021a2132c250c25938b992b11}{}\label{classbutton_acd710d9021a2132c250c25938b992b11} 
+\index{button@{button}!add\+\_\+listener@{add\+\_\+listener}}
+\index{add\+\_\+listener@{add\+\_\+listener}!button@{button}}
+\subsubsection{\texorpdfstring{add\+\_\+listener()}{add\_listener()}}
+{\footnotesize\ttfamily void button\+::add\+\_\+listener (\begin{DoxyParamCaption}\item[{\hyperlink{classlistener}{listener} $\ast$}]{lst }\end{DoxyParamCaption})}
+
+
+
+add\+\_\+listener 
+
+Parameter\+: listener pointer refering to class that is listening to the button This method is used to add a class that is listening to the button \hypertarget{classbutton_a545f0e24d8317692621c2f503ceb2fea}{}\label{classbutton_a545f0e24d8317692621c2f503ceb2fea} 
+\index{button@{button}!update\+\_\+button\+\_\+state@{update\+\_\+button\+\_\+state}}
+\index{update\+\_\+button\+\_\+state@{update\+\_\+button\+\_\+state}!button@{button}}
+\subsubsection{\texorpdfstring{update\+\_\+button\+\_\+state()}{update\_button\_state()}}
+{\footnotesize\ttfamily void button\+::update\+\_\+button\+\_\+state (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+update\+\_\+button\+\_\+state 
+
+This method is used to update the state for the button. This method is used to call the button\+\_\+pressed function from the pointer given to add\+\_\+listener 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{listenerpattern_8hpp}{listenerpattern.\+hpp}\item 
+listenerpattern.\+cpp\end{DoxyCompactItemize}
