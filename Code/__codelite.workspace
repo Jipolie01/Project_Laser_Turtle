@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="example code" Database="">
-  <Project Name="create_protocol" Path="create_protocol/_codelite.project" Active="No"/>
+  <Project Name="init_game" Path="init_game/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="create_protocol" ConfigName="Release"/>
+      <Project Name="init_game" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="receive_signal" Path="receive_signal/_codelite.project" Active="Yes"/>
+  <Project Name="test" Path="test/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="receive_signal" ConfigName="Release"/>
+      <Project Name="test" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="receive_signal_no_class" Path="receive_signal_no_class/_codelite.project" Active="No"/>
+  <Project Name="the_game" Path="the_game/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="receive_signal_no_class" ConfigName="Release"/>
+      <Project Name="the_game" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="send_signal" Path="send_signal/_codelite.project" Active="No"/>
+  <Project Name="the_game_no_rtos" Path="the_game_no_rtos/_codelite.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="send_signal" ConfigName="Release"/>
+      <Project Name="the_game_no_rtos" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="send_signal_no_class" Path="send_signal_no_class/_codelite.project" Active="No"/>
+  <Project Name="the_game_rtos" Path="the_game_rtos/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
-      <Project Name="send_signal_no_class" ConfigName="Release"/>
+      <Project Name="the_game_rtos" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

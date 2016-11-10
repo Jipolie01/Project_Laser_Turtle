@@ -9,14 +9,11 @@
 ///Using the listener you can do this in the exact same way for
 /// every button regardless of what the button classes are called.
 class button_listener {
-protected:
-    hwlib::pin_in & button_pin;
 public:
     ///Default constructor
     //
     ///This constructor requires a pin to wich the button is attached.
-    button_listener(hwlib::pin_in & button_pin):
-        button_pin(button_pin)
+    button_listener()
     {}
     
     ///Default destructor
@@ -29,7 +26,7 @@ public:
     //
     ///This function checks for the input. It needs to be defined
     /// in other classes that inherit this one
-    virtual bool check_button() = 0;
+    virtual bool button_down() = 0;
 };
 
 ///button class
@@ -37,6 +34,8 @@ public:
 ///This class defines how our button is to be read. It inherits
 /// button listener to generalize the reading of the button.
 class button : public button_listener{
+protected:
+    hwlib::pin_in & button_pin;
 public:
     ///Default constructor
     //
@@ -44,7 +43,7 @@ public:
     /// button is attached and creates a button_listener object
     /// to be used for the generalization.
     button(hwlib::pin_in & button_pin):
-        button_listener(button_pin)
+        button_pin(button_pin)
     {}
     
     ///check button
@@ -52,7 +51,7 @@ public:
     ///This function defines how our button should work. It overrides
     /// the function in the button_listener class to make generalization
     /// work.
-    bool check_button() override {
+    bool button_down() override {
         return !(button_pin.get());
     }
 };
