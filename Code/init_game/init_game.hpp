@@ -2,8 +2,8 @@
 #include "hwlib.hpp"
 #include "keypad_class.hpp"
 #include "display_classes.hpp"
-//#include "application_logic_classes.hpp"
-//#include "send_ir_classes.hpp"
+#include "application_logic_classes.hpp"
+#include "send_ir_classes.hpp"
 
 #ifndef INIT_GAME_HPP
 #define INIT_GAME_HPP
@@ -24,15 +24,19 @@ class init_game_controller : public rtos::task<>{
     hwlib::target::pin_in in3 = hwlib::target::pin_in( hwlib::target::pins::a7 );
     hwlib::port_in_from_pins in_port = hwlib::port_in_from_pins( in0, in1, in2, in3 );
     
-    Keypad & keypad;
-    //send_controller sender;
+    ir_message_logic & message;
+    Keypad keypad;
+    send_controller sender;
     
     void main(void){
         char key = 0;
+        int to_send;
         lcd_passthrough lcd_commands;
         lcd_passthrough lcd_clear;
         while(1){
             if(key == 'C'){
+                hwlib::cout << key;
+                to_send = 0;
                 lcd_mutex.wait();
                 lcd_controller.write(lcd_clear);
                 lcd_mutex.signal();
@@ -56,25 +60,29 @@ class init_game_controller : public rtos::task<>{
                     lcd_controller.write(lcd_struct);
                     lcd_mutex.signal();
                     lcd_controller.enable_flag();
-                   // if(key >= 0 && key <= 9){
-                        
-                  //  }
-                  //  if(key == '#'){
-                        
-                 //   }
-                 //   if(key == '*'){
-                        
-                 //   }
+                    sleep(100*rtos::ms);
+                    
+                    if((key >= '0') && (key <= '9')){
+                        hwlib::cout << key;
+                        to_send = (to_send*10)+key;
+                    }
+                    if(key == '#'){
+                        hwlib::cout << key;
+                        char16_t encoded_message = message.encode(0, to_send);
+                        sender.write(encoded_message);
+                        break;
+                    }
                 }
             }
             key = keypad.check_for_input();
         }
     }
 public:
-    init_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex):
+    init_game_controller(lcd_display_controller & lcd_controller, rtos::mutex & lcd_mutex, ir_message_logic & message):
         task(0, "init_game"),
         lcd_controller(lcd_controller),
         lcd_mutex(lcd_mutex),
+        message(message),
         keypad(out_port, in_port)
     {}
 };

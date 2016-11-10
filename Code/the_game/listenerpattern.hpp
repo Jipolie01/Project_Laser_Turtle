@@ -5,6 +5,7 @@
 #ifndef LISTENERPATTERN_HPP
 #define LISTENERPATTERN_HPP
 
+///Forward declarations
 class listener;
 class run_game_controller;
 

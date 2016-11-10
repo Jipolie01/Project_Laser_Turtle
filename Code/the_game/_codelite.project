@@ -31,6 +31,18 @@
   <VirtualDirectory Name="source">
     <File Name="main.cpp"/>
     <File Name="Makefile"/>
+    <File Name="application_logic_classes.hpp"/>
+    <File Name="display_classes.hpp"/>
+    <File Name="entity_classes.hpp"/>
+    <File Name="game_time_classes.hpp"/>
+    <File Name="keypad_class.hpp"/>
+    <File Name="listenerpattern.cpp"/>
+    <File Name="listenerpattern.hpp"/>
+    <File Name="register_game_parameters_class.hpp"/>
+    <File Name="rgb_led_classes.hpp"/>
+    <File Name="run_game.hpp"/>
+    <File Name="send_ir_classes.hpp"/>
+    <File Name="speaker_classes.hpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>
@@ -43,7 +55,7 @@
       <ResourceCompiler Options=""/>
     </GlobalSettings>
     <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-       <Compiler Options="-g;-O0;-std=c++11" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+      <Compiler Options="-g;-O0;-std=c++11" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
         <IncludePath Value=".;../Catch/include"/>
       </Compiler>
       <Linker Options="" Required="yes"/>
@@ -119,4 +131,4 @@
       </Completion>
     </Configuration>
   </Settings>
-</CodeLite_Project>   
+</CodeLite_Project>

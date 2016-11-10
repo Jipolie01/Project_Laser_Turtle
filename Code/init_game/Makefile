@@ -12,7 +12,7 @@
 SOURCES := 
 
 # header files in this project
-HEADERS := init_game.hpp keypad_class.hpp display_classes.hpp
+HEADERS := init_game.hpp keypad_class.hpp display_classes.hpp application_logic_classes.hpp send_ir_classes.hpp
 
 # other places to look for files for this project
 SEARCH  := 
