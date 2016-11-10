@@ -651,7 +651,7 @@ END GROUP
                 [!provide]                PROVIDE (__ram_size, __ram_size)
                 [!provide]                PROVIDE (__ram_end, __ram_end)
 
-.text           0x00000000     0x47ac
+.text           0x00000000     0x47b8
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                __text_start = .
                 [!provide]                PROVIDE (__text_start, __text_start)
@@ -1027,227 +1027,227 @@ END GROUP
                 0x00002038      0x120 main.o
                 0x00002038                lcd_display_controller::main()
  .text.startup._ZN20init_game_controller4mainEv
-                0x00002158      0x228 main.o
+                0x00002158      0x234 main.o
                 0x00002158                init_game_controller::main()
  .text._ZN4rtos4taskILi4096EEC2EjPKc
-                0x00002380       0x54 main.o
-                0x00002380                rtos::task<4096>::task(unsigned int, char const*)
-                0x00002380                rtos::task<4096>::task(unsigned int, char const*)
+                0x0000238c       0x54 main.o
+                0x0000238c                rtos::task<4096>::task(unsigned int, char const*)
+                0x0000238c                rtos::task<4096>::task(unsigned int, char const*)
  .text._ZN22lcd_display_controllerC2EPKcRN5hwlib6pin_ocES4_RN4rtos5mutexE
-                0x000023d4      0x150 main.o
-                0x000023d4                lcd_display_controller::lcd_display_controller(char const*, hwlib::pin_oc&, hwlib::pin_oc&, rtos::mutex&)
-                0x000023d4                lcd_display_controller::lcd_display_controller(char const*, hwlib::pin_oc&, hwlib::pin_oc&, rtos::mutex&)
+                0x000023e0      0x150 main.o
+                0x000023e0                lcd_display_controller::lcd_display_controller(char const*, hwlib::pin_oc&, hwlib::pin_oc&, rtos::mutex&)
+                0x000023e0                lcd_display_controller::lcd_display_controller(char const*, hwlib::pin_oc&, hwlib::pin_oc&, rtos::mutex&)
  .text._ZN15send_controllerC2Ev
-                0x00002524       0x9c main.o
-                0x00002524                send_controller::send_controller()
-                0x00002524                send_controller::send_controller()
+                0x00002530       0x9c main.o
+                0x00002530                send_controller::send_controller()
+                0x00002530                send_controller::send_controller()
  .text._ZN20init_game_controllerC2ER22lcd_display_controllerRN4rtos5mutexER16ir_message_logic
-                0x000025c0      0x19c main.o
-                0x000025c0                init_game_controller::init_game_controller(lcd_display_controller&, rtos::mutex&, ir_message_logic&)
-                0x000025c0                init_game_controller::init_game_controller(lcd_display_controller&, rtos::mutex&, ir_message_logic&)
+                0x000025cc      0x19c main.o
+                0x000025cc                init_game_controller::init_game_controller(lcd_display_controller&, rtos::mutex&, ir_message_logic&)
+                0x000025cc                init_game_controller::init_game_controller(lcd_display_controller&, rtos::mutex&, ir_message_logic&)
  .text.startup.main
-                0x0000275c       0xbc main.o
-                0x0000275c                main
+                0x00002768       0xbc main.o
+                0x00002768                main
  .text.Int27_Handler
-                0x00002818        0x2 bmptk_cortex.o
-                0x00002818                Int27_Handler
- *fill*         0x0000281a        0x2 
+                0x00002824        0x2 bmptk_cortex.o
+                0x00002824                Int27_Handler
+ *fill*         0x00002826        0x2 
  .text.__startup
-                0x0000281c       0x48 bmptk_cortex.o
-                0x0000281c                __startup
+                0x00002828       0x48 bmptk_cortex.o
+                0x00002828                __startup
  .text.SysTick_Handler
-                0x00002864        0x2 bmptk_cortex.o
-                0x00002864                SysTick_Handler
+                0x00002870        0x2 bmptk_cortex.o
+                0x00002870                SysTick_Handler
  .text.__cxa_pure_virtual
-                0x00002866        0x2 bmptk_cortex.o
-                0x00002866                __cxa_pure_virtual
- .text.malloc   0x00002868       0x24 bmptk_heap_bmptk.o
-                0x00002868                malloc
+                0x00002872        0x2 bmptk_cortex.o
+                0x00002872                __cxa_pure_virtual
+ .text.malloc   0x00002874       0x24 bmptk_heap_bmptk.o
+                0x00002874                malloc
  .text.bmptk_heap_free
-                0x0000288c       0x14 bmptk_heap_bmptk.o
-                0x0000288c                bmptk_heap_free
+                0x00002898       0x14 bmptk_heap_bmptk.o
+                0x00002898                bmptk_heap_free
  .text.bmptk_heap_used
-                0x000028a0       0x14 bmptk_heap_bmptk.o
-                0x000028a0                bmptk_heap_used
+                0x000028ac       0x14 bmptk_heap_bmptk.o
+                0x000028ac                bmptk_heap_used
  .text.bmptk_heap_size
-                0x000028b4       0x10 bmptk_heap_bmptk.o
-                0x000028b4                bmptk_heap_size
+                0x000028c0       0x10 bmptk_heap_bmptk.o
+                0x000028c0                bmptk_heap_size
  .text.bmptk_stack_size
-                0x000028c4        0x6 bmptk_fixed_size_stack.o
-                0x000028c4                bmptk_stack_size
- *fill*         0x000028ca        0x2 
+                0x000028d0        0x6 bmptk_fixed_size_stack.o
+                0x000028d0                bmptk_stack_size
+ *fill*         0x000028d6        0x2 
  .text.bmptk_stack_free
-                0x000028cc       0x18 bmptk_fixed_size_stack.o
-                0x000028cc                bmptk_stack_free
- .text          0x000028e4       0xa0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
-                0x000028e4                __aeabi_ldivmod
- .text          0x00002984      0x2ec c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
-                0x00002984                __udivmoddi4
- .text          0x00002c70        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
-                0x00002c70                __aeabi_ldiv0
- .text          0x00002c74       0xec c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memcpy.o)
-                0x00002c74                memcpy
- .text.memset   0x00002d60       0x9c c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
-                0x00002d60                memset
-                0x00002dfc                . = ALIGN (0x4)
+                0x000028d8       0x18 bmptk_fixed_size_stack.o
+                0x000028d8                bmptk_stack_free
+ .text          0x000028f0       0xa0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                0x000028f0                __aeabi_ldivmod
+ .text          0x00002990      0x2ec c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+                0x00002990                __udivmoddi4
+ .text          0x00002c7c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_dvmd_tls.o)
+                0x00002c7c                __aeabi_ldiv0
+ .text          0x00002c80       0xec c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memcpy.o)
+                0x00002c80                memcpy
+ .text.memset   0x00002d6c       0x9c c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+                0x00002d6c                memset
+                0x00002e08                . = ALIGN (0x4)
  *(.glue_7t .glue_7)
- .glue_7        0x00002dfc        0x0 linker stubs
- .glue_7t       0x00002dfc        0x0 linker stubs
-                0x00002dfc                . = ALIGN (0x4)
+ .glue_7        0x00002e08        0x0 linker stubs
+ .glue_7t       0x00002e08        0x0 linker stubs
+                0x00002e08                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata._ZTVN5hwlib19_pin_in_dummy_classE
-                0x00002dfc        0xc hwlib.o
-                0x00002dfc                vtable for hwlib::_pin_in_dummy_class
+                0x00002e08        0xc hwlib.o
+                0x00002e08                vtable for hwlib::_pin_in_dummy_class
  .rodata._ZTVN5hwlib19_pin_oc_dummy_classE
-                0x00002e08       0x10 hwlib.o
-                0x00002e08                vtable for hwlib::_pin_oc_dummy_class
+                0x00002e14       0x10 hwlib.o
+                0x00002e14                vtable for hwlib::_pin_oc_dummy_class
  .rodata._ZTVN5hwlib20cout_using_uart_putcE
-                0x00002e18       0x10 hwlib.o
-                0x00002e18                vtable for hwlib::cout_using_uart_putc
+                0x00002e24       0x10 hwlib.o
+                0x00002e24                vtable for hwlib::cout_using_uart_putc
  .rodata._ZTVN5hwlib9image_8x8E
-                0x00002e28        0xc hwlib.o
-                0x00002e28                vtable for hwlib::image_8x8
- .rodata._ZTVN3due6pin_inE
                 0x00002e34        0xc hwlib.o
-                0x00002e34                vtable for due::pin_in
- .rodata._ZTVN3due7pin_outE
+                0x00002e34                vtable for hwlib::image_8x8
+ .rodata._ZTVN3due6pin_inE
                 0x00002e40        0xc hwlib.o
-                0x00002e40                vtable for due::pin_out
+                0x00002e40                vtable for due::pin_in
+ .rodata._ZTVN3due7pin_outE
+                0x00002e4c        0xc hwlib.o
+                0x00002e4c                vtable for due::pin_out
  .rodata._ZN5hwlibL5blackE
-                0x00002e4c        0x4 hwlib.o
+                0x00002e58        0x4 hwlib.o
  .rodata._ZN5hwlibL5whiteE
-                0x00002e50        0x4 hwlib.o
+                0x00002e5c        0x4 hwlib.o
  .rodata._ZN5hwlib16font_default_8x86imagesE
-                0x00002e54      0xa00 hwlib.o
-                0x00002e54                hwlib::font_default_8x8::images
+                0x00002e60      0xa00 hwlib.o
+                0x00002e60                hwlib::font_default_8x8::images
  .rodata.str1.1
-                0x00003854       0x1d hwlib.o
+                0x00003860       0x1d hwlib.o
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
-                0x00003871       0xa4 hwlib.o
- *fill*         0x00003915        0x3 
+                0x0000387d       0xa4 hwlib.o
+ *fill*         0x00003921        0x3 
  .rodata._ZTVN4rtos8waitableE
-                0x00003918        0xc rtos.o
-                0x00003918                vtable for rtos::waitable
- .rodata._ZTVN4rtos4flagE
                 0x00003924        0xc rtos.o
-                0x00003924                vtable for rtos::flag
+                0x00003924                vtable for rtos::waitable
+ .rodata._ZTVN4rtos4flagE
+                0x00003930        0xc rtos.o
+                0x00003930                vtable for rtos::flag
  .rodata._ZTVN4rtos8callbackE
-                0x00003930       0x10 rtos.o
-                0x00003930                vtable for rtos::callback
+                0x0000393c       0x10 rtos.o
+                0x0000393c                vtable for rtos::callback
  .rodata._ZTVN4rtos12channel_baseE
-                0x00003940        0xc rtos.o
-                0x00003940                vtable for rtos::channel_base
+                0x0000394c        0xc rtos.o
+                0x0000394c                vtable for rtos::channel_base
  .rodata.str1.1
-                0x0000394c      0x348 rtos.o
+                0x00003958      0x348 rtos.o
                                 0x364 (size before relaxing)
  .rodata._ZTVN4rtos5timerE
-                0x00003c94       0x24 rtos.o
-                0x00003c94                vtable for rtos::timer
+                0x00003ca0       0x24 rtos.o
+                0x00003ca0                vtable for rtos::timer
  .rodata._ZTVN4rtos9task_baseE
-                0x00003cb8       0x14 rtos.o
-                0x00003cb8                vtable for rtos::task_base
+                0x00003cc4       0x14 rtos.o
+                0x00003cc4                vtable for rtos::task_base
  .rodata._ZTVN5hwlib17port_in_from_pinsE
-                0x00003ccc       0x10 main.o
-                0x00003ccc                vtable for hwlib::port_in_from_pins
+                0x00003cd8       0x10 main.o
+                0x00003cd8                vtable for hwlib::port_in_from_pins
  .rodata._ZTVN5hwlib17port_oc_from_pinsE
-                0x00003cdc       0x14 main.o
-                0x00003cdc                vtable for hwlib::port_oc_from_pins
+                0x00003ce8       0x14 main.o
+                0x00003ce8                vtable for hwlib::port_oc_from_pins
  .rodata._ZTVN5hwlib14window_ostreamE
-                0x00003cf0       0x10 main.o
-                0x00003cf0                vtable for hwlib::window_ostream
+                0x00003cfc       0x10 main.o
+                0x00003cfc                vtable for hwlib::window_ostream
  .rodata._ZTVN5hwlib11window_partE
-                0x00003d00       0x10 main.o
-                0x00003d00                vtable for hwlib::window_part
+                0x00003d0c       0x10 main.o
+                0x00003d0c                vtable for hwlib::window_part
  .rodata._ZTVN5hwlib16font_default_8x8E
-                0x00003d10        0xc main.o
-                0x00003d10                vtable for hwlib::font_default_8x8
- .rodata._ZTVN5hwlib11image_16x16E
                 0x00003d1c        0xc main.o
-                0x00003d1c                vtable for hwlib::image_16x16
- .rodata._ZTVN5hwlib18font_default_16x16E
+                0x00003d1c                vtable for hwlib::font_default_8x8
+ .rodata._ZTVN5hwlib11image_16x16E
                 0x00003d28        0xc main.o
-                0x00003d28                vtable for hwlib::font_default_16x16
+                0x00003d28                vtable for hwlib::image_16x16
+ .rodata._ZTVN5hwlib18font_default_16x16E
+                0x00003d34        0xc main.o
+                0x00003d34                vtable for hwlib::font_default_16x16
  .rodata._ZTVN5hwlib26i2c_bus_bit_banged_scl_sdaE
-                0x00003d34       0x10 main.o
-                0x00003d34                vtable for hwlib::i2c_bus_bit_banged_scl_sda
+                0x00003d40       0x10 main.o
+                0x00003d40                vtable for hwlib::i2c_bus_bit_banged_scl_sda
  .rodata._ZTVN5hwlib18glcd_oled_bufferedE
-                0x00003d44       0x10 main.o
-                0x00003d44                vtable for hwlib::glcd_oled_buffered
+                0x00003d50       0x10 main.o
+                0x00003d50                vtable for hwlib::glcd_oled_buffered
  .rodata._ZTVN3due6pin_ocE
-                0x00003d54       0x10 main.o
-                0x00003d54                vtable for due::pin_oc
+                0x00003d60       0x10 main.o
+                0x00003d60                vtable for due::pin_oc
  .rodata._ZTVN3due8d2_36kHzE
-                0x00003d64        0xc main.o
-                0x00003d64                vtable for due::d2_36kHz
+                0x00003d70        0xc main.o
+                0x00003d70                vtable for due::d2_36kHz
  .rodata._ZTVN5hwlib6keypadILi16EEE
-                0x00003d70       0x10 main.o
-                0x00003d70                vtable for hwlib::keypad<16>
+                0x00003d7c       0x10 main.o
+                0x00003d7c                vtable for hwlib::keypad<16>
  .rodata._ZTVN4rtos4taskILi4096EEE
-                0x00003d80       0x14 main.o
-                0x00003d80                vtable for rtos::task<4096>
+                0x00003d8c       0x14 main.o
+                0x00003d8c                vtable for rtos::task<4096>
  .rodata._ZTV22lcd_display_controller
-                0x00003d94       0x14 main.o
-                0x00003d94                vtable for lcd_display_controller
+                0x00003da0       0x14 main.o
+                0x00003da0                vtable for lcd_display_controller
  .rodata._ZTVN4rtos7channelIDsLi6EEE
-                0x00003da8        0xc main.o
-                0x00003da8                vtable for rtos::channel<char16_t, 6>
+                0x00003db4        0xc main.o
+                0x00003db4                vtable for rtos::channel<char16_t, 6>
  .rodata._ZTV15send_controller
-                0x00003db4       0x14 main.o
-                0x00003db4                vtable for send_controller
+                0x00003dc0       0x14 main.o
+                0x00003dc0                vtable for send_controller
  .rodata._ZTV20init_game_controller
-                0x00003dc8       0x14 main.o
-                0x00003dc8                vtable for init_game_controller
+                0x00003dd4       0x14 main.o
+                0x00003dd4                vtable for init_game_controller
  .rodata._ZZN5hwlib18glcd_oled_bufferedC4ERNS_7i2c_busEjE13init_sequence
-                0x00003ddc       0x29 main.o
-                0x00003ddc                hwlib::glcd_oled_buffered::glcd_oled_buffered(hwlib::i2c_bus&, unsigned int)::init_sequence
- *fill*         0x00003e05        0x3 
- .rodata        0x00003e08      0x894 main.o
+                0x00003de8       0x29 main.o
+                0x00003de8                hwlib::glcd_oled_buffered::glcd_oled_buffered(hwlib::i2c_bus&, unsigned int)::init_sequence
+ *fill*         0x00003e11        0x3 
+ .rodata        0x00003e14      0x894 main.o
  .rodata._ZN5hwlibL5blackE
-                0x0000469c        0x4 main.o
+                0x000046a8        0x4 main.o
  .rodata.str1.1
-                0x000046a0      0x106 main.o
+                0x000046ac      0x106 main.o
                                 0x131 (size before relaxing)
  .rodata._ZN5hwlibL5whiteE
-                0x000047a6        0x4 main.o
-                0x000047ac                . = ALIGN (0x4)
- *fill*         0x000047aa        0x2 
+                0x000047b2        0x4 main.o
+                0x000047b8                . = ALIGN (0x4)
+ *fill*         0x000047b6        0x2 
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000047ac                . = ALIGN (0x4)
+                0x000047b8                . = ALIGN (0x4)
  *(.gcc_except_table)
-                0x000047ac                . = ALIGN (0x4)
+                0x000047b8                . = ALIGN (0x4)
  *(.eh_frame_hdr)
-                0x000047ac                . = ALIGN (0x4)
+                0x000047b8                . = ALIGN (0x4)
  *(.eh_frame)
-                0x000047ac                . = ALIGN (0x4)
-                0x000047ac                __text_end = .
+                0x000047b8                . = ALIGN (0x4)
+                0x000047b8                __text_end = .
                 [!provide]                PROVIDE (__text_end, __text_end)
 
-.vfp11_veneer   0x000047ac        0x0
- .vfp11_veneer  0x000047ac        0x0 linker stubs
+.vfp11_veneer   0x000047b8        0x0
+ .vfp11_veneer  0x000047b8        0x0 linker stubs
 
-.v4_bx          0x000047ac        0x0
- .v4_bx         0x000047ac        0x0 linker stubs
+.v4_bx          0x000047b8        0x0
+ .v4_bx         0x000047b8        0x0 linker stubs
 
-.iplt           0x000047ac        0x0
- .iplt          0x000047ac        0x0 hwlib.o
+.iplt           0x000047b8        0x0
+ .iplt          0x000047b8        0x0 hwlib.o
 
 .IF_YOU_SEE_THIS_YOU_HAVE_ONE_OR_MORE_GLOBAL_OBJECT_CONSTRUCTORS
  *(.init)
  *(.preinit_array)
  *(SORT(.init_array.*))
  *(.init_array)
-                0x000047ac                . = ALIGN (0x4)
-                0x000047ac                __exidx_start = .
+                0x000047b8                . = ALIGN (0x4)
+                0x000047b8                __exidx_start = .
                 [!provide]                PROVIDE (__exidx_start, __exidx_start)
 
-.ARM.exidx      0x000047ac        0x8
+.ARM.exidx      0x000047b8        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x000047ac        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x000047b8        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_udivmoddi4.o)
 
-.rel.dyn        0x000047b4        0x0
- .rel.iplt      0x000047b4        0x0 hwlib.o
-                0x000047b4                . = ALIGN (0x4)
-                0x000047b4                __exidx_end = .
+.rel.dyn        0x000047c0        0x0
+ .rel.iplt      0x000047c0        0x0 hwlib.o
+                0x000047c0                . = ALIGN (0x4)
+                0x000047c0                __exidx_end = .
                 [!provide]                PROVIDE (__exidx_end, __exidx_end)
 
 .bss            0x20000000    0x14058
@@ -1329,9 +1329,9 @@ END GROUP
                 0x20014058                __bss_end = .
                 [!provide]                PROVIDE (__bss_end, __bss_end)
 
-.data           0x20014058      0xc10 load address 0x000047b4
+.data           0x20014058      0xc10 load address 0x000047c0
                 0x20014058                . = ALIGN (0x4)
-                0x000047b4                __data_init_start = LOADADDR (.data)
+                0x000047c0                __data_init_start = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_start, __data_init_start)
                 0x20014058                __data_start = .
                 [!provide]                PROVIDE (__data_start, __data_start)
@@ -1364,13 +1364,13 @@ END GROUP
                 0x20014c68                . = ALIGN (0x4)
                 0x20014c68                __data_end = .
                 [!provide]                PROVIDE (__data_end, __data_end)
-                0x000047b4                __data_init_end = LOADADDR (.data)
+                0x000047c0                __data_init_end = LOADADDR (.data)
                 [!provide]                PROVIDE (__data_init_end, __data_init_end)
                 0x00000c10                PROVIDE (__data_size, (__data_end - __data_start))
                 0x00000c10                PROVIDE (__data_init_size, __data_size)
                 [!provide]                PROVIDE (__data_init_end, (__data_init_start + __data_init_size))
 
-.igot.plt       0x20014c68        0x0 load address 0x000053c4
+.igot.plt       0x20014c68        0x0 load address 0x000053d0
  .igot.plt      0x20014c68        0x0 hwlib.o
                 0x20014c68                . = ALIGN (0x4)
                 0x20014c68                __heap_start = .

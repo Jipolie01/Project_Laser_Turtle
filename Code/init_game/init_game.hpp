@@ -31,22 +31,19 @@ class init_game_controller : public rtos::task<>{
     void main(void){
         char key = 0;
         int to_send;
-        lcd_passthrough lcd_commands;
-        /*lcd_passthrough lcd_clear;
-        lcd_mutex.wait();
-        lcd_controller.write(lcd_clear);
-        lcd_mutex.signal();
-        lcd_controller.enable_flag();
-        sleep(100*rtos::ms);*/
-        lcd_commands.assignment(lcd_commands.line3, "Type C to");
-        lcd_commands.assignment(lcd_commands.line4, "initialize");
-        lcd_mutex.wait();
-        lcd_controller.write(lcd_commands);
-        lcd_mutex.signal();
-        lcd_controller.enable_flag();
-        sleep(100*rtos::ms);
-        
+        int returned = 1;
         while(1){
+            if(returned){
+                lcd_passthrough lcd_commands;
+                lcd_commands.assignment(lcd_commands.line3, "Type C to");
+                lcd_commands.assignment(lcd_commands.line4, "initialize");
+                lcd_mutex.wait();
+                lcd_controller.write(lcd_commands);
+                lcd_mutex.signal();
+                lcd_controller.enable_flag();
+                sleep(100*rtos::ms);
+                returned = 0;
+            }
             if(key == 'C'){
                 hwlib::cout << key;
                 to_send = 0;
@@ -88,6 +85,9 @@ class init_game_controller : public rtos::task<>{
                         sleep(100*rtos::ms);
                         char16_t encoded_message = message.encode(0, to_send);
                         sender.write(encoded_message);
+                    }
+                    if(key == '*'){
+                        returned = 1;
                         break;
                     }
                 }
