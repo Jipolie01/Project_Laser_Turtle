@@ -56,11 +56,11 @@ private:
     
     send_controller sender;
     
-    //rtos::channel<char16_t, 10> received_information_channel;
-    //int hits_array_pos = 0;
-    //hit * hits[10];
-    byte player_id;
-    byte weapon_id;
+    rtos::channel<char16_t, 10> received_information_channel;
+    int hits_array_pos = 0;
+    hit * hits[10];
+    byte player_id = 0;
+    byte weapon_id = 0;
     char health_array[16] = "Health: 100";
     
     ///main function
@@ -75,7 +75,7 @@ private:
     /// these events differently.
     void main(void){
         //initilization
-        bool register_game_parameters_done = 0;
+        /*bool register_game_parameters_done = 0;
         char key = 0;
         
         lcd_passthrough lcd_commands;
@@ -87,7 +87,7 @@ private:
         sleep(100*rtos::ms);
         while(1){
             key = keypad.get_char();
-            //put game parameters key in lcd struct
+            
             lcd_mutex.wait();
             auto lcd_struct = lcd_controller.read();
             lcd_struct.line4[0] = key;
@@ -101,7 +101,7 @@ private:
             if(register_game_parameters_done == 1){
                 break;
             }
-        }
+        }*/
         lcd_passthrough lcd_clear;
         lcd_mutex.wait();
         lcd_controller.write(lcd_clear);
@@ -113,10 +113,30 @@ private:
         /*game_time.suspend();
         button_ctrl.suspend();
         lcd_controller.suspend();*/
-        int play_time = 40;
+        int play_time = 0;
         //wait for time
-        //wait(ir_receiver);
-        //do receive stuf
+        while(1){
+            player_id = 0;
+            weapon_id = 0;
+            wait(received_information_channel);
+            //check for start bit
+            auto bitstream = received_information_channel.read();
+            if(bitstream != -1){
+                if(message_logic.decode(bitstream, player_id, weapon_id)){
+                    if(player_id == 0){
+                        play_time = weapon_id;
+                        hwlib::cout << (int)weapon_id << '\n';
+                        break;
+                    }
+                    else{
+                        continue;
+                    }
+                }
+            }
+            else{
+                continue;
+            }
+        }
         
         /*game_time.suspend();
         button_ctrl.resume();//might need to be only done for periodic tasks
@@ -312,7 +332,8 @@ public:
         sound_mutex(sound_mutex),
         speaker_ctrl("speaker_ctrl", speaker_pin, sound_mutex),
         led_ctrl("led_controller", pin_r, pin_g, pin_b),
-        sender(player_information)
+        sender(player_information),
+        received_information_channel(this, "received_information_channel")
     {}
     
     ///Enable the button flag
@@ -321,6 +342,10 @@ public:
     /// button pressed flag.
     void enable_flag(){
         button_pressed_flag.set();
+    }
+    
+    void write(char16_t value){
+        received_information_channel.write(value);
     }
 };
 

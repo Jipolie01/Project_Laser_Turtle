@@ -8,13 +8,11 @@
 # 
 #############################################################################
 
-SERIAL_PORT ?= COM3
-
 # source files in this project (main.cpp is automatically assumed)
 SOURCES := 
 
 # header files in this project
-HEADERS := init_game.hpp keypad_class.hpp display_classes.hpp application_logic_classes.hpp send_ir_classes.hpp
+HEADERS := ir_receiver_classes.hpp
 
 # other places to look for files for this project
 SEARCH  := 

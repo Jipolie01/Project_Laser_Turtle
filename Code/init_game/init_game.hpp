@@ -47,7 +47,7 @@ private:
     /// to indicate that you are done with sending commands.
     void main(void){
         char key = 0;
-        int to_send;
+        uint_fast8_t to_send;
         int returned = 1;
         lcd_passthrough lcd_commands;
         while(1){
@@ -87,7 +87,8 @@ private:
                         lcd_mutex.signal();
                         lcd_controller.enable_flag();
                         sleep(100*rtos::ms);
-                        to_send = (to_send*10)+key;
+                        to_send = (to_send*10)+(key-'0');
+                        hwlib::cout << '\n' << to_send << '\n';
                     }
                     if(key == '#'){
                         hwlib::cout << key;

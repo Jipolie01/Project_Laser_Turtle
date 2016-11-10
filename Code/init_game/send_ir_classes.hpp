@@ -99,6 +99,7 @@ private:
     void send_full_message(){
         auto message = messages_channel.read();
         ir_send.send_message(message);
+        hwlib::cout << message << '\n';
     }
 public:
     ///Default constructor

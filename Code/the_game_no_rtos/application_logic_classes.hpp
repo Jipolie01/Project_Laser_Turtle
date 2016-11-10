@@ -41,52 +41,17 @@ public:
     /// The function needs the bitstream as a parameter and returns zero or one depending
     /// on the result of the exor. One being exor correct and zero exor incorrect.
     bool decode(char16_t receiving_bits, byte & received_player_id, byte & received_weapon_id){
-        byte identifier_player;
-        byte identifier_weapon;
-        byte exor;
-        
-        for(int i = 14; i >= 10; i--){
-            if((receiving_bits & (1 << i)) != 0){
-                identifier_player = (identifier_player| 1);
-            }
-            else{
-                identifier_player = (identifier_player | 0);
-            }
-            if(i != 10){
-            identifier_player = identifier_player << 1;
-            }
-        }
-        
-        for(int i = 9; i >= 5; i--){
-            if((receiving_bits & (1 << i)) != 0){
-                identifier_weapon = (identifier_weapon |1);
-            }
-            else{
-                identifier_weapon = (identifier_weapon | 0);
-            }
-            if(i != 5){
-                identifier_weapon = identifier_weapon << 1;
-            }
-        }
-        
-        for(int i= 4; i >= 0; i--){
-            if((receiving_bits & (1 << i)) != 0){
-                exor = (exor | 1);
-            }else{
-                exor = (exor | 0);
-            }
-            if(i != 0){
-                exor = exor<< 1;
-            }
-        }
+        byte exor = (receiving_bits & 31);
+        byte identifier_weapon = ((receiving_bits >> 5) & 31);
+        byte identifier_player = ((receiving_bits >> 10) & 31);
         
         if((identifier_player ^ identifier_weapon) == exor){
-                received_player_id = identifier_player;
-                received_weapon_id = identifier_weapon;
-                return 0;
+            received_player_id = identifier_player;
+            received_weapon_id = identifier_weapon;
+            return 1;
         }
         else{
-                return 1;
+            return 0;
         }
     }
 };

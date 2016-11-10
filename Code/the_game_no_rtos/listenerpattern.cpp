@@ -29,7 +29,6 @@ button_controller::button_controller(hwlib::pin_in & button_pin, run_game_contro
     run_game(run_game)
 {}
 
-void button_controller::button_pressed()
-{
+void button_controller::button_pressed(){
         run_game->enable_flag();
 }

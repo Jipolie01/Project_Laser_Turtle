@@ -41,10 +41,19 @@ public:
     /// The function needs the bitstream as a parameter and returns zero or one depending
     /// on the result of the exor. One being exor correct and zero exor incorrect.
     bool decode(char16_t receiving_bits, byte & received_player_id, byte & received_weapon_id){
-        byte identifier_player;
-        byte identifier_weapon;
-        byte exor;
+        byte identifier_player = (10 >> receiving_bits & 31);
+        byte identifier_weapon = (5 >> receiving_bits & 31);
+        byte exor = (receiving_bits & 31);
         
+        if((identifier_player ^ identifier_weapon) == exor){
+            *received_player_id = identifier_player;
+            *received_weapon_id = identifier_weapon;
+            return 1;
+        }
+        else{
+            return 0;
+        }
+        /*
         for(int i = 14; i >= 10; i--){
             if((receiving_bits & (1 << i)) != 0){
                 identifier_player = (identifier_player| 1);
@@ -87,7 +96,7 @@ public:
         }
         else{
                 return 1;
-        }
+        }*/
     }
 };
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="init_game" InternalType="">
+<CodeLite_Project Name="test" InternalType="">
   <Plugins>
     <Plugin Name="qmake">
       <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
@@ -31,9 +31,7 @@
   <VirtualDirectory Name="source">
     <File Name="main.cpp"/>
     <File Name="Makefile"/>
-    <File Name="init_game.hpp"/>
-    <File Name="send_ir_classes.hpp"/>
-    <File Name="application_logic_classes.hpp"/>
+    <File Name="ir_receiver_classes.hpp"/>
   </VirtualDirectory>
   <Settings Type="Dynamic Library">
     <GlobalSettings>
